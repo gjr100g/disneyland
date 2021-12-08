@@ -11,7 +11,8 @@
 border-radius: 0 120px 0 0;}
 /* 디즈니테마 이름 입니다 */
 #LANDS .name{width: 59.5%; height: 52%;background-color: wheat;float: right;}
-#LANDS .name h2{font-size: 50px; margin-top: 100px;  font-family:"Blacksword"}
+#LANDS .name h2{font-size: 50px; margin-top: 100px;  font-family:"Blacksword";
+font-weight: normal;}
 /* 테마 메인입니다 */
 #LANDS .main{width: 100%; height: 100%; background-image: url(../img/main/판타지랜드.jpg);
     background-position: center;background-size: cover; animation-name: main;
@@ -130,15 +131,15 @@ padding-top: 100px;}
     .Videos:nth-of-type(6) div{background-image: url(../img/main/뉴올리언스\ 스퀘어.jpg);}
 
 
-#reservation-outside{width: 100%; height: 800px; background-color: orchid;position: relative;}
-#reservation-outside .photo{width: 60%; height: 100%; background-color: palegoldenrod;
+#reservation-outside{width: 100%; height: 800px;position: relative;}
+#reservation-outside .photo{width: 65%; height: 100%; background-color: palegoldenrod;
 overflow: hidden;}
-#reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/판타지랜드.jpg);
+#reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
 #reservation{width: 1400px;height: 100%;position: absolute; left: 50%;margin-left: -700px;top: 0;
-background-color: paleturquoise;padding-top: 190px;}
+padding-top: 190px;}
     /* 예약 제목 입니다 */
-    .reservation-text{width: 800px; height: 400px;background-color: rosybrown;float: left;
+    .reservation-text{width: 800px; height: 400px;float: left;
     padding-top: 100px;}
     .reservation-text h2{font-size: 38px;color: white; margin-bottom: 15px;}
     .reservation-text p{color: white;}
@@ -149,7 +150,7 @@ background-color: paleturquoise;padding-top: 190px;}
     /* 달력 년도 입니다 */
     .calendar .year{width: 100%; height: 12%; background-color: papayawhip;}
     /* 달력 입니다 */
-    .calendar table{width: 100%; height: 76%;}
+    .calendar table{width: 100%; height: 76%; background-color: white;}
     .calendar table th{font-size: 22px; padding: 10px 0;}
     .calendar table td{text-align: center; font-size: 20px;}
     .calendar table,td,tr{border: solid rgb(73, 73, 73) 1px;  border-collapse: collapse;
@@ -158,3 +159,23 @@ background-color: paleturquoise;padding-top: 190px;}
     .calendar table .Sunday{color: rgb(170, 0, 0);}
     /* 달력 선택완료 입니다 */
     .calendar .select{width: 100%; height: 12%; background-color: papayawhip;}
+/* 이벤트 섹션 입니다.   ///////////////////////
+//////////////////////////////////////////////
+////////////////////////////////////////////// */
+#event-outside{width: 100%; height: 600px;}
+#event{width: 1400px; height: 100%; margin: 0 auto; background-color: wheat;}
+.event-text{width: 50%; height: 100%; float: left; background-color: aquamarine;padding-top: 170px;}
+.event-text h2{font-size: 30px;margin-bottom: 10px;}
+.event-text p{font-size: 15px; color: rgb(110, 110, 110);}
+.event-text span{width: 110px;height: 40px;font-weight: bold;color: white;background-color: black;
+border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;line-height: 37px;
+margin-top: 20px;}
+.event-photo{width: 50%; height: 100%; float: right; background-color: coral;position: relative;}
+.event-photo .photo1{width: 250px;height: 200px; position: absolute; background-color: blueviolet;
+top: 30px; right: 10px;}
+.event-photo .photo2{width: 150px;height: 130px; position: absolute;background-color: brown;
+top: 30px; left: 280px;}
+.event-photo .photo3{width: 200px;height: 150px; position: absolute;background-color: chartreuse;
+top: 100px; height: 150px;}
+.event-photo .photo4{width: 130px;height: 120px; position: absolute;background-color: cornflowerblue;
+top: 150px; height: 20px;}
