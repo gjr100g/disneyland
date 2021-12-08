@@ -1,0 +1,494 @@
+@charset "UTF-8";
+body{background-image: linear-gradient(#222,#222);background-repeat: no-repeat;background-size: cover;
+
+background-color: #222;}
+
+
+@media(max-width:599px){
+    header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
+.web-text{width: 100%; height: 100px; background-image: url(../img/sub1/배경.png); background-size: cover; 
+    background-repeat: no-repeat;}
+
+.web-text div{width: 100%; height: 40%; background-image: linear-gradient(rgba(0, 0, 0, 0),#222);}
+.web-text h2{text-align: center; font-size: 25px; color: gold; display: inline-block; margin-top: 35px;width: 100%;}
+#PLAYERS{width: 95%; height: auto; background-color:white; margin: 0 auto; 
+    border-radius: 30px; padding-bottom: 10px; padding-top: 15px;}
+    .PLAYERS-text{width: 100%;height: 100px; }
+        /* 선수목록 제목 입니다  */
+        .PLAYERS-text-top{width: 95%; margin: 0 auto;
+        height: 60%;}
+            .PLAYERS-text-top h2{font-size: 20px;margin: 2%; display: inline-block;}
+        /* 선수 포지션 버튼입니다     */
+        .PLAYERS-text-bottom{width: 95%; margin: 0 auto;
+        height: 100px;}
+       .PLAYERS-text-bottom .botten-box{width: 90%; margin: 0 auto;
+        height: 100px; display: flex; flex-direction: row; justify-content: space-between;}
+        .PLAYERS-text-bottom .botten-box a{width: 19%;}
+            .PLAYERS-text-bottom .botten{box-shadow: gray 0 2px 6px 2px; font-weight: bold;
+            width: 100%; height: 35px; border-radius: 5px; text-align: center; line-height: 35px;
+            color: black;}
+        .PLAYERS-text-bottom .botten:hover{background-color: rgb(199, 0, 0); color: white;}
+
+        /* 선수 사진 입니다 올릴경우 정보 올라옴  */
+        .photo{overflow: hidden; border-radius: 5px;}
+        
+        .name{width: 100%;height: 70px; margin-top:150px; transition: 0.5s;
+        display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+        .name h3{color: white; font-size: 15px;text-align: center;}
+        .name p{color: white; text-align: center; font-size: 12px;}
+        .csname{width: 100%;height: 70px; margin-top:150px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 15px;text-align: center;}
+            .csname p{color: white; text-align: center; font-size: 12px;}
+        .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
+        border: solid rgb(161, 161, 161) 1px; border-style: solid none none none; display: none;}
+        .information table{width: 90%; margin: 0 auto;
+        color: white; height: 70px; font-size: 18px;}
+
+
+    /* 골키퍼 입니다 */
+    #GK{width: 95%; height: auto; margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #GK-text{width: 100%; height: 70px;}
+        #GK-text h2{font-size: 25px;text-align: center; line-height: 70px;color: rgb(184, 0, 0);}
+        #GK a{width: 48%;height: 200px; margin: 1%;}
+        .GK{width:100%; height: 100%;}
+        /* 골키퍼 사진 입니다 */
+        .GK1{background-image:url(../img/sub1/players/GK/David_de_Gea.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK2{background-image:url(../img/sub1/players/GK/딘\ 헨더슨.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK3{background-image:url(../img/sub1/players/GK/리\ 그랜트.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+    #DF{width: 95%; height: auto;margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #DF-text{width: 100%; height: 70px; }
+            #DF-text h2{font-size: 25px;text-align: center; line-height: 70px;color: rgb(184, 0, 0);}
+            #DF a{width: 48%;height: 200px; margin: 1%;}
+            .DF{width:100%; height: 100%; }
+        /* 수비수 사진 입니다 */
+        .DF1{background-image:url(../img/sub1/players/DF/Harry_Maguire.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF2{background-image:url(../img/sub1/players/DF/디오고\ 달롯.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}       
+        .DF3{background-image:url(../img/sub1/players/DF/루크\ 쇼.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF4{background-image:url(../img/sub1/players/DF/브렌단\ 윌리엄스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF5{background-image:url(../img/sub1/players/DF/빅토르\ 린델로프.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF6{background-image:url(../img/sub1/players/DF/아론\ 완-비사카.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF7{background-image:url(../img/sub1/players/DF/악셀\ 튀앙제브.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF8{background-image:url(../img/sub1/players/DF/알렉스\ 텔레스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF9{background-image:url(../img/sub1/players/DF/애릭바이.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF10{background-image:url(../img/sub1/players/DF/테덴\ 멘지.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF11{background-image:url(../img/sub1/players/DF/필\ 존스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+
+
+
+    #MF{width: 95%; height: auto; margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #MF-text{width: 100%; height: 70px;}
+            #MF-text h2{font-size: 25px;text-align: center; line-height: 70px;color: rgb(184, 0, 0);}
+            #MF a{width: 48%;height: 200px; margin: 1%;}
+            .MF{width:100%; height: 100%; }       
+        /* 미드필더 사진입니다 */
+        .MF1{background-image:url(../img/sub1/players/MF/Paul\ Pogba.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF2{background-image:url(../img/sub1/players/MF/네마냐\ 마티치.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF3{background-image:url(../img/sub1/players/MF/도니\ 판\ 더\ 베이크.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF4{background-image:url(../img/sub1/players/MF/브루노\ 페르난데스.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF5{background-image:url(../img/sub1/players/MF/스콧\ 맥토미니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF6{background-image:url(../img/sub1/players/MF/아마드\ 디알로.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF7{background-image:url(../img/sub1/players/MF/안드레아스\ 페레이라.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF8{background-image:url(../img/sub1/players/MF/제시\ 린가드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF9{background-image:url(../img/sub1/players/MF/제임스\ 가너.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF10{background-image:url(../img/sub1/players/MF/파쿤도\ 펠리스트리.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF11{background-image:url(../img/sub1/players/MF/프레드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF12{background-image:url(../img/sub1/players/MF/후안마타.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+#FW{width: 95%; height: auto; margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #FW-text{width: 100%; height: 70px; }
+        #FW-text h2{font-size: 25px;text-align: center; line-height: 70px;color: rgb(184, 0, 0);}
+        #FW a{width: 48%;height: 200px; margin: 1%;}
+        .FW{width:100%; height: 100%;}  
+        /* 공격수 사진입니다 */
+        .FW1{background-image:url(../img/sub1/players/FW/Cristiano_Ronaldo.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW2{background-image:url(../img/sub1/players/FW/그린우드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW3{background-image:url(../img/sub1/players/FW/마커스\ 래시포드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW4{background-image:url(../img/sub1/players/FW/앙토니\ 마시알.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW5{background-image:url(../img/sub1/players/FW/에딘손\ 카바니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW6{background-image:url(../img/sub1/players/FW/제이든\ 산초.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW7{background-image:url(../img/sub1/players/FW/타히트\ 총.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+#CS{width: 95%; height: auto;  margin: 0 auto; display: flex;
+flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-direction: column;}
+    #CS-text{width: 100%; height: 70px;}
+        #CS-text h2{font-size: 25px;text-align: center; line-height: 70px;color: rgb(184, 0, 0);}
+        #CS a{width: 48%;height: 200px; margin: 1%;}
+        .CS{width:100%; height: 100%; overflow: hidden;}
+        #CS table{width: 98%; height: 250px; margin:0 auto;}
+        #CS table th{width: 50%; font-size: 10px; background-color: rgb(218, 218, 218); border-radius: 5px;}
+        #CS table td{width: 50%; text-align: center; font-size: 10px; border-radius: 5px;background-color: rgb(236, 236, 236);}
+        /* 감독 사진입니다 */
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+}
+
+
+
+
+
+
+@media(min-width:600px) and (max-width:1429px){
+    header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
+.web-text{width: 100%; height: 150px;  background-image: url(../img/sub1/배경.png); background-size: cover; 
+    background-repeat: no-repeat;}
+    .web-text div{width: 100%; height: 40%; background-image: linear-gradient(rgba(0, 0, 0, 0),#222);}
+.web-text h2{text-align: center; font-size: 30px; color: gold; display: inline-block; margin-top: 50px;width: 100%;}
+#PLAYERS{width: 95%; height: auto; background-color:white; margin: 0 auto; 
+    border-radius: 30px; padding-bottom: 10px;}
+    .PLAYERS-text{width: 100%;height: 150px;}
+        /* 선수목록 제목 입니다  */
+        .PLAYERS-text-top{width: 95%; margin: 0 auto; 
+        height: 70%;}
+            .PLAYERS-text-top h2{font-size: 20px; margin: 2%; display: inline-block;}
+        /* 선수 포지션 버튼입니다     */
+        .PLAYERS-text-bottom{width: 95%; margin: 0 auto;
+        height: 30%;}
+        .PLAYERS-text-bottom .botten-box{width: 70%; margin: 0 auto;
+        height: 100px; display: flex; flex-direction: row; justify-content: space-between;}
+        .PLAYERS-text-bottom .botten-box a{width: 19%;}
+            .PLAYERS-text-bottom .botten{box-shadow: gray 0 2px 6px 2px; font-weight: bold;
+            width: 100%; height: 35px; border-radius: 5px; text-align: center; line-height: 35px;
+            color: black;}
+        .PLAYERS-text-bottom .botten:hover{background-color: rgb(199, 0, 0); color: white;}
+
+        /* 선수 사진 입니다 올릴경우 정보 올라옴  */
+        .photo{overflow: hidden; border-radius: 10px;}
+        
+        .name{width: 100%;height: 70px; margin-top:190px; transition: 0.5s;
+        display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+        .name h3{color: white; font-size: 17px;text-align: center;}
+        .name p{color: white; text-align: center;font-size: 14px;}
+        .csname{width: 100%;height: 70px; margin-top:190px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 20px;text-align: center;}
+            .csname p{color: white; text-align: center;}
+        .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
+        border: solid rgb(161, 161, 161) 1px; border-style: solid none none none; display: none;}
+        .information table{width: 90%; margin: 0 auto;
+        color: white; height: 70px; font-size: 18px;}
+
+
+    /* 골키퍼 입니다 */
+    #GK{width: 95%; height: auto; margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #GK-text{width: 100%; height: 100px;}
+        #GK-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+        #GK a{width: 31.3333%;height: 250px; margin: 1%;}
+        .GK{width:100%; height: 100%; }
+        /* 골키퍼 사진 입니다 */
+        .GK1{background-image:url(../img/sub1/players/GK/David_de_Gea.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK2{background-image:url(../img/sub1/players/GK/딘\ 헨더슨.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK3{background-image:url(../img/sub1/players/GK/리\ 그랜트.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+    #DF{width: 95%; height: auto;  margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #DF-text{width: 100%; height: 100px;}
+            #DF-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+            #DF a{width: 31.3333%;height: 250px; margin: 1%;}
+            .DF{width:100%; height: 100%;}
+        /* 수비수 사진 입니다 */
+        .DF1{background-image:url(../img/sub1/players/DF/Harry_Maguire.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF2{background-image:url(../img/sub1/players/DF/디오고\ 달롯.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}       
+        .DF3{background-image:url(../img/sub1/players/DF/루크\ 쇼.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF4{background-image:url(../img/sub1/players/DF/브렌단\ 윌리엄스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF5{background-image:url(../img/sub1/players/DF/빅토르\ 린델로프.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF6{background-image:url(../img/sub1/players/DF/아론\ 완-비사카.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF7{background-image:url(../img/sub1/players/DF/악셀\ 튀앙제브.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF8{background-image:url(../img/sub1/players/DF/알렉스\ 텔레스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF9{background-image:url(../img/sub1/players/DF/애릭바이.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF10{background-image:url(../img/sub1/players/DF/테덴\ 멘지.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF11{background-image:url(../img/sub1/players/DF/필\ 존스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+
+    #MF{width: 95%; height: auto; margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #MF-text{width: 100%; height: 100px;}
+            #MF-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+            #MF a{width: 31.3333%;height: 250px; margin: 1%;}
+            .MF{width:100%; height: 100%;}       
+        /* 미드필더 사진입니다 */
+        .MF1{background-image:url(../img/sub1/players/MF/Paul\ Pogba.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF2{background-image:url(../img/sub1/players/MF/네마냐\ 마티치.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF3{background-image:url(../img/sub1/players/MF/도니\ 판\ 더\ 베이크.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF4{background-image:url(../img/sub1/players/MF/브루노\ 페르난데스.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF5{background-image:url(../img/sub1/players/MF/스콧\ 맥토미니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF6{background-image:url(../img/sub1/players/MF/아마드\ 디알로.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF7{background-image:url(../img/sub1/players/MF/안드레아스\ 페레이라.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF8{background-image:url(../img/sub1/players/MF/제시\ 린가드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF9{background-image:url(../img/sub1/players/MF/제임스\ 가너.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF10{background-image:url(../img/sub1/players/MF/파쿤도\ 펠리스트리.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF11{background-image:url(../img/sub1/players/MF/프레드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF12{background-image:url(../img/sub1/players/MF/후안마타.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+#FW{width: 95%; height: auto;  margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #FW-text{width: 100%; height: 100px; }
+        #FW-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+        #FW a{width: 31.3333%;height: 250px; margin: 1%;}
+        .FW{width:100%; height: 100%; }  
+        /* 공격수 사진입니다 */
+        .FW1{background-image:url(../img/sub1/players/FW/Cristiano_Ronaldo.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW2{background-image:url(../img/sub1/players/FW/그린우드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW3{background-image:url(../img/sub1/players/FW/마커스\ 래시포드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW4{background-image:url(../img/sub1/players/FW/앙토니\ 마시알.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW5{background-image:url(../img/sub1/players/FW/에딘손\ 카바니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW6{background-image:url(../img/sub1/players/FW/제이든\ 산초.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW7{background-image:url(../img/sub1/players/FW/타히트\ 총.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+#CS{width: 95%; height: auto;  margin: 0 auto; display: flex;
+flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-direction: column;}
+    #CS-text{width: 100%; height: 100px; }
+        #CS-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+        #CS a{width: 31.3333%;height: 250px; margin: 1%;}
+        .CS{width:100%; height: 100%; }
+        #CS table{width: 98%; height: 250px; margin:0 auto;}
+        #CS table th{width: 50%; font-size: 15px; background-color: rgb(218, 218, 218);}
+        #CS table td{width: 50%; text-align: center; font-size: 15px;background-color: rgb(236, 236, 236);}
+        /* 감독 사진입니다 */
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+    
+}
+
+
+
+
+
+
+@media(min-width:1430px){
+    header nav li:nth-of-type(6) a{color: rgb(216, 0, 0);}
+.web-text{width: 100%; height: 150px; background-image: url(../img/sub1/배경.png); background-size: cover; 
+    background-repeat: no-repeat;}
+.web-text div{width: 100%; height: 40%; background-image: linear-gradient(rgba(0, 0, 0, 0),#222);}
+.web-text h2{text-align: center;font-size: 50px; color: gold; margin-top: 35px;display: inline-block;
+width: 100%;}
+#PLAYERS{width: 1410px; height: auto; background-color:white; margin: 0 auto; 
+    border-radius: 30px; padding-bottom: 10px;}
+    .PLAYERS-text{width: 100%;height: 150px; }
+        /* 선수목록 제목 입니다  */
+        .PLAYERS-text-top{width: 95%; margin: 0 auto; 
+        height: 70%;}
+            .PLAYERS-text-top h2{font-size: 30px; margin:  2%; display: inline-block;}
+        /* 선수 포지션 버튼입니다     */
+        .PLAYERS-text-bottom{width: 95%; margin: 0 auto;
+        height: 30%;}
+        .PLAYERS-text-bottom .botten-box{width: 550px; margin: 0 auto;
+        height: 100px; display: flex; flex-direction: row; justify-content: space-between;}
+            .PLAYERS-text-bottom .botten{box-shadow: gray 0 2px 6px 2px; font-weight: bold;
+            width: 103px; height: 35px; border-radius: 5px; text-align: center; line-height: 35px;
+            color: black;}
+        .PLAYERS-text-bottom .botten:hover{background-color: rgb(199, 0, 0); color: white;}
+
+        /* 선수 사진 입니다 올릴경우 정보 올라옴  */
+        .photo{overflow: hidden; border-radius: 10px;}
+        .photo:hover > .name{ margin-top: 230PX;}
+        
+        .name{width: 100%;height: 70px; margin-top:310px; transition: 0.5s;
+        display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+        .csname{width: 100%;height: 70px; margin-top:310px; transition: 0.5s;
+            display: inline-block;background-image: linear-gradient(rgba(255,0,0,0),black,black);}
+            .csname h3{color: white; font-size: 30px;text-align: center;}
+            .csname p{color: white; text-align: center;}
+        .name h3{color: white; font-size: 30px;text-align: center;}
+        .name p{color: white; text-align: center;}
+        .information{width: 100%; height: 100px; margin: 0 auto;background-color: black;
+        border: solid rgb(161, 161, 161) 1px; border-style: solid none none none;}
+        .information table{width: 90%; margin: 0 auto;
+        color: white; height: 70px; font-size: 18px;}
+
+
+    /* 골키퍼 입니다 */
+    #GK{width: 95%; height: auto;  margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #GK-text{width: 100%; height: 100px;}
+        #GK-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+        #GK a{width: 31.3333%;height: 380px; margin: 1%;}
+        .GK{width:100%; height: 100%; }
+        /* 골키퍼 사진 입니다 */
+        .GK1{background-image:url(../img/sub1/players/GK/David_de_Gea.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK2{background-image:url(../img/sub1/players/GK/딘\ 헨더슨.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .GK3{background-image:url(../img/sub1/players/GK/리\ 그랜트.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+    #DF{width: 95%; height: auto; margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #DF-text{width: 100%; height: 100px; }
+            #DF-text h2{font-size: 35px;text-align: center; line-height: 100px; color: rgb(184, 0, 0);}
+            #DF a{width: 31.3333%;height: 380px; margin: 1%;}
+            .DF{width:100%; height: 100%; }
+        /* 수비수 사진 입니다 */
+        .DF1{background-image:url(../img/sub1/players/DF/Harry_Maguire.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF2{background-image:url(../img/sub1/players/DF/디오고\ 달롯.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}       
+        .DF3{background-image:url(../img/sub1/players/DF/루크\ 쇼.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF4{background-image:url(../img/sub1/players/DF/브렌단\ 윌리엄스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF5{background-image:url(../img/sub1/players/DF/빅토르\ 린델로프.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF6{background-image:url(../img/sub1/players/DF/아론\ 완-비사카.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF7{background-image:url(../img/sub1/players/DF/악셀\ 튀앙제브.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF8{background-image:url(../img/sub1/players/DF/알렉스\ 텔레스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF9{background-image:url(../img/sub1/players/DF/애릭바이.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}            
+        .DF10{background-image:url(../img/sub1/players/DF/테덴\ 멘지.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+        .DF11{background-image:url(../img/sub1/players/DF/필\ 존스.jpg);background-position: center;
+            background-repeat: no-repeat;background-size: cover;}
+
+
+    #MF{width: 95%; height: auto;  margin: 0 auto; display: flex;
+        flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+        #MF-text{width: 100%; height: 100px; }
+            #MF-text h2{font-size: 35px;text-align: center; line-height: 100px; color: rgb(184, 0, 0);}
+            #MF a{width: 31.3333%;height: 380px; margin: 1%;}
+            .MF{width:100%; height: 100%;}       
+        /* 미드필더 사진입니다 */
+        .MF1{background-image:url(../img/sub1/players/MF/Paul\ Pogba.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF2{background-image:url(../img/sub1/players/MF/네마냐\ 마티치.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF3{background-image:url(../img/sub1/players/MF/도니\ 판\ 더\ 베이크.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF4{background-image:url(../img/sub1/players/MF/브루노\ 페르난데스.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF5{background-image:url(../img/sub1/players/MF/스콧\ 맥토미니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF6{background-image:url(../img/sub1/players/MF/아마드\ 디알로.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF7{background-image:url(../img/sub1/players/MF/안드레아스\ 페레이라.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF8{background-image:url(../img/sub1/players/MF/제시\ 린가드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF9{background-image:url(../img/sub1/players/MF/제임스\ 가너.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF10{background-image:url(../img/sub1/players/MF/파쿤도\ 펠리스트리.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF11{background-image:url(../img/sub1/players/MF/프레드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .MF12{background-image:url(../img/sub1/players/MF/후안마타.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+#FW{width: 95%; height: auto;  margin: 0 auto; display: flex;
+    flex-direction: row; flex-wrap: wrap; justify-content:flex-start;}
+    #FW-text{width: 100%; height: 100px; }
+        #FW-text h2{font-size: 35px;text-align: center; line-height: 100px; color: rgb(184, 0, 0);}
+        #FW a{width: 31.3333%;height: 380px; margin: 1%;}
+        .FW{width:100%; height: 100%; }  
+        /* 공격수 사진입니다 */
+        .FW1{background-image:url(../img/sub1/players/FW/Cristiano_Ronaldo.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW2{background-image:url(../img/sub1/players/FW/그린우드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW3{background-image:url(../img/sub1/players/FW/마커스\ 래시포드.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW4{background-image:url(../img/sub1/players/FW/앙토니\ 마시알.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW5{background-image:url(../img/sub1/players/FW/에딘손\ 카바니.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW6{background-image:url(../img/sub1/players/FW/제이든\ 산초.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+        .FW7{background-image:url(../img/sub1/players/FW/타히트\ 총.jpg);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+
+
+#CS{width: 95%; height: auto;  margin: 0 auto; display: flex;
+flex-wrap: wrap; justify-content:flex-start; align-content: center; flex-direction: column;}
+    #CS-text{width: 100%; height: 100px;}
+        #CS-text h2{font-size: 35px;text-align: center; line-height: 100px;color: rgb(184, 0, 0);}
+        #CS a{width: 31.3333%;height: 380px; margin: 1%;}
+        .CS{width:100%; height: 100%;}
+        #CS table{width: 98%; height: 250px; margin:0 auto; margin-bottom: 10px;}
+        #CS table th{width: 50%; font-size: 20px; background-color: rgb(218, 218, 218);border-radius: 5px;}
+        #CS table td{width: 50%; text-align: center; font-size: 20px;border-radius: 5px; 
+        background-color: rgb(236, 236, 236);}
+        /* 감독 사진입니다 */
+        .CS{background-image: url(../img/sub1/players/솔샤르.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;}
+    
+}
+
+

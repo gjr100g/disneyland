@@ -1,44 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		*{margin: 0; padding: 0;}
-		a{text-decoration: none;color: #222;}
-		footer{width: 100%; height: 380px;}
-		#footer{width: 1400px; height: 300px; margin: 0 auto;
-		padding-top: 80px;}
-		.footer-box{width: 100%; height: 80%;}
-		.footer-box .logo-icon{width: 200px; height: 100%;float: left;}
-		.footer-box .logo-icon img[alt="logo"]{width: 100%;margin: 0;}
-		.footer-box .logo-icon img{width: 18%;margin:15% 6%;}
-		.footer-box .menu{height: 100%; float: left; width: auto; font-weight: bold; color: black;
-		font-size: 18px;margin-left: 300px;}
-		.footer-box .menu a{display: block;}
-		.footer-box .menu a:hover{text-decoration:underline;}
-		#footer .undertext{float: left; border: solid #777 1px; border-style: solid none none none;
-		width: 100%;}
-		#footer .undertext a{font-size: 12px; float: left; line-height: 58px;padding: 0 5px;}
-		#footer .undertext hr{width: 0; height: 12px; float: left;margin-top: 22px;}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/common_css.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // 호버시 화살표 색 바꾸기
 
-	</style>
+        // 명소
+        $(function(){
+            $(".Attractions .VIEW_ALL").hover(function(){
+                $(".Attractions .VIEW_ALL img").attr("src","img/main/화살표.1")
+            });
+            $(".Attractions .VIEW_ALL").mouseleave(function(){
+                $(".Attractions .VIEW_ALL img").attr("src","img/main/화살표.png")
+            });
+        });
+        // 상품
+        $(function(){
+            $(".Goods-box .VIEW_ALL").hover(function(){
+                $(".Goods-box .VIEW_ALL img").attr("src","img/main/화살표.1")
+            });
+            $(".Goods-box .VIEW_ALL").mouseleave(function(){
+                $(".Goods-box .VIEW_ALL img").attr("src","img/main/화살표.png")
+            });
+        });
+        // 비디오
+                $(function(){
+            $(".Videos-text .VIEW_ALL").hover(function(){
+                $(".Videos-text .VIEW_ALL img").attr("src","img/main/화살표.1")
+            });
+            $(".Videos-text .VIEW_ALL").mouseleave(function(){
+                $(".Videos-text .VIEW_ALL img").attr("src","img/main/화살표.png")
+            });
+        });
+    </script>
 </head>
 <body>
+    <!-- 헤더입니다.    /////////////////////////
+    ////////////////////////////////////////////
+    ////////////////////////////////////////////-->
+    <header>
+        <div id="main">
+            <!-- 로고 입니다. -->
+            <a href="#"><div id="logo">
+                <img src="img/common/logo8.png" alt="logo8">
+            </div></a>
+            <!-- 쇼핑 입니다. -->
+            <div id="shop_">
+                <img src="img/common/shop.png" alt="">
+                <p>0</p>
+            </div>
+            <!-- 네비게이션 입니다. -->
+            <nav>
+                <a href="#">Parks & Tickets</a>
+                <a href="#">Places to Stay</a>
+                <a href="#">Things to Do</a>
+                <a href="#">Magic Key</a>
+                <a href="#">Shop</a>
+                <div id="login">
+                    <a href="#">Sign In</a>
+                    <a href="#"><span>My Disneyland</span></a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- 에버랜드 매인 슬로드 입니다    ////////////////////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////    -->
+    <div id="LANDS">
+        <div class="name">
+            <h2>Watch Dreams Come<br>True at the Happiest<br>Place on Earth…</h2>
+        </div>
+        <div class="main-outside">
+             <div class="main">
+
+            </div>  
+        </div>
+     
+        <div class="sub">
+            <h3>Featured Posts</h3>
+            <div class="overflow">
+                <ul>
+                    <li><a href="#"><h3>Japan Like<br>You've Never<br>Seen It</h3></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 추천 섹션 입니다. ///////////////////////////////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////-->
+    <div id="suggestion-outside">
+        <div id="suggestion">
+            <!-- 추천 박스 입니다 -->
+            <div class="suggestion-box">
+                <h2>Suggestion</h2>
+                <span>Attractions</span>
+                <span>Restaurant</span>
+                <!-- 명소 추천 입니다 -->
+                <div class="Attractions">
+                    <a href="#">
+                        <div class="Attractions-box">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>Africa's People and Culture</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Attractions-box">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>Africa's People and Culture</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Attractions-box">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>Africa's People and Culture</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                </div>
+            </div>
+
+            <!-- 상점입니다. -->
+            <div class="shop">
+                <div class="shop-text">
+                    <h3>Shop Disney</h3>
+                </div>
+                <div class="Goods-box">
+                    <a href="#">
+                        <div class="Goods">
+                            <div></div>
+                            <h4>인형</h4>
+                            <p>15,000원</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Goods">
+                            <div></div>
+                            <h4>장난감</h4>
+                            <p>15,000원</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Goods">
+                            <div></div>
+                            <h4>코스튬</h4>
+                            <p>15,000원</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Goods">
+                            <div></div>
+                            <h4>머리띠</h4>
+                            <p>15,000원</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Goods">
+                            <div></div>
+                            <h4>악세사리</h4>
+                            <p>15,000원</p>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 비디오 섹션 입니다    ///////////////////////
+    ////////////////////////////////////////////////
+    ///////////////////////////////////////////////-->
+ /
+    	<!-- 프터 입니다.   /////////////////////////////
+	////////////////////////////////////////////////
+	//////////////////////////////////////////////// -->
 	<footer>
 		<div id="footer">
 			<div class="footer-box">
 				<!-- 로고 및 아이콘 박스 입니다. -->
 				<div class="logo-icon">
 					<div class="logo">
-						<a href="#"><img src="img/logo1.png" alt="logo"></a>
+						<a href="#"><img src="img/common/logo1.png" alt="logo"></a>
 					</div>
 					<div class="icon">
-						<a href="#"><img src="img/인스타.png" alt=""></a>
-						<a href="#"><img src="img/트위터.png" alt=""></a>
-						<a href="#"><img src="img/페이스북.png" alt=""></a>
+						<a href="#"><img src="img/common/인스타.png" alt=""></a>
+						<a href="#"><img src="img/common/트위터.png" alt=""></a>
+						<a href="#"><img src="img/common/페이스북.png" alt=""></a>
 					</div>
 				</div>
 				<!-- 매뉴 박스 입니다. -->
@@ -72,6 +254,5 @@
 			</div>
 		</div>
 	</footer>
-	<!-- ㅁ -->
 </body>
 </html>
