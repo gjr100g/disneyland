@@ -44,13 +44,13 @@
         // 메인 비디오 나오는 제이쿼리 입니다
         $(function(){
             $(".main").click(function(){
-                $("#main1").fadeIn(500);
+                $("#Adventur").fadeIn(500);
             });
-            $("#main1 span").click(function(){
-                $("#main1").fadeOut(500);
+            $("#Adventur span").click(function(){
+                $("#Adventur").fadeOut(500);
             });
-            $("#main1 div").click(function(){
-                $("#main1").fadeOut(500);
+            $("#Adventur div").click(function(){
+                $("#Adventur").fadeOut(500);
             });
         });
 
@@ -155,7 +155,7 @@
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     
                     if( bottom_of_window > bottom_of_element ){
-                        $(this).animate({'transform':'scale(1)'},1500);
+                        $(this).animate({transform:'scale(1)'},1500);
                     }
                     
                 }); 
