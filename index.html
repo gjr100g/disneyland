@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset_css.css">
     <link rel="stylesheet" href="css/common_css.css">
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
         // 호버시 화살표 색 바꾸기
@@ -54,6 +55,116 @@
         });
 
 
+        // 달력 제이쿼리 입니다
+        $(function(){
+            var today = new Date();
+            var date = new Date();           
+
+            $(".calendar .year button:nth-of-type(1)").click(function() { // 이전달
+                $("#calendar > tbody > td").remove();
+                $("#calendar > tbody > tr").remove();
+                today = new Date ( today.getFullYear(), today.getMonth()-1, today.getDate());
+                buildCalendar();
+            })
+            
+            $(".calendar .year button:nth-of-type(2)").click(function(){ //다음달
+                $("#calendar > tbody > td").remove();
+                $("#calendar > tbody > tr").remove();
+                today = new Date ( today.getFullYear(), today.getMonth()+1, today.getDate());
+                buildCalendar();
+            })
+
+
+            function buildCalendar() {
+                
+                nowYear = today.getFullYear();
+                nowMonth = today.getMonth();
+                firstDate = new Date(nowYear,nowMonth,1).getDate();
+                firstDay = new Date(nowYear,nowMonth,1).getDay(); //1st의 요일
+                lastDate = new Date(nowYear,nowMonth+1,0).getDate();
+
+                if((nowYear%4===0 && nowYear % 100 !==0) || nowYear%400===0) { //윤년 적용
+                    lastDate[1]=29;
+                }
+
+                $(".year_mon").text(nowYear+"년 "+(nowMonth+1)+"월");
+
+                for (i=0; i<firstDay; i++) { //첫번째 줄 빈칸
+                    $("#calendar tbody:last").append("<td></td>");
+                }
+                for (i=1; i <=lastDate; i++){ // 날짜 채우기
+                    plusDate = new Date(nowYear,nowMonth,i).getDay();
+                    if (plusDate==0) {
+                        $("#calendar tbody:last").append("<tr></tr>");
+                    }
+                    $("#calendar tbody:last").append("<td class='date'>"+ i +"</td>");
+                }
+                if($("#calendar > tbody > td").length%7!=0) { //마지막 줄 빈칸
+                    for(i=1; i<= $("#calendar > tbody > td").length%7; i++) {
+                        $("#calendar tbody:last").append("<td></td>");
+                    }
+                }
+                $(".date").each(function(index){ // 오늘 날짜 표시
+                    if(nowYear==date.getFullYear() && nowMonth==date.getMonth() && $(".date").eq(index).text()==date.getDate()) {
+                        $(".date").eq(index).addClass('colToday');
+                    }
+                }) 
+            }
+            buildCalendar();
+
+
+        })
+        // 달력 제이쿼리 입니다
+        $(function(){
+            $(".calendar table .date").click(function(){
+                $(this).toggleClass("aa");
+            });
+        });
+
+        // 선택취소
+        $(function(){
+            $(".calendar .select button:nth-of-type(1)").click(function(){
+               $(".calendar table .date").removeClass("aa") 
+            });
+        });
+        
+
+        // 스크롤에 따른 제이쿼리 입니다
+        $(document).ready(function() {
+            $(window).scroll( function(){
+                    
+                $('.opacity').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element ){
+                        $(this).animate({'opacity':'1'},1500);
+                    }
+                    
+                }); 
+            });
+        });
+
+        $(document).ready(function() {
+            $(window).scroll( function(){
+                    
+                $('.qqqq').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element ){
+                        $(this).animate({'transform':'scale(1)'},1500);
+                    }
+                    
+                }); 
+            });
+        });
+
+
+
+
     </script>
 </head>
 <body>
@@ -90,15 +201,64 @@
     <!-- 영상들 입니다 -->
 
     <!-- 메인 슬라이더 영상 입니다. -->
-    <div id="main1">
-        <div></div>
-        <span>x</span>
-        <iframe width="702" height="395" src="https://www.youtube.com/embed/IUJnNMwqatg" 
-        title="YouTube video player"allow="accelerometer; autoplay;
-         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-    </div>
-    
+
+        <!-- 메인 usa -->
+        <div id="usa" class="main1"> 
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/HVg0He0wa7w"
+            title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 어드벤처랜드 -->
+        <div id="Adventur" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/71Mf7xmXxLc" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 뉴올리언스 스퀘어 -->
+        <div id="New-Orleans" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/F3H0gEbFhjw"
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 스타워즈 -->
+        <div id="Galaxy" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/ghtP6f-Qq6k" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 미키의 툰타워 -->
+        <div id="Mickey" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/4y10eNyrNww" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 크리터 컨트리 -->
+        <div id="Critter" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/k5_RCOXxWsM" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- 판타지 랜드 -->
+        <div id="Fantasy" class="main1">
+            <div></div>
+            <span>x</span>
+            <iframe width="923" height="519" src="https://www.youtube.com/embed/I9aoRDN2SK4" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
 
 
     <!-- 놀이기구 영상 입니다 -->
@@ -137,14 +297,14 @@
     <div id="suggestion-outside">
         <div id="suggestion">
             <!-- 추천 박스 입니다 -->
-            <div class="suggestion-box">
+            <div class="suggestion-box , opacity">
                 <h2>Suggestion</h2>
                 <span>Attractions</span>
                 <span>Restaurant</span>
                 <!-- 명소 추천 입니다 -->
                 <div class="Attractions">
                     <a href="#">
-                        <div class="Attractions-box">
+                        <div class="Attractions-box , opacity" >
                             <div class="photo">
                                 <div></div>
                             </div>
@@ -157,7 +317,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="Attractions-box">
+                        <div class="Attractions-box , opacity">
                             <div class="photo">
                                 <div></div>
                             </div>
@@ -170,7 +330,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="Attractions-box">
+                        <div class="Attractions-box , opacity"">
                             <div class="photo">
                                 <div></div>
                             </div>
@@ -188,7 +348,7 @@
             </div>
 
             <!-- 상점입니다. -->
-            <div class="shop">
+            <div class="shop , opacity">
                 <div class="shop-text">
                     <h3>Shop Disney</h3>
                 </div>
@@ -242,7 +402,7 @@
     ///////////////////////////////////////////////-->
     <div id="Videos-outside">
         <div id="Videos">
-            <div class="Videos-text">
+            <div class="Videos-text , opacity">
                 <h2>Recent Videos</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendissevarius<br>
                     enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor<br>
@@ -253,32 +413,32 @@
                 </a>
             </div>
             <div class="Videos-box">
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
                     <h3>New Zealand's<br>Vast Land</h3>
                     <span> <img src="img/main/삼각형.png" alt=""></span>
@@ -297,13 +457,13 @@
                 interdum nulla, ut commodo.
                 </p>
             </div>
-            <div class="calendar">
+            <div class="calendar , opacity">
                 <div class="year">
-                    <button><img src="img/main/아이콘/왼쪽.png" alt=""></button>
-                    <h2>2021.12</h2>
-                    <button><img src="img/main/아이콘/오른쪽.png" alt=""></button>
+                    <button><img src="img/main/아이콘/왼쪽.gif" alt=""></button>
+                    <h2 class="year_mon">2021.12월</h2>
+                    <button><img src="img/main/아이콘/오른쪽.gif" alt=""></button>
                 </div>
-                <table>
+                <table id="calendar">
                     <thead>
                         <tr>
                             <th>월</th>
@@ -316,62 +476,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong></strong></td>
-                            <td><strong></strong></td>
-                            <td><strong>1</strong></td>
-                            <td><strong>2</strong></td>
-                            <td><strong>3</strong></td>
-                            <td class="Saturday"><strong>4</strong></td>
-                            <td class="Sunday"><strong>5</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>6</strong></td>
-                            <td><strong>7</strong></td>
-                            <td><strong>8</strong></td>
-                            <td><strong>9</strong></td>
-                            <td><strong>10</strong></td>
-                            <td class="Saturday"><strong>11</strong></td>
-                            <td class="Sunday"><strong>12</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>13</strong></td>
-                            <td><strong>14</strong></td>
-                            <td><strong>15</strong></td>
-                            <td><strong>16</strong></td>
-                            <td><strong>17</strong></td>
-                            <td class="Saturday"><strong>18</strong></td>
-                            <td class="Sunday"><strong>19</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>20</strong></td>
-                            <td><strong>21</strong></td>
-                            <td><strong>22</strong></td>
-                            <td><strong>23</strong></td>
-                            <td><strong>24</strong></td>
-                            <td class="Saturday"><strong>25</strong></td>
-                            <td class="Sunday"><strong>26</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>27</strong></td>
-                            <td><strong>28</strong></td>
-                            <td><strong>29</strong></td>
-                            <td><strong>30</strong></td>
-                            <td><strong>31</strong></td>
-                            <td class="Saturday"><strong></strong></td>
-                            <td class="Sunday"><strong></strong></td>
-                        </tr>
+
                     </tbody>
                 </table>
                 <div class="select">
-
+                    <button>선택취소</button>
+                    <button>선택완료</button>
                 </div>
             </div>
         </div>
     </div>
     <div id="event-outside">
         <div id="event">
-            <div class="event-text">
+            <div class="event-text , opacity">
                 <h2>Become a TravelTeller</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                 Suspendisse varius enim in eros elementum tristique. Duis<br>
