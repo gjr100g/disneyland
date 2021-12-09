@@ -1,143 +1,41 @@
-@media(max-width:599px){
 /* 헤더입니다.  /////////////////////
 ////////////////////////////////////*/
 header{width: 100%; height: 64px;padding: 14px 0;
-    position: absolute;z-index: 10;}
-        #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
-        /* 로고 입니다 */
-        #logo{float: left;}
-        #logo img{width: 150px; height: 38px;}
-        /* 장바구니 입니다 */
-        #shop_{float: left; height: 100%; margin-left: 5%;}
-        #shop_ img{height: 80%; margin: 7% 0;float: left;}
-        #shop_ p{font-size: 30px; font-weight: bold; color: white;float: left;
-        margin: 0 7px;}
-        /* 네비게이션 입니다 */
-        nav{height: 100%;width: 59.5%;display: block;float: right;}
-        nav a{font-size: 17px; font-weight: bold;line-height: 38px; padding: 0 18px;}
-        nav a:hover{text-decoration: underline;}
-        /* 로그인 입니다 */
-        #login{float: right;}
-        #login a:nth-of-type(2){color: white; background-color: #333;border-radius: 10px;
-        height: 100%; display: inline-block;}
-    
-    
-    /* 푸터입니다.  //////////////////////
-    /////////////////////////////////////*/
-    footer{width: 100%; height: 380px;}
-        #footer{width: 1400px; height: 300px; margin: 0 auto;
-        padding-top: 80px;}
-        /* 프터안 박스입니다 */
-        .footer-box{width: 100%; height: 80%;}
-        /* 아이콘 및 로고 입니다. */
-        .footer-box .logo-icon{width: 200px; height: 100%;float: left;}
-        .footer-box .logo-icon img[alt="logo"]{width: 100%;margin: 0;}
-        .footer-box .logo-icon img{width: 18%;margin:15% 6%;}
-        /* 메뉴입니다. */
-        .footer-box .menu{height: 100%; float: left; width: auto; font-weight: bold; color: black;
-        font-size: 18px;margin-left: 300px;}
-        .footer-box .menu a{display: block;}
-        .footer-box .menu a:hover{text-decoration:underline;}
-        /* 마지막 박스 입니다. */
-        #footer .undertext{float: left; border: solid #777 1px; border-style: solid none none none;
-        width: 100%; margin-top: 80px;}
-        #footer .undertext a{font-size: 12px; float: left; line-height: 58px;padding: 0 5px;}
-        #footer .undertext hr{width: 0; height: 12px; float: left;margin-top: 22px;}
-}
+position: absolute;z-index: 10;}
+    #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
+    /* 로고 입니다 */
+    #logo{float: left;}
+    #logo img{width: 150px; height: 38px;}
+
+    /* 네비게이션 입니다 */
+    nav{height: 100%;width: 59.5%;display: block;float: right;}
+    nav a{font-size: 17px; font-weight: bold;line-height: 38px; padding: 0 18px;}
+    nav a:hover{text-decoration: underline;}
+    /* 로그인 입니다 */
+    #login{float: right;}
+    #login a:nth-of-type(2){color: white; background-color: #333;border-radius: 10px;
+    height: 100%; display: inline-block;}
 
 
-@media(min-width:600px) and (max-width:1399px){
-/* 헤더입니다.  /////////////////////
-////////////////////////////////////*/
-header{width: 100%; height: 64px;padding: 14px 0; position: absolute;z-index: 10;}
-        #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
-        /* 로고 입니다 */
-        #logo{float: left;}
-        #logo img{width: 150px; height: 38px;}
-        /* 장바구니 입니다 */
-        #shop_{float: left; height: 100%; margin-left: 5%;}
-        #shop_ img{height: 80%; margin: 7% 0;float: left;}
-        #shop_ p{font-size: 30px; font-weight: bold; color: white;float: left;
-        margin: 0 7px;}
-        /* 네비게이션 입니다 */
-        nav{height: 100%;width: 59.5%;display: block;float: right;}
-        nav a{font-size: 17px; font-weight: bold;line-height: 38px; padding: 0 18px;
-        display: none;}
-        nav a:hover{text-decoration: underline;}
-        /* 로그인 입니다 */
-        #login{float: right; display: none;}
-        #login a:nth-of-type(2){color: white; background-color: #333;border-radius: 10px;
-        height: 100%; display: inline-block;}
-    
-    
-    /* 푸터입니다.  //////////////////////
-    /////////////////////////////////////*/
-    footer{width: 100%; height: 380px;}
-        #footer{width: 1400px; height: 300px; margin: 0 auto;
-        padding-top: 80px;}
-        /* 프터안 박스입니다 */
-        .footer-box{width: 100%; height: 80%;}
-        /* 아이콘 및 로고 입니다. */
-        .footer-box .logo-icon{width: 200px; height: 100%;float: left;}
-        .footer-box .logo-icon img[alt="logo"]{width: 100%;margin: 0;}
-        .footer-box .logo-icon img{width: 18%;margin:15% 6%;}
-        /* 메뉴입니다. */
-        .footer-box .menu{height: 100%; float: left; width: auto; font-weight: bold; color: black;
-        font-size: 18px;margin-left: 300px;}
-        .footer-box .menu a{display: block;}
-        .footer-box .menu a:hover{text-decoration:underline;}
-        /* 마지막 박스 입니다. */
-        #footer .undertext{float: left; border: solid #777 1px; border-style: solid none none none;
-        width: 100%; margin-top: 80px;}
-        #footer .undertext a{font-size: 12px; float: left; line-height: 58px;padding: 0 5px;}
-        #footer .undertext hr{width: 0; height: 12px; float: left;margin-top: 22px;}
-}
-
-
-
-@media(min-width:1400px){
-/* 헤더입니다.  /////////////////////
-////////////////////////////////////*/
-header{width: 100%; height: 64px;padding: 14px 0;
-    position: absolute;z-index: 10;}
-        #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
-        /* 로고 입니다 */
-        #logo{float: left;}
-        #logo img{width: 150px; height: 38px;}
-        /* 장바구니 입니다 */
-        #shop_{float: left; height: 100%; margin-left: 5%;}
-        #shop_ img{height: 80%; margin: 7% 0;float: left;}
-        #shop_ p{font-size: 30px; font-weight: bold; color: white;float: left;
-        margin: 0 7px;}
-        /* 네비게이션 입니다 */
-        nav{height: 100%;width: 59.5%;display: block;float: right;}
-        nav a{font-size: 17px; font-weight: bold;line-height: 38px; padding: 0 18px;}
-        nav a:hover{text-decoration: underline;}
-        /* 로그인 입니다 */
-        #login{float: right;}
-        #login a:nth-of-type(2){color: white; background-color: #333;border-radius: 10px;
-        height: 100%; display: inline-block;}
-    
-    
-    /* 푸터입니다.  //////////////////////
-    /////////////////////////////////////*/
-    footer{width: 100%; height: 380px;}
-        #footer{width: 1400px; height: 300px; margin: 0 auto;
-        padding-top: 80px;}
-        /* 프터안 박스입니다 */
-        .footer-box{width: 100%; height: 80%;}
-        /* 아이콘 및 로고 입니다. */
-        .footer-box .logo-icon{width: 200px; height: 100%;float: left;}
-        .footer-box .logo-icon img[alt="logo"]{width: 100%;margin: 0;}
-        .footer-box .logo-icon img{width: 18%;margin:15% 6%;}
-        /* 메뉴입니다. */
-        .footer-box .menu{height: 100%; float: left; width: auto; font-weight: bold; color: black;
-        font-size: 18px;margin-left: 300px;}
-        .footer-box .menu a{display: block;}
-        .footer-box .menu a:hover{text-decoration:underline;}
-        /* 마지막 박스 입니다. */
-        #footer .undertext{float: left; border: solid #777 1px; border-style: solid none none none;
-        width: 100%; margin-top: 80px;}
-        #footer .undertext a{font-size: 12px; float: left; line-height: 58px;padding: 0 5px;}
-        #footer .undertext hr{width: 0; height: 12px; float: left;margin-top: 22px;}
-}
+/* 푸터입니다.  //////////////////////
+/////////////////////////////////////*/
+footer{width: 100%; height: 380px; background-color: white; 
+    box-shadow: rgb(223, 223, 223) 0 0 30px 1px;}
+    #footer{width: 1400px; height: 300px; margin: 0 auto;
+    padding-top: 80px;}
+    /* 프터안 박스입니다 */
+    .footer-box{width: 100%; height: 80%;}
+    /* 아이콘 및 로고 입니다. */
+    .footer-box .logo-icon{width: 200px; height: 100%;float: left;}
+    .footer-box .logo-icon img[alt="logo"]{width: 100%;margin: 0;}
+    .footer-box .logo-icon img{width: 18%;margin:15% 6%;}
+    /* 메뉴입니다. */
+    .footer-box .menu{height: 100%; float: left; width: auto; font-weight: bold; color: black;
+    font-size: 18px;margin-left: 300px;}
+    .footer-box .menu a{display: block;}
+    .footer-box .menu a:hover{text-decoration:underline;}
+    /* 마지막 박스 입니다. */
+    #footer .undertext{float: left; border: solid #777 1px; border-style: solid none none none;
+    width: 100%; margin-top: 80px;}
+    #footer .undertext a{font-size: 12px; float: left; line-height: 58px;padding: 0 5px;}
+    #footer .undertext hr{width: 0; height: 12px; float: left;margin-top: 22px;}
