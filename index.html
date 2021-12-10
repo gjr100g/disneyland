@@ -42,14 +42,35 @@
 
         // 메인 비디오 나오는 제이쿼리 입니다
         $(function(){
-            $(".main").click(function(){
+            $(".main-s:nth-of-type(1) .button").click(function(){
+                $("#Fantasy").fadeIn(500);
+            });
+            $(".main-s:nth-of-type(2) .button").click(function(){
+                $("#Galaxy").fadeIn(500);
+            });
+            $(".main-s:nth-of-type(3) .button").click(function(){
+                $("#Mickey").fadeIn(500);
+            });
+            $(".main-s:nth-of-type(4) .button").click(function(){
+                $("#Critter").fadeIn(500);
+            });
+            $(".main-s:nth-of-type(5) .button").click(function(){
                 $("#Adventur").fadeIn(500);
             });
-            $("#Adventur span").click(function(){
-                $("#Adventur").fadeOut(500);
+            $(".main-s:nth-of-type(6) .button").click(function(){
+                $("#New-Orleans").fadeIn(500);
             });
-            $("#Adventur div").click(function(){
-                $("#Adventur").fadeOut(500);
+            $(".main-s:nth-of-type(7) .button").click(function(){
+                $("#usa").fadeIn(500);
+            });
+
+
+            // 창 닫음
+            $(".main1 span").click(function(){
+                $(".main1").fadeOut(500);
+            });
+            $(".main1 div").click(function(){
+                $(".main1").fadeOut(500);
             });
         });
 
@@ -161,10 +182,107 @@
             });
         });
 
+        // 메인 테마 사진 제이쿼리 입니다
+        $(function(){
+            $(".theme-button span:nth-of-type(1)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(1)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+                $(" #LANDS .main-s:nth-of-type(8)").hide();
+            });
+            $(".theme-button span:nth-of-type(2)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(2)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+            });
+            $(".theme-button span:nth-of-type(3)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(3)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+            });
+            $(".theme-button span:nth-of-type(4)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(4)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+            });
+            $(".theme-button span:nth-of-type(5)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(5)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+            });
+            $(".theme-button span:nth-of-type(6)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(6)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+                $(" #LANDS .main-s:nth-of-type(7)").hide();
+            });
+            $(".theme-button span:nth-of-type(7)").click(function(){
+                $(" #LANDS .main-s:nth-of-type(7)").fadeIn();
+                $(" #LANDS .main-s:nth-of-type(2)").hide();
+                $(" #LANDS .main-s:nth-of-type(3)").hide();
+                $(" #LANDS .main-s:nth-of-type(4)").hide();
+                $(" #LANDS .main-s:nth-of-type(5)").hide();
+                $(" #LANDS .main-s:nth-of-type(6)").hide();
+                $(" #LANDS .main-s:nth-of-type(1)").hide();
+            });
+        });
+
+
+        // 추천 섹션 제이쿼리 입니다
+        $(function(){
+            $(".suggestion-box span:nth-of-type(1)").click();
+        });
+
+        $(function(){
+            $(".suggestion-box span:nth-of-type(2)").click(function(){
+                $(".suggestion-box span:nth-of-type(2)").css({"color":"rgb(0, 156, 218)"});
+                $(".suggestion-box span:nth-of-type(1)").css({"color":"#999"});
+                $(".Attractions:nth-of-type(2)").fadeIn();
+                $(".Attractions:nth-of-type(1)").hide();
+            });
+        });
+        $(function(){
+            $(".suggestion-box span:nth-of-type(1)").click(function(){
+                $(".suggestion-box span:nth-of-type(1)").css({"color":"rgb(0, 156, 218)"});
+                $(".suggestion-box span:nth-of-type(2)").css({"color":"#999"});
+                $(".Attractions:nth-of-type(1)").fadeIn();
+                $(".Attractions:nth-of-type(2)").hide();
+            });
+        });
+
 
 
 
     </script>
+
+
+
+
+
+
 </head>
 <body>
     <!-- 헤더입니다.    /////////////////////////
@@ -280,25 +398,114 @@
         </div>
         <!-- 메인 창 입니다 -->
         <div class="main-outside">
-             <div class="main"></div>
-             <div class="main-text">
-                <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                <h2>Ko Samui, Thailand</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                    enim in eros elementum tristique.</p>
-                <a href="#">
-                    <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
-                </a>
-                <div class="theme-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <!-- 판타지랜드 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
                 </div>
-             </div>
-             
+            </div>
+            <!-- 프론트랜드 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            <!-- 툰타운 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            <!-- 컨츄리 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            <!-- 어드밴처랜드 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            <!-- 뉴올리언스 -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            <!-- 메인 usa -->
+            <div class="main-s">
+                <div class="main"></div>
+                <div class="main-text">
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
+                    <h2>Ko Samui, Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros elementum tristique.</p>
+                    <a href="#">
+                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                    </a>
+                
+                </div>
+            </div>
+            
+            <div class="theme-button">
+                <span class="qq"></span>
+                <span class="qq"></span>
+                <span class="qq"></span>
+                <span class="qq"></span>
+                <span class="qq"></span>
+                <span class="qq"></span>
+                <span class="qq"></span>
+            </div>
         </div>
         <!-- 서브 창 입니다 -->
         <div class="sub">
@@ -351,7 +558,7 @@
                 <h2>Suggestion</h2>
                 <span>shop</span>
                 <span>Restaurant</span>
-                <!-- 명소 추천 입니다 -->
+                <!-- 가게 추천 입니다 -->
                 <div class="Attractions">
                     <a href="#">
                         <div class="Attractions-box , opacity">
@@ -359,9 +566,10 @@
                                 <div></div>
                             </div>
                             <div class="text">
-                                <h3>Africa's People and Culture</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <h3>디즈니 베이비</h3>
+                                <p>당신의 작은 설탕 자두를 우리의 가장 귀여운 스타일로 입힐 시즌입니다! 
+                                아기는 우리의 달콤한 허니 스타일로 너무 귀엽게 될 것입니다.</p>
+
                                 <span>NATASHA MILES</span>
                             </div>
                         </div>
@@ -372,9 +580,8 @@
                                 <div></div>
                             </div>
                             <div class="text">
-                                <h3>Africa's People and Culture</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <h3>디즈니 프린세스</h3>
+                                <p>디즈니 프린세스와 함께 용기와 친절을 기념하세요  공주에서 영감을 받은 패션, 액세서리, 수집품 등으로 나만의 이야기를 들려주세요.</p>
                                 <span>NATASHA MILES</span>
                             </div>
                         </div>
@@ -385,9 +592,50 @@
                                 <div></div>
                             </div>
                             <div class="text">
-                                <h3>Africa's People and Culture</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <h3>디즈니 천 마스크</h3>
+                                <p>디즈니, 스타워즈, 마블, 픽사 등의 어린이와 성인용 마스크로 가족 전체의 세련미를 뽐내세요.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                </div>
+
+                <!-- 음식점 추천 입니다 -->
+                <div class="Attractions">
+                    <a href="#">
+                        <div class="Attractions-box , opacity">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>카페 올리언스</h3>
+                                <p>저녁 메뉴는 오후 6시까지만 제공됩니다. 해당 저녁의 오후 8시 이후에는 손님을 위한 즐거운 디즈니 메리스트 나이츠 메뉴가 제공됩니다. 이 이벤트는 티켓을 구매한 사람 한에서 이용 가능합니다.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Attractions-box , opacity">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>데이지스 다이너</h3>
+                                <p>3세 이상이며 테마파크 예약과 같은 날자에 같은 공원에 입장을 해야 이용 가능합니다.</p>
+                                <span>NATASHA MILES</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="Attractions-box , opacity">
+                            <div class="photo">
+                                <div></div>
+                            </div>
+                            <div class="text">
+                                <h3>The Golden Horseshoe</h3>
+                                <p>3세 이상이며 테마파크 예약과 같은 날자에 같은 공원에 입장을 해야 이용 가능합니다.</p>
                                 <span>NATASHA MILES</span>
                             </div>
                         </div>

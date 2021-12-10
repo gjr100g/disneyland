@@ -41,10 +41,21 @@ cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
 
 /* 테마 메인입니다 */
 #LANDS .main-outside{width: 35%; height: 100%;float: left; overflow: hidden;
-border-radius: 0 120px 0 0; position: relative;}
-#LANDS .main{width: 100%; height: 100%; background-image: url(../img/main/어드벤처랜드.jpg);
+border-radius: 0 120px 0 0; position: relative; background-color: antiquewhite;}
+#LANDS .main-s{width: 100%;height: 100%; display: none;}
+#LANDS .main-s:nth-of-type(1){display: block;}
+#LANDS .main{width: 100%; height: 100%;
     background-position: center;background-size: cover; animation-name: main;
     animation-duration: 20s;z-index: 1; transform: scale(1.3);}
+    /* 매인테마 사진들 입니다 */
+    #LANDS .main-s:nth-of-type(1) .main{background-image: url(../img/main/메인/판타지랜드.jpg);}
+    #LANDS .main-s:nth-of-type(2) .main{background-image: url(../img/main/메인/프론티어랜드.jpg!d);}
+    #LANDS .main-s:nth-of-type(3) .main{background-image: url(../img/main/메인/툰타운.jpg);}
+    #LANDS .main-s:nth-of-type(4) .main{background-image: url(../img/main/메인/컨츄리.jpg);}
+    #LANDS .main-s:nth-of-type(5) .main{background-image: url(../img/main/메인/어드벤처랜드2.jpg);}
+    #LANDS .main-s:nth-of-type(6) .main{background-image: url(../img/main/메인/뉴올리언스\ 스퀘어.jpg);}
+    #LANDS .main-s:nth-of-type(7) .main{background-image: url(../img/main/메인/usa.jpg);}
+
     /* 매인 텍스트 입니다 */
     .main-text{position: absolute; bottom: 0; width: 100%; height: 310px;
     padding-left: 70px; padding-right: 70px;padding-top: 70px;}
@@ -62,8 +73,9 @@ border-radius: 0 120px 0 0; position: relative;}
     font-weight: bold;}
     .main-text .VIEW_ALL span{width: 18px; height: 18px; float: left; background-color: gray;
     border-radius: 18px; opacity: 0.5;}
+    .theme-button{position: absolute; right: 70px; bottom: 50px;}
     .theme-button span{width: 15px;height: 15px;float: left; background-color: white; opacity: 0.5;
-    border-radius: 15px; margin-left: 5px;float: right;cursor: pointer;}
+    border-radius: 15px; margin-left: 5px;cursor: pointer;}
 
 
 /* 테마 서브 입니다 */
@@ -106,6 +118,8 @@ padding-top: 100px;}
         /* 상점 추천 입니다 */
         .Attractions{height: 88.2%; width: 100%; margin-top: 40px;
         position: relative;}
+  
+        .Attractions:nth-of-type(2){display:none}
             .Attractions-box{width: 100%; height: 280px; transition: 0.5s;border-radius: 8px;
             margin-bottom: 30px;}
             .Attractions-box:hover{box-shadow: rgb(199, 199, 199) 0 0 10px 1px;
@@ -117,9 +131,15 @@ padding-top: 100px;}
             background-size: cover;transition: 2s;}
             .Attractions-box .photo div:hover{transform: scale(1.1);}
                 /* 상점 사진들 입니다 */
-                .Attractions-box:nth-of-type(1) .photo div{background-image: url(../img/main/어드벤처랜드.jpg);}
-                .Attractions-box:nth-of-type(2) .photo div{background-image: url(../img/main/컨츄리.jpg);}
-                .Attractions-box:nth-of-type(3) .photo div{background-image: url(../img/main/툰타운.jpg);}
+                .Attractions:nth-of-type(1) a:nth-of-type(1) .Attractions-box .photo div{background-image: url(../img/main/가게/다즈니베이비.webp);}
+                .Attractions:nth-of-type(1) a:nth-of-type(2) .Attractions-box .photo div{background-image: url(../img/main/가게/디즈니프린세스.webp);}
+                .Attractions:nth-of-type(1) a:nth-of-type(3) .Attractions-box .photo div{background-image: url(../img/main/가게/마스크.webp);}
+               
+                
+                /* 음식점 사진들 입니다 */
+                .Attractions:nth-of-type(2) a:nth-of-type(1) .Attractions-box .photo div{background-image: url(../img/main/음식집/cafe-orleans-menu-fantasmic-cafe-orlean-chicken-16x9.webp);}
+                .Attractions:nth-of-type(2) a:nth-of-type(2) .Attractions-box .photo div{background-image: url(../img/main/음식집/데이지스\ 다이너.webp);}
+                .Attractions:nth-of-type(2) a:nth-of-type(3) .Attractions-box .photo div{background-image: url(../img/main/음식집/황금\ 말굽.webp);}
 
             /* 명소추천 텍스트 입니다. */
             .Attractions-box .text{width: 55%;height: 100%;float: right; padding: 35px 0 0 20px;}
