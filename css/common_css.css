@@ -1,7 +1,7 @@
 /* 헤더입니다.  /////////////////////
 ////////////////////////////////////*/
 header{width: 100%; height: 64px;padding: 14px 0;
-position: absolute;z-index: 10;}
+position: absolute;z-index: 10; }
     #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
     /* 로고 입니다 */
     #logo{float: left;}
@@ -20,7 +20,7 @@ position: absolute;z-index: 10;}
 /* 푸터입니다.  //////////////////////
 /////////////////////////////////////*/
 footer{width: 100%; height: 380px; background-color: white; 
-    box-shadow: rgb(223, 223, 223) 0 0 30px 1px;}
+    box-shadow: rgb(241, 241, 241) 0 -35px 30px 1px;}
     #footer{width: 1400px; height: 300px; margin: 0 auto;
     padding-top: 80px;}
     /* 프터안 박스입니다 */

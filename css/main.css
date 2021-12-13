@@ -17,7 +17,7 @@ font-size: 50px; font-weight: bold; color: white; cursor: pointer;}
 
 /* 스크롤 액션 */
 .opacity{opacity: 0;}
-.qqqq{transform: scale(0.8);}
+.qqqq{transition: 2s;}
 
 
 
@@ -64,18 +64,19 @@ border-radius: 0 120px 0 0; position: relative; background-color: antiquewhite;}
     .main-text .button img{width: 25px; margin: 20px 23px;}
     .main-text .button:hover{background-color: orange;border: none; transition: 1s;}
     .main-text .button:hover img{margin: 22px 24.5px;}
-    .main-text h2{font-size: 26px; font-family: "Blacksword"; font-style: normal;color: white;
+    .main-text h2{font-size: 26px;color: white;font-weight: bold;text-shadow:rgb(0, 156, 218) 0 0 3px ;
     margin: 18px 0;}
-    .main-text p{font-size: 15px; font-weight: bold;color: white; margin-bottom: 60px;}
+    .main-text p{font-size: 15px; font-weight: bold;color: white; margin-bottom: 60px;
+        text-shadow:rgb(0, 156, 218) 0 0 3px ;}
     .main-text .VIEW_ALL{position: relative;}
     .main-text .VIEW_ALL img{position: absolute;height: 10px; top: 4px;left: 6px;}
     .main-text .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; padding-right: 5px;
     font-weight: bold;}
-    .main-text .VIEW_ALL span{width: 18px; height: 18px; float: left; background-color: gray;
+    .main-text .VIEW_ALL span{width: 18px; height: 18px; float: left; background-color:rgb(0, 156, 218);
     border-radius: 18px; opacity: 0.5;}
     .theme-button{position: absolute; right: 70px; bottom: 50px;}
     .theme-button span{width: 15px;height: 15px;float: left; background-color: white; opacity: 0.5;
-    border-radius: 15px; margin-left: 5px;cursor: pointer;}
+    border-radius: 15px; margin-left: 5px;cursor: pointer; }
 
 
 /* 테마 서브 입니다 */
@@ -120,9 +121,9 @@ padding-top: 100px;}
         position: relative;}
   
         .Attractions:nth-of-type(2){display:none}
-            .Attractions-box{width: 100%; height: 280px; transition: 0.5s;border-radius: 8px;
+            .Attractions-box{width: 100%; height: 280px;border-radius: 8px;
             margin-bottom: 30px;}
-            .Attractions-box:hover{box-shadow: rgb(199, 199, 199) 0 0 10px 1px;
+            .Attractions-box:hover{box-shadow: rgb(199, 199, 199) 0 0 10px 1px;transition: 0.5s;
             background-color: white;}
             /* 상점추천 사진 입니다 */
             .Attractions-box .photo{height: 100%;width: 45%; background-color: lawngreen;overflow: hidden;
@@ -176,11 +177,11 @@ padding-top: 100px;}
                 .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
                 .Goods-box .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
                 /* 케릭터 사진 입니다. */
-                .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/도널드덕.jpg);}
-                .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/장난감.webp);}
-                .Goods-box a:nth-of-type(3) .Goods div{background-image: url(../img/main/코스튬.webp);}
-                .Goods-box a:nth-of-type(4) .Goods div{background-image: url(../img/main/머리띠.webp);}
-                .Goods-box a:nth-of-type(5) .Goods div{background-image: url(../img/main/악세사리.webp);}
+                .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/캐릭터/도널드넉.jpg);}
+                .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/캐릭터/미키마우슥.jpg);}
+                .Goods-box a:nth-of-type(3) .Goods div{background-image: url(../img/main/캐릭터/스티치.jpg);}
+                .Goods-box a:nth-of-type(4) .Goods div{background-image: url(../img/main/캐릭터/푸우.jpg);}
+                .Goods-box a:nth-of-type(5) .Goods div{background-image: url(../img/main/캐릭터/엘사.jpg);}
 
 /* 비디오 섹션 입니다   //////////////
 /////////////////////////////////////
@@ -222,7 +223,7 @@ padding-top: 100px;}
     .Videos:nth-of-type(5) div{background-image: url(../img/main/비디오/라타투이.webp);}
     .Videos:nth-of-type(6) div{background-image: url(../img/main/비디오/인디애나.webp);}
 
-/* 이벤트 섹션입니다   ////////////////////
+/* 예매 섹션 입니다   ////////////////////
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
@@ -235,15 +236,16 @@ padding-top: 190px;}
     /* 예약 제목 입니다 */
     .reservation-text{width: 800px; height: 400px;float: left;
         padding-top: 165px;}
-        .reservation-text h2{font-size: 38px;color: white; margin-bottom: 15px;}
-        .reservation-text p{color: white;}
+        .reservation-text h2{font-size: 38px;color: white; margin-bottom: 15px;
+            text-shadow:rgb(0, 156, 218) 0 0 3px ;}
+        .reservation-text p{color: white; width: 600px;}
     
         /* 달력 입니다 */
         .calendar{width: 500px; height: auto; border-radius: 20px;overflow: hidden; 
         float: right;box-shadow: rgb(141, 141, 141) 15px 15px 20px 1px;}
         /* 달력 년도 입니다 */
         .calendar .year{width: 100%; height: 100px; background-color: rgb(66, 154, 255)}
-        .calendar .year h2{font-size: 40px; width: 50%;float: left;line-height: 85px;
+        .calendar .year h2{font-size: 30px; width: 50%;float: left;line-height: 90px;
         text-align: center; color: white;}
         .calendar .year button:nth-of-type(1){border: none; background: none; float: left;
         width: 25%;padding-top: 30px;text-align: right;cursor: pointer;padding-right: 10px;}
@@ -273,7 +275,7 @@ padding-top: 190px;}
 #event-outside{width: 100%; height: 600px;}
 #event{width: 1400px; height: 100%; margin: 0 auto; }
 .event-text{width: 50%; height: 100%; float: left; padding-top: 170px;}
-.event-text h2{font-size: 30px;margin-bottom: 10px;}
+.event-text h2{font-size: 30px;margin-bottom: 10px; }
 .event-text p{font-size: 15px; color: rgb(110, 110, 110);}
 .event-text span{width: 110px;height: 40px;font-weight: bold;color: white;background-color: black;
 border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;line-height: 37px;

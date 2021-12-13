@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="css/common_css.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
+        // 메뉴바 스크롤 내리면 제이쿼리
+        function isElementUnderBottom(elem, triggerDiff) {
+            const { top } = elem.getBoundingClientRect();
+            const { innerHeight } = window;
+            return top > innerHeight + (triggerDiff || 0);
+        }
+
+        function handleScroll() {
+        const elems = document.querySelectorAll('.qqqq');
+        elems.forEach(elem => {
+            if (isElementUnderBottom(elem, -20)) {
+            elem.style.opacity = "0";
+            elem.style.transform = 'scale(0.4)';
+            } else {
+            elem.style.opacity = "1";
+            elem.style.transform = 'scale(1.0)';
+            }
+        })
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        
         // 호버시 화살표 색 바꾸기
 
         // 명소
@@ -73,6 +95,30 @@
                 $(".main1").fadeOut(500);
             });
         });
+
+        
+        // 놀이기구 영상 나오는 제이쿼리 입니다
+        $(function(){
+            $(".Videos:nth-of-type(1) .button").click(function(){
+                $("#Pinocchio").fadeIn(500);
+            });
+            $(".Videos:nth-of-type(2) .button").click(function(){
+                $("#StarWars").fadeIn(500);
+            });
+            $(".Videos:nth-of-type(3) .button").click(function(){
+                $("#Monsters").fadeIn(500);
+            });
+            $(".Videos:nth-of-type(4) .button").click(function(){
+                $("#Caribbean").fadeIn(500);
+            });
+            $(".Videos:nth-of-type(5) .button").click(function(){
+                $("#Ratatouille").fadeIn(500);
+            });
+            $(".Videos:nth-of-type(6) .button").click(function(){
+                $("#Indiana").fadeIn(500);
+            });
+        });
+
 
 
         // 달력 제이쿼리 입니다
@@ -184,7 +230,20 @@
 
         // 메인 테마 사진 제이쿼리 입니다
         $(function(){
+            $(document).ready(function(){
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"orange","opacity":"1"});
+            });
+        });
+
+        $(function(){
             $(".theme-button span:nth-of-type(1)").click(function(){
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(1)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -192,9 +251,15 @@
                 $(" #LANDS .main-s:nth-of-type(5)").hide();
                 $(" #LANDS .main-s:nth-of-type(6)").hide();
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
-                $(" #LANDS .main-s:nth-of-type(8)").hide();
             });
             $(".theme-button span:nth-of-type(2)").click(function(){
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(2)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(1)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -204,6 +269,13 @@
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
             });
             $(".theme-button span:nth-of-type(3)").click(function(){
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(3)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(1)").hide();
@@ -213,6 +285,13 @@
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
             });
             $(".theme-button span:nth-of-type(4)").click(function(){
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(4)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -222,6 +301,13 @@
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
             });
             $(".theme-button span:nth-of-type(5)").click(function(){
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(5)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -231,6 +317,13 @@
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
             });
             $(".theme-button span:nth-of-type(6)").click(function(){
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(6)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -240,6 +333,13 @@
                 $(" #LANDS .main-s:nth-of-type(7)").hide();
             });
             $(".theme-button span:nth-of-type(7)").click(function(){
+                $(".theme-button span:nth-of-type(7)").css({"background-color":"orange","opacity":"1"});
+                $(".theme-button span:nth-of-type(2)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(3)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(4)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(5)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(6)").css({"background-color":"white","opacity":"0.5"});
+                $(".theme-button span:nth-of-type(1)").css({"background-color":"white","opacity":"0.5"});
                 $(" #LANDS .main-s:nth-of-type(7)").fadeIn();
                 $(" #LANDS .main-s:nth-of-type(2)").hide();
                 $(" #LANDS .main-s:nth-of-type(3)").hide();
@@ -253,7 +353,9 @@
 
         // 추천 섹션 제이쿼리 입니다
         $(function(){
-            $(".suggestion-box span:nth-of-type(1)").click();
+            $(document).ready(function(){
+                $(".suggestion-box span:nth-of-type(1)").css({"color":"rgb(0, 156, 218)"});
+            });
         });
 
         $(function(){
@@ -272,8 +374,6 @@
                 $(".Attractions:nth-of-type(2)").hide();
             });
         });
-
-
 
 
     </script>
@@ -375,7 +475,55 @@
 
     <!-- 놀이기구 영상 입니다 -->
 
+   <!-- 비디오 영상들 입니다   ////////////////// -->
 
+   <div id="Pinocchio" class="main1"> 
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/9WsEopbW09Y" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- 스타워즈 -->
+<div id="StarWars" class="main1">
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/aBQHVTU2430" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- 몬스터 주식회사 -->
+<div id="Monsters" class="main1">
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/780fUu2ec68" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- 케르비안의 해적 -->
+<div id="Caribbean" class="main1">
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/1vIchXwRw7U" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- 라따뚜이 -->
+<div id="Ratatouille" class="main1">
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/WtZdXqY1TKs" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- 인디에나 존스 -->
+<div id="Indiana" class="main1">
+    <div></div>
+    <span>x</span>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/8OEkTOubp8g" 
+    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
 
@@ -403,11 +551,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>판타지 랜드</h2>
+                    <p>캐릭터의 세상, 동화속의 세상, 볼거리 등으로 가득 찬 동화 속 세계로 들어가보세요!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -417,11 +564,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>프론티어 랜드</h2>
+                    <p>볼거리, 엔터테인먼트, 쇼핑, 식당 등을 탐험하는 진정한 선구자처럼 재미있는 새로운 길을 개척해 보세요!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -431,11 +577,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>미키즈 툰타운</h2>
+                    <p>고전적인 디즈니로 뒤죽박죽인 세계를 탐험하고, 다양한 캐릭터들을 만나보세요!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -445,11 +590,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>크리터 컨트리</h2>
+                    <p>멋진 시간을 준비하세요. 고전적인 명소, 식사, 쇼핑 등이 가득한 숲을 탐험하세요!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -459,11 +603,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>어드벤처 랜드</h2>
+                    <p>터키를 테마로 한 즐거움과 이국적인 오디세이가 가득한 정글 에스크 환경에서 야생적인 면을 만나보세요.</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -473,11 +616,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>뉴올리언스 광장</h2>
+                    <p>하루를 즐겁게 보내라. 음악을 사랑하는 이 땅의 다채로운 문화와 정신을 기념하라!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -487,11 +629,10 @@
                 <div class="main"></div>
                 <div class="main-text">
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>    
-                    <h2>Ko Samui, Thailand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique.</p>
+                    <h2>미국 메인 스트리트</h2>
+                    <p>미국 소도시를 한가롭게 거닐어 보세요. 디즈니 랜드를 통해 세기의 변화를 느낄 수 있을 거예요!</p>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>READ MORE</p><span></span><img src="img/main/꺽세.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>자세히 보기</p><span></span><img src="img/main/꺽세.png" alt=""></span>
                     </a>
                 
                 </div>
@@ -555,9 +696,9 @@
         <div id="suggestion">
             <!-- 추천 박스 입니다 -->
             <div class="suggestion-box , opacity">
-                <h2>Suggestion</h2>
-                <span>shop</span>
-                <span>Restaurant</span>
+                <h2>즐길거리</h2>
+                <span>가게</span>
+                <span>음식점</span>
                 <!-- 가게 추천 입니다 -->
                 <div class="Attractions">
                     <a href="#">
@@ -570,7 +711,7 @@
                                 <p>당신의 작은 설탕 자두를 우리의 가장 귀여운 스타일로 입힐 시즌입니다! 
                                 아기는 우리의 달콤한 허니 스타일로 너무 귀엽게 될 것입니다.</p>
 
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
@@ -582,7 +723,7 @@
                             <div class="text">
                                 <h3>디즈니 프린세스</h3>
                                 <p>디즈니 프린세스와 함께 용기와 친절을 기념하세요  공주에서 영감을 받은 패션, 액세서리, 수집품 등으로 나만의 이야기를 들려주세요.</p>
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
@@ -594,12 +735,12 @@
                             <div class="text">
                                 <h3>디즈니 천 마스크</h3>
                                 <p>디즈니, 스타워즈, 마블, 픽사 등의 어린이와 성인용 마스크로 가족 전체의 세련미를 뽐내세요.</p>
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
                     <hr>
-                    <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                    <span class="VIEW_ALL"><p>전체 보기</p><img src="img/main/화살표.png" alt=""></span>
                 </div>
 
                 <!-- 음식점 추천 입니다 -->
@@ -612,7 +753,7 @@
                             <div class="text">
                                 <h3>카페 올리언스</h3>
                                 <p>저녁 메뉴는 오후 6시까지만 제공됩니다. 해당 저녁의 오후 8시 이후에는 손님을 위한 즐거운 디즈니 메리스트 나이츠 메뉴가 제공됩니다. 이 이벤트는 티켓을 구매한 사람 한에서 이용 가능합니다.</p>
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
@@ -624,7 +765,7 @@
                             <div class="text">
                                 <h3>데이지스 다이너</h3>
                                 <p>3세 이상이며 테마파크 예약과 같은 날자에 같은 공원에 입장을 해야 이용 가능합니다.</p>
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
@@ -636,12 +777,12 @@
                             <div class="text">
                                 <h3>The Golden Horseshoe</h3>
                                 <p>3세 이상이며 테마파크 예약과 같은 날자에 같은 공원에 입장을 해야 이용 가능합니다.</p>
-                                <span>NATASHA MILES</span>
+                                <span>자세히 보기</span>
                             </div>
                         </div>
                     </a>
                     <hr>
-                    <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                    <span class="VIEW_ALL"><p>전체 보기</p><img src="img/main/화살표.png" alt=""></span>
                 </div>
             </div>
 
@@ -654,41 +795,41 @@
                     <a href="#">
                         <div class="Goods">
                             <div></div>
-                            <h4>인형</h4>
-                            <p>15,000원</p>
+                            <h4>도날드 덕</h4>
+                            <p>1934년 6월 9일</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class="Goods">
                             <div></div>
-                            <h4>장난감</h4>
-                            <p>15,000원</p>
+                            <h4>미키 마우스</h4>
+                            <p>1928년 11월 18일</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class="Goods">
                             <div></div>
-                            <h4>코스튬</h4>
-                            <p>15,000원</p>
+                            <h4>스티치</h4>
+                            <p>2002년 6월 21일</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class="Goods">
                             <div></div>
-                            <h4>머리띠</h4>
-                            <p>15,000원</p>
+                            <h4>푸우</h4>
+                            <p>1921년 8월 21일</p>
                         </div>
                     </a>
                     <a href="#">
                         <div class="Goods">
                             <div></div>
-                            <h4>악세사리</h4>
-                            <p>15,000원</p>
+                            <h4>엘사</h4>
+                            <p>2013년 11월 27일</p>
                         </div>
                     </a>
                     <hr>
                     <a href="#">
-                        <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                        <span class="VIEW_ALL"><p>전체 보기</p><img src="img/main/화살표.png" alt=""></span>
                     </a>
                     
                 </div>
@@ -701,58 +842,57 @@
     <div id="Videos-outside">
         <div id="Videos">
             <div class="Videos-text , opacity">
-                <h2>Recent Videos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendissevarius<br>
-                    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor<br>
-                    interdum nulla, ut commodo diam 
-                    libero vitae erat.</p>
+                <h2>만화속의 세상</h2>
+                <p>애니메이션, 만화, 영화 속의 세상에 직접 들어가 각종 케릭터들을 만나고 주인공이 되어 여행을 즐겨보세요!</p>
+                <br>
                 <a href="#">
-                    <span class="VIEW_ALL"><p>VIEW ALL</p><img src="img/main/화살표.png" alt=""></span>
+                    <span class="VIEW_ALL"><p>전체 보기</p><img src="img/main/화살표.png" alt=""></span>
                 </a>
             </div>
             <div class="Videos-box">
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3>피노키오</h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3>스타워즈</h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3>캐리비안의 해적</h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3>캐리비안의 해적</h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3>미녀와 야수</h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
-                <div class="Videos">
+                <div class="Videos , qqqq">
                     <div></div>
-                    <h3>New Zealand's<br>Vast Land</h3>
-                    <span> <img src="img/main/삼각형.png" alt=""></span>
+                    <h3></h3>
+                    <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
             </div>
         </div>
     </div>
 
+
     <div id="reservation-outside">
         <div class="photo"><div></div></div>
         <div id="reservation">
             <div class="reservation-text">
-                <h2>Sign up for<br>our newsletter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim<br>
-                in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor<br>
-                interdum nulla, ut commodo.
+                <h2>원하는 날에<br>예매해 보세요~</h2>
+                <p>디즈니랜드 파크와 디즈니 대한민국 어드벤처 파크의 2가지 놀라운 테마파크가 있는
+                     대한민국 애너하임의 디즈니랜드 리조트의 흥분을 느껴보세요! 여러 날 티켓을 
+                     사용하면 방문을 최대한 활용하고 두 공원에서 제공하는 것을 볼 수 있습니다!
                 </p>
             </div>
             <div class="calendar , opacity">
@@ -791,13 +931,12 @@
     <div id="event-outside">
         <div id="event">
             <div class="event-text , opacity">
-                <h2>Become a TravelTeller</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Suspendisse varius enim in eros elementum tristique. Duis<br>
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut<br>
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo<br>
-                cursus id rutrum lorem imperdiet.</p>
-                <a href="#"><span>Get started</span></a>
+                <h2>나만의 사진을 찍어보세요</h2>
+                <p>나만의 사진을 찍어보세요 참여하기 버튼을 클릭한후<br>
+                디즈니 랜드에서 찍은 나만의 사진과 가장 좋았던 월드 그리고 사연을 올려주세요<br>
+                디즈니 랜드 사이트에 공게적으로 투포를 한 후 당첨되신 분에게 다양한 선물을 드립니다.
+                </p>
+                <a href="#"><span>참여하기</span></a>
             </div>
             <div class="event-photo">
                 <div class="photo1"></div>
