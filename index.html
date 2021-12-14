@@ -10,7 +10,93 @@
     <link rel="stylesheet" href="css/common_css.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
-        // 메뉴바 스크롤 내리면 제이쿼리
+        // 스크롤을 내리면 눈이 움직임
+        $(function(){
+            var x = $(document).scrollTop(0);
+            $(document).scroll(function(){
+                var y = $(document).scrollTop();
+                var z = y-x;
+                if(y<400 || z<0){
+                    $(".snow1").stop().animate({top:"500px",right:"470px"});
+                    $(".snow2").stop().animate({top:"300px",right:"500px"});
+                    $(".snow3").stop().animate({top:"600px",right:"800px"});
+                    $(".snow4").stop().animate({top:"300px",right:"500px"});
+                    $(".snow5").stop().animate({top:"900px",right:"730px"});
+                    $(".snow6").stop().animate({top:"550px",right:"640px"});
+                    $(".snow7").stop().animate({top:"770px",right:"500px"});
+                    $(".snow8").stop().animate({top:"200px",right:"700px"});
+                    $(".snow9").stop().animate({top:"700px",right:"800px"});
+                    $(".snow10").stop().animate({top:"600px",right:"700px"});
+                    $(".snow11").stop().animate({top:"400px",right:"800px"});
+                    $(".snow12").stop().animate({top:"400px",right:"600px"});
+                    $(".snow13").stop().animate({top:"800px",right:"600px"});
+                    $(".snow14").stop().animate({top:"1010px",right:"850px"});
+                    $(".snow15").stop().animate({top:"100px",right:"900px"});
+                    $(".snow16").stop().animate({top:"870px",right:"600px"});
+                    $(".snow17").stop().animate({top:"200px",right:"955px"});
+                    $(".snow18").stop().animate({top:"1050px",right:"1000px"});
+                }
+                if(y<250 || z<0){
+                    $(".snow1").stop().animate({top:"150px",right:"90px"});
+                    $(".snow2").stop().animate({top:"200px",right:"120px"});
+                    $(".snow3").stop().animate({top:"160px",right:"320px"});
+                    $(".snow4").stop().animate({top:"300px",right:"190px"});
+                    $(".snow5").stop().animate({top:"350px",right:"120px"});
+                    $(".snow6").stop().animate({top:"260px",right:"190px"});
+                    $(".snow7").stop().animate({top:"250px",right:"120px"});
+                    $(".snow8").stop().animate({top:"300px",right:"170px"});
+                    $(".snow9").stop().animate({top:"240px",right:"270px"});
+                    $(".snow10").stop().animate({top:"190px",right:"160px"});
+                    $(".snow11").stop().animate({top:"350px",right:"320px"});
+                    $(".snow12").stop().animate({top:"450px",right:"100px"});
+                    $(".snow13").stop().animate({top:"400px",right:"200px"});
+                    $(".snow14").stop().animate({top:"410px",right:"250px"});
+                    $(".snow15").stop().animate({top:"490px",right:"300px"});
+                    $(".snow16").stop().animate({top:"370px",right:"90px"});
+                    $(".snow17").stop().animate({top:"300px",right:"255px"});
+                    $(".snow18").stop().animate({top:"350px",right:"300px"});
+                }
+                if(y<100 || z<0){
+                    $(".snow1").stop().animate({top:"100px",right:"70px"});
+                    $(".snow2").stop().animate({top:"170px",right:"90px"});
+                    $(".snow3").stop().animate({top:"100px",right:"220px"});
+                    $(".snow4").stop().animate({top:"170px",right:"170px"});
+                    $(".snow5").stop().animate({top:"300px",right:"90px"});
+                    $(".snow6").stop().animate({top:"250px",right:"140px"});
+                    $(".snow7").stop().animate({top:"220px",right:"70px"});
+                    $(".snow8").stop().animate({top:"210px",right:"140px"});
+                    $(".snow9").stop().animate({top:"215px",right:"210px"});
+                    $(".snow10").stop().animate({top:"120px",right:"130px"});
+                    $(".snow11").stop().animate({top:"300px",right:"170px"});
+                    $(".snow12").stop().animate({top:"390px",right:"70px"});
+                    $(".snow13").stop().animate({top:"350px",right:"120px"});
+                    $(".snow14").stop().animate({top:"360px",right:"170px"});
+                    $(".snow15").stop().animate({top:"420px",right:"150px"});
+                    $(".snow16").stop().animate({top:"350px",right:"50px"});
+                    $(".snow17").stop().animate({top:"270px",right:"225px"});
+                    $(".snow18").stop().animate({top:"330px",right:"230px"});
+                }
+
+
+
+            });
+        });
+
+        // 스크롤 내리면 매뉴바 색이 바뀜
+      
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){ 
+                    $('header').addClass('active');
+                    $('img[alt="logo8"]').attr("src","img/common/logo1.png");
+                }else{ 
+                    $('header').removeClass('active');
+                    $('img[alt="logo8"]').attr("src","img/common/logo8.gif"); 
+                } 
+            });
+
+
+
+        // 만화속 세상 스크롤 내리면 제이쿼리
         function isElementUnderBottom(elem, triggerDiff) {
             const { top } = elem.getBoundingClientRect();
             const { innerHeight } = window;
@@ -376,6 +462,33 @@
         });
 
 
+
+        // 스크롤 내릴떄 애니메이션
+        $(function(){
+            var x = $(document).scrollTop(0);
+            $(document).scroll(function(){
+                var y = $(document).scrollTop();
+                var z = y-x;
+
+                if(y<3300 || z<0){
+                    $(".photo1").stop().animate({top:"150px"});
+                    $(".photo2").stop().animate({top:"0px"});
+                    $(".photo4").stop().animate({top:"240px"});
+                }
+                if(y>=3400 || z>=0){
+                    $(".photo1").stop().animate({top:"75px"});
+                    $(".photo2").stop().animate({top:"75px"});
+                    $(".photo4").stop().animate({top:"315px"});
+                }
+                if(y>=3500 || z>=0){
+                    $(".photo1").stop().animate({top:"0px"});
+                    $(".photo2").stop().animate({top:"150px"});
+                    $(".photo4").stop().animate({top:"390px"});
+                }
+
+            });
+        });
+
     </script>
 
 
@@ -392,7 +505,7 @@
         <div id="main">
             <!-- 로고 입니다. -->
             <a href="#"><div id="logo">
-                <img src="img/common/logo8.png" alt="logo8">
+                <img src="img/common/logo8.gif" alt="logo8">
             </div></a>
 
             <nav>
@@ -406,7 +519,7 @@
                     <a href="#"><span>나의 디즈니랜드</span></a>
                 </div>
             </nav>
-
+            <span class="hamburger"><img src="img/common/햄버거매뉴.png" alt=""></span>
         </div>
     </header>
 
@@ -537,12 +650,32 @@
     <div id="LANDS">
         <!-- 텍스트 창 입니다 -->
         <div class="name">
-            <h2>Watch Dreams Come<br>True at the Happiest<br>Place on Earth…</h2>
+            <h2>세상에서 가장<br>행복한 곳 에서 꿈이<br>실현되는 것을 지켜보십시오…</h2>
             <div class="input">
                 <input type="text" placeholder="search...">
                 <input type="submit" value="">
                 <img src="img/main/돋보기.png" alt="">
             </div>
+            <!-- 눈 일러스트 -->
+            <img src="img/main/아이콘/눈.png" class="snow1 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow2 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow3 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow4 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow5 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow6 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow7 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow8 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow9 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow10 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow11 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow12 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow13 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow14 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow15 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow16 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow17 , snow">
+            <img src="img/main/아이콘/눈.png" class="snow18 , snow">
+
         </div>
         <!-- 메인 창 입니다 -->
         <div class="main-outside">
@@ -862,7 +995,7 @@
                 </div>
                 <div class="Videos , qqqq">
                     <div></div>
-                    <h3>캐리비안의 해적</h3>
+                    <h3>몬스터 주식회사</h3>
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
                 <div class="Videos , qqqq">
@@ -877,7 +1010,7 @@
                 </div>
                 <div class="Videos , qqqq">
                     <div></div>
-                    <h3></h3>
+                    <h3>인디아나 존스</h3>
                     <span class="button"> <img src="img/main/삼각형.png" alt=""></span>
                 </div>
             </div>
@@ -967,22 +1100,22 @@
 				</div>
 				<!-- 매뉴 박스 입니다. -->
 				<div class="menu">
-					<a href="#">Blog</a>
+					<a href="#">블로그</a>
 					<br>
-					<a href="#">Places</a>
+					<a href="#">가이드맵</a>
 					<br>
-					<a href="#">TravelTellers</a>
+					<a href="#">지도</a>
 					<br>
-					<a href="#">Videos</a>
+					<a href="#">영상</a>
 				</div>				
 				<div class="menu">
-					<a href="#">shop</a>
+					<a href="#">상품</a>
 					<br>
-					<a href="#">contact</a>
+					<a href="#">연락처</a>
 					<br>
-					<a href="#">Private Policy</a>
+					<a href="#">개인정책</a>
 					<br>
-					<a href="#">Terms & Conditions</a>
+					<a href="#">이용약괸</a>
 				</div>
 
 			</div>
