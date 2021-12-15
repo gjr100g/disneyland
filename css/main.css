@@ -7,18 +7,13 @@
 
 
 @media(max-width:599px){
-
-}
-
-
-@media(min-width:600px) and (max-width:1199px) {
 /* 실행 영상들 css 입니다   //////////////////////////////
 /////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////// */
 .main1{width: 100%; height: 100%;position:fixed; z-index: 10;  display: none;}
 .main1 div{width: 100%;height: 100%; opacity: 0.7; background-color: black;}
-.main1 iframe{position: absolute; width: 1400px;height: 700px; top: 50%;left: 50%;
-margin: -350px -700px;}
+.main1 iframe{position: absolute; width: 80%;height: 400px; top: 50%;left: 50%;
+margin: -200px -40%;}
 .main1 span{display: inline-block; position: absolute; right: 60px;top: 30px;
 font-size: 50px; font-weight: bold; color: white; cursor: pointer;}
 
@@ -32,14 +27,328 @@ font-size: 50px; font-weight: bold; color: white; cursor: pointer;}
 
 
 */
-#LANDS{width: 100%; height: 860px; overflow: hidden;}
+#LANDS{width: 100%; height: 1000px; overflow: hidden; padding: 0 4%;}
+
+/* 디즈니테마 이름 입니다 */
+#LANDS .name{width: 100%; height:250px; position: relative;}
+#LANDS .name h2{font-size: 35px; margin-top: 80px;  font-family:"Blacksword";
+font-weight: normal; margin-bottom: 27px;}
+#LANDS .name .input{width: 100%; height: 40px; background-color: white;
+box-shadow: rgb(233, 233, 233)0 0 10px 1px; position: relative;}
+#LANDS .name .input input[type="text"]{width: 89%;height: 100%; border: none;background: none;
+padding-left: 15px;font-size: 14px;}
+input:focus {outline:none;}
+#LANDS .name .input input[type="submit"]{width: 10%; height: 100%;border:none;background: none;
+cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
+#LANDS .name img{height: 20px; position: absolute; top: 11px; right: 15px;z-index: 1;}
+#LANDS .name .snow{display: none;}
+
+/* 테마 메인입니다 */
+#LANDS .main-outside{width: 100%; height: 300px; overflow: hidden;margin-bottom: 60px;
+position: relative; background-color: antiquewhite;}
+#LANDS .main-s{width: 100%;height: 100%; display: none;}
+#LANDS .main-s:nth-of-type(1){display: block;}
+#LANDS .main{width: 100%; height: 100%;
+    background-position: center;background-size: cover; animation-name: main;
+    animation-duration: 20s;z-index: 1; transform: scale(1.3);}
+    /* 매인테마 사진들 입니다 */
+    #LANDS .main-s:nth-of-type(1) .main{background-image: url(../img/main/메인/판타지랜드.jpg);}
+    #LANDS .main-s:nth-of-type(2) .main{background-image: url(../img/main/메인/프론티어랜드.jpg!d);}
+    #LANDS .main-s:nth-of-type(3) .main{background-image: url(../img/main/메인/툰타운.jpg);}
+    #LANDS .main-s:nth-of-type(4) .main{background-image: url(../img/main/메인/컨츄리.jpg);}
+    #LANDS .main-s:nth-of-type(5) .main{background-image: url(../img/main/메인/어드벤처랜드2.jpg);}
+    #LANDS .main-s:nth-of-type(6) .main{background-image: url(../img/main/메인/뉴올리언스\ 스퀘어.jpg);}
+    #LANDS .main-s:nth-of-type(7) .main{background-image: url(../img/main/메인/usa.jpg);}
+
+    /* 매인 텍스트 입니다 */
+    .main-text{position: absolute; bottom: 0; width: 100%; height: 310px;
+    padding-left: 20px; padding-right: 20px;padding-top: 70px;}
+    .main-text .button{width: 50px; height: 50px; border: solid white 2px; border-radius: 50px;
+    cursor: pointer;z-index: 2; display: inline-block;position: absolute;top: 25px;left: 20px;}
+    .main-text .button img{width: 18px; margin: 15px 16px;}
+    .main-text .button:hover{background-color: orange;border: none; transition: 1s;}
+    .main-text .button:hover img{margin: 17px 18px;}
+    .main-text h2{font-size: 26px;color: white;font-weight: bold;text-shadow:rgb(0, 156, 218) 0 0 3px ;
+    margin: 18px 0;}
+    .main-text p{font-size: 15px; font-weight: bold;color: white; margin-bottom: 15px;
+        text-shadow:rgb(0, 156, 218) 0 0 3px ;}
+    .main-text .VIEW_ALL{position: relative;}
+    .main-text .VIEW_ALL img{position: absolute;height: 10px; top: 4px;left: -11px;}
+    .main-text .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; padding-right: 5px;
+    font-weight: bold;}
+    .main-text .VIEW_ALL span{width: 18px; height: 18px; float: left; background-color:rgb(0, 156, 218);
+    border-radius: 18px; opacity: 0.5;}
+    .theme-button{position: absolute; left: 25px;bottom: 30px;}
+    .theme-button span{width: 15px;height: 15px;float: left; background-color: white; opacity: 0.5;
+    border-radius: 15px; margin-left: 5px;cursor: pointer; }
+
+
+/* 테마 서브 입니다 */
+#LANDS .sub{width: 100%; height: 300px;}
+#LANDS .sub h3{font-size: 20px;}
+#LANDS .sub .overflow{width: 100%; height: 90%; overflow: auto;margin-top: 16px;}
+#LANDS .sub .overflow ul{width: 300%;height: 80%;}
+#LANDS .sub .overflow ul li{width: 15%;height: 100%;overflow: hidden; float: left; margin-right: 10px;}
+#LANDS .sub .overflow ul a{width: 100%; height: 100%;display:block;
+border-radius: 10px; position: relative;}
+#LANDS .sub .overflow ul a h3{position: absolute;bottom: 15px;left: 10px;color: rgb(255, 255, 255);
+text-shadow:0 0 7px rgb(0, 156, 218);font-size: 15px;}
+#LANDS .sub .overflow ul span{width: 90px;height: 30px; display: inline-block;
+border-radius: 8px; font-weight: bold; text-align: center;line-height: 30px;position: absolute;
+color: white;font-size: 12px; top: 10px;left: 10px;}
+#LANDS .sub .overflow ul li div{width: 100%;height: 100%;background-size: cover;background-position: center;
+transition: 5s;}
+#LANDS .sub .overflow ul li:hover div{transform: scale(1.2);}
+.overflow li:nth-of-type(1) span{background-color: green;}
+.overflow li:nth-of-type(2) span{background-color: red;}
+.overflow li:nth-of-type(3) span{background-color:sienna;}
+.overflow li:nth-of-type(4) span{background-color:blue;}
+.overflow li:nth-of-type(5) span{background-color:purple;}
+.overflow li:nth-of-type(6) span{background-color:gold;}
+    /* 서브 사진 입니다 */
+    #LANDS .sub .overflow ul li:nth-of-type(1) div{background-image: url(../img/main/명소/이상한나라의.jpg);}
+    #LANDS .sub .overflow ul li:nth-of-type(2) div{background-image: url(../img/main/명소/스트리트차량.webp);}
+    #LANDS .sub .overflow ul li:nth-of-type(3) div{background-image: url(../img/main/명소/곰돌이푸.webp);}
+    #LANDS .sub .overflow ul li:nth-of-type(4) div{background-image: url(../img/main/명소/니모.jpg);}
+    #LANDS .sub .overflow ul li:nth-of-type(5) div{background-image: url(../img/main/명소/타잔.png);}
+    #LANDS .sub .overflow ul li:nth-of-type(6) div{background-image: url(../img/main/명소/스타워즈.jpeg);}
+    #LANDS .sub .overflow ul li:nth-of-type(7) div{background-image: url(../img/main/명소/이상한나라의.jpg);}
+
+
+/* 추천 섹션 입니다 ////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////*/
+#suggestion-outside{width: 100%; height: auto;}
+#suggestion{width: 100%; height: 1850px;margin: 0 auto;padding: 0 20px;
+padding-top: 70px;}
+    /* 추천 박스 입니다 */
+    .suggestion-box{width: 100%; height: 1000px; margin-bottom: 150px;}
+    .suggestion-box h2{font-size: 35px;margin-bottom: 25px;font-family:"Blacksword";font-weight: normal;}
+    .suggestion-box span{margin-right: 25px;font-weight: bold; color: #999; cursor: pointer;
+    font-size: 18px;}
+        /* 상점 추천 입니다 */
+        .Attractions{height: 1000px; width: 100%; margin-top: 40px;
+        position: relative;}
+  
+        .Attractions:nth-of-type(2){display:none}
+            .Attractions-box{width: 100%; height: 280px;border-radius: 8px;
+            margin-bottom: 30px;box-shadow: rgb(218, 218, 218) 0 0 10px 1px;
+        background-color: white;}
+
+            /* 상점추천 사진 입니다 */
+            .Attractions-box .photo{height: 100%;width: 45%; background-color: lawngreen;overflow: hidden;
+            border-radius: 5px;float: left;}
+            .Attractions-box .photo div{width: 100%; height: 100%;background-position: center;
+            background-size: cover;transition: 2s;}
+            .Attractions-box .photo div:hover{transform: scale(1.1);}
+                /* 상점 사진들 입니다 */
+                .Attractions:nth-of-type(1) a:nth-of-type(1) .Attractions-box .photo div{background-image: url(../img/main/가게/다즈니베이비.webp);}
+                .Attractions:nth-of-type(1) a:nth-of-type(2) .Attractions-box .photo div{background-image: url(../img/main/가게/디즈니프린세스.webp);}
+                .Attractions:nth-of-type(1) a:nth-of-type(3) .Attractions-box .photo div{background-image: url(../img/main/가게/마스크.webp);}
+               
+                
+                /* 음식점 사진들 입니다 */
+                .Attractions:nth-of-type(2) a:nth-of-type(1) .Attractions-box .photo div{background-image: url(../img/main/음식집/cafe-orleans-menu-fantasmic-cafe-orlean-chicken-16x9.webp);}
+                .Attractions:nth-of-type(2) a:nth-of-type(2) .Attractions-box .photo div{background-image: url(../img/main/음식집/데이지스\ 다이너.webp);}
+                .Attractions:nth-of-type(2) a:nth-of-type(3) .Attractions-box .photo div{background-image: url(../img/main/음식집/황금\ 말굽.webp);}
+
+            /* 명소추천 텍스트 입니다. */
+            .Attractions-box .text{width: 55%;height: 100%;float: right; padding: 35px 0 0 20px;}
+            .Attractions-box .text h3{font-size: 25px;margin-bottom: 10px;}
+            .Attractions-box .text p{font-size: 15px; color: #555;}
+            .Attractions-box .text span{margin-top: 20px; display: inline-block; font-size: 15px;
+            color: #333;}
+            /* 모두보기 버튼 입니다 */
+            .Attractions hr{width: 70%; position: absolute;bottom: 46px; border: solid rgb(206, 206, 206) 1px;}
+            .Attractions .VIEW_ALL{position: absolute;right: 0;bottom: 40px;background-color: #f4feff;
+                padding-left: 3px;}
+            .Attractions .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+            color: rgb(160, 160, 160);}
+            .Attractions .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
+            .Attractions .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+           
+            /* 케릭터 입니다. */
+            .shop{width: 100%; height: 650px;margin-top: 80px;}
+                .shop-text{width: 100%; height: 50px; font-size: 18px;margin-bottom: 20px;
+                border: solid rgb(206, 206, 206)1px; border-style: none none solid none;}
+                /* 케릭터 입니다 */
+                .Goods-box{width: 100%; height: 93%; ; position: relative;}
+                .Goods{width: 100%; height: 84px; margin: 10px 0; display: inline-block;transition: 0.5s;
+                border-radius: 8px;box-shadow: rgb(206, 206, 206) 0 0 10px 1px;background-color: white;}
+
+                .Goods div{ width: 60px; height: 60px; background-image: url(../img/main/미키마우스.jpg);
+                background-position: center;background-size: cover;
+                border-radius: 60px; margin: 7px 12px; float: left;}
+                .Goods h4{font-size: 19px; margin-top: 20px;}
+                .Goods p{font-size: 13px; color: rgb(110, 110, 110); margin-top: 6px;}
+                /* 모두보기 버튼 입니다 */
+                .Goods-box hr{width: 70%; position: absolute;bottom: 36px; border: solid rgb(206, 206, 206) 1px;}
+                .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 30px; background-color: #f4feff;
+                padding-left: 3px;}
+                .Goods-box .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+                    color: rgb(160, 160, 160);}
+                .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
+                .Goods-box .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+                /* 케릭터 사진 입니다. */
+                .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/캐릭터/도널드넉.jpg);}
+                .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/캐릭터/미키마우슥.jpg);}
+                .Goods-box a:nth-of-type(3) .Goods div{background-image: url(../img/main/캐릭터/스티치.jpg);}
+                .Goods-box a:nth-of-type(4) .Goods div{background-image: url(../img/main/캐릭터/푸우.jpg);}
+                .Goods-box a:nth-of-type(5) .Goods div{background-image: url(../img/main/캐릭터/엘사.jpg);}
+
+/* 비디오 섹션 입니다   //////////////
+/////////////////////////////////////
+/////////////////////////////////////*/
+#Videos-outside{width: 100%; height: 1250px;padding-top: 100px;}
+#Videos{width: 100%;height: 900px; margin: 0 auto; padding: 0 20px;}
+    /* 비디오 제목 입니다 */
+    .Videos-text{width: 100%; height: 200px;}
+    .Videos-text h2{font-size: 35px; margin-bottom: 15px; font-family:"Blacksword";font-weight: normal;}
+    .Videos-text p{font-size: 16px; color: rgb(73, 73, 73); margin-bottom: 15px;}
+    .Videos-text .VIEW_ALL p{float: left; font-size: 18px;line-height: 22px; margin-right: 10px;
+    color: #555;}
+    .Videos-text .VIEW_ALL img{height: 22px; float: left;}
+    .Videos-text .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+    /* 비디오 박스 입니다 */
+    .Videos-box{width: 100%; height: 900px;display: flex;
+    flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+    .Videos{background-color: skyblue; border-radius: 10px;overflow: hidden;
+    position: relative;}
+    .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
+    .Videos h3{position: absolute; top: 20px;left: 15px; font-size: 15px;color: white;}
+    .Videos span{width: 70px; height: 70px; border: solid white 1px; border-radius: 70px;
+    position: absolute; right: 20px; bottom: 20px; cursor: pointer;}
+    .Videos span img{width: 25px; margin: 20px 23px;}
+    .Videos span:hover{background-color: orange;border: none; transition: 1s;}
+    .Videos span:hover img{margin: 21px 24.5px;}
+    /* 비디오 박스 크기 입니다 */
+    .Videos:nth-of-type(1){height: 24%; width: 100%;}
+    .Videos:nth-of-type(2){height: 24%; width: 100%;}
+    .Videos:nth-of-type(3){height: 24%; width: 49%;}
+    .Videos:nth-of-type(4){height: 24%; width: 49%;}
+    .Videos:nth-of-type(5){height: 24%; width: 49%;}
+    .Videos:nth-of-type(6){height: 24%; width: 49%;}
+    /* 비디오 박스 사진 입니다 */
+    .Videos:nth-of-type(1) div{background-image: url(../img/main/비디오/피노키오.webp);}
+    .Videos:nth-of-type(2) div{background-image: url(../img/main/비디오/스타워즈.webp);}
+    .Videos:nth-of-type(3) div{background-image: url(../img/main/비디오/유령의집.webp);}
+    .Videos:nth-of-type(4) div{background-image: url(../img/main/비디오/케르비아.webp);}
+    .Videos:nth-of-type(5) div{background-image: url(../img/main/비디오/라타투이.webp);}
+    .Videos:nth-of-type(6) div{background-image: url(../img/main/비디오/인디애나.webp);}
+
+/* 예매 섹션 입니다   ////////////////////
+/////////////////////////////////////////
+///////////////////////////////////////// */
+#reservation-outside{width: 100%; height: 900px;position: relative;}
+#reservation-outside .photo{width: 100; height: 100%; background-color: palegoldenrod;
+overflow: hidden;}
+#reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
+background-position: center; background-repeat: no-repeat; background-size: cover;}
+#reservation{width: 100%;height: 100%;position: absolute; left: 0;top: 0;
+}
+    /* 예약 제목 입니다 */
+    .reservation-text{width: 80%; height: 400px;position: absolute; top: 30px;left: 50%;
+    margin-left: -40%;}
+        .reservation-text h2{font-size: 28px;color: white; margin-bottom: 15px;
+            text-shadow:rgb(0, 156, 218) 0 0 3px ;}
+        .reservation-text p{color: white; width: 100%; font-size: 13px;}
+    
+        /* 달력 입니다 */
+        .calendar{width: 70%; height: auto; border-radius: 10px;overflow: hidden;margin-right: 20px; 
+        box-shadow: rgb(141, 141, 141) 15px 15px 20px 1px; position: absolute; left: 50%;
+        top: 200px; margin-left: -35%;}
+        /* 달력 년도 입니다 */
+        .calendar .year{width: 100%; height: 40px; background-color: rgb(66, 154, 255)}
+        .calendar .year h2{font-size: 20px; width: 70%;float: left;line-height: 40px;
+        text-align: center; color: white;}
+        .calendar .year button:nth-of-type(1){border: none; background: none; float: left;
+        width: 15%;padding-top: 15px;text-align: right;cursor: pointer;padding-right: 10px;}
+        .calendar .year button:nth-of-type(2){border: none; background: none; float: right;
+        width: 15%;padding-top: 15px;text-align: left;cursor: pointer;padding-left: 10px;}
+        .calendar .year button img{height: 15px;opacity: 0.7;}
+        /* 달력 입니다 */
+        .calendar table{width: 100%; height:auto; background-color: white;}
+        .calendar table th{font-size: 15px; padding: 7px 0;}
+        .calendar table td{text-align: center; font-size: 12px; font-weight: bold; cursor: pointer;
+        padding: 10px 0;}
+        .calendar table,td,tr{border: solid rgb(204, 204, 204) 1px;  border-collapse: collapse;
+        border-style: solid none;}
+        .calendar table .Saturday{color: rgb(42, 42, 255);}
+        .calendar table .Sunday{color: rgb(170, 0, 0);}
+        /* 달력 선택완료 입니다 */
+        .calendar .select{width: 100%; height: 40px;background-color: white;}
+        .calendar .select button{width: 50%;height: 100%; float: left; background: none;
+        border: none; font-weight: bold;font-size: 13px;cursor: pointer;}
+        .calendar .select button:nth-of-type(2){background-color: rgb(66, 154, 255);
+        color: white;;}
+    
+        .aa{background-color: rgb(66, 154, 255); color: white;transition: 0.5;}
+/* 이벤트 섹션 입니다.   ///////////////////////
+//////////////////////////////////////////////
+////////////////////////////////////////////// */
+#event-outside{width: 100%; height: 800px;}
+#event{width: 100%; height: 100%; margin: 0 auto; padding: 0 20px;}
+.event-text{width: 100%; height: 300px;padding-top: 50px;}
+.event-text h2{font-size: 25px;margin-bottom: 10px; }
+.event-text p{font-size: 13px; color: rgb(110, 110, 110);}
+.event-text span{width: 110px;height: 40px;font-weight: bold;color: white;background-color: black;
+border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;line-height: 37px;
+margin-top: 20px;}
+.event-photo{width: 100%; height: 400px;position: relative; }
+.event-photo .photo1{width: 75%;height: 235px; position: absolute;background-position: center;
+top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+.event-photo .photo2{width: 50%;height: 154px; position: absolute;background-position: center;
+top: 140px; left: 0;;background-size: cover;}
+.event-photo .photo3{width: 55%;height: 161px; position: absolute;background-position: center;
+top: 200px; right: 30%; background-size: cover;}
+.event-photo .photo4{width: 40%;height: 119px; position: absolute;background-position: center;
+top: 390px; right: 5%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+/* 이벤트 사진 입니다 */
+.event-photo .photo1{background-image:url(../img/main/인증/인증4.webp);}
+.event-photo .photo2{background-image:url(../img/main/인증/인증3.jpg);}
+.event-photo .photo3{background-image:url(../img/main/인증/인증2.jpg.crdownload);}
+.event-photo .photo4{background-image:url(../img/main/인증/인증1.jpg.crdownload);}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:600px) and (max-width:1424.99px) {
+/* 실행 영상들 css 입니다   //////////////////////////////
+/////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////// */
+.main1{width: 100%; height: 100%;position:fixed; z-index: 10;  display: none;}
+.main1 div{width: 100%;height: 100%; opacity: 0.7; background-color: black;}
+.main1 iframe{position: absolute; width: 80%;height: 400px; top: 50%;left: 50%;
+margin: -200px -40%;}
+.main1 span{display: inline-block; position: absolute; right: 60px;top: 30px;
+font-size: 50px; font-weight: bold; color: white; cursor: pointer;}
+
+/* 스크롤 액션 */
+.opacity{opacity: 0;}
+.qqqq{transition: 2s;}
+
+/* 디즈니 메인 섹션입니다    ////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+*/
+#LANDS{width: 100%; height: 760px; overflow: hidden;}
 
 /* 디즈니테마 이름 입니다 */
 #LANDS .name{width: 59%; height: 52%;float: right;position: relative;}
-#LANDS .name h2{font-size: 50px; margin-top: 100px;  font-family:"Blacksword";
+#LANDS .name h2{font-size: 40px; margin-top: 80px;  font-family:"Blacksword";
 font-weight: normal; margin-bottom: 40px;}
-#LANDS .name .input{width: 600px; height: 45px; background-color: white;
-box-shadow: rgb(216, 216, 216)0 0 10px 1px; position: relative;}
+#LANDS .name .input{width: 90%; height: 45px; background-color: white;
+box-shadow: rgb(233, 233, 233)0 0 10px 1px; position: relative;}
 #LANDS .name .input input[type="text"]{width: 89%;height: 100%; border: none;background: none;
 padding-left: 20px;font-size: 16px;}
 input:focus {outline:none;}
@@ -67,9 +376,9 @@ border-radius: 0 120px 0 0; position: relative; background-color: antiquewhite;}
 
     /* 매인 텍스트 입니다 */
     .main-text{position: absolute; bottom: 0; width: 100%; height: 310px;
-    padding-left: 30px; padding-right: 30px;padding-top: 70px;}
+    padding-left: 20px; padding-right: 20px;padding-top: 70px;}
     .main-text .button{width: 70px; height: 70px; border: solid white 2px; border-radius: 70px;
-    cursor: pointer;z-index: 2; display: inline-block;position: absolute;top: 0;left: 70px;}
+    cursor: pointer;z-index: 2; display: inline-block;position: absolute;top: 0;left: 20px;}
     .main-text .button img{width: 25px; margin: 20px 23px;}
     .main-text .button:hover{background-color: orange;border: none; transition: 1s;}
     .main-text .button:hover img{margin: 22px 24.5px;}
@@ -125,7 +434,7 @@ transition: 5s;}
 /////////////////////////////////////////////////////////////*/
 #suggestion-outside{width: 100%; height: auto;}
 #suggestion{width: 100%; height: 1200px;margin: 0 auto;padding: 0 20px;
-padding-top: 100px;}
+padding-top: 70px;}
     /* 추천 박스 입니다 */
     .suggestion-box{width: 58%; height: 100%;float: left;}
     .suggestion-box h2{font-size: 35px;margin-bottom: 25px;font-family:"Blacksword";font-weight: normal;}
@@ -165,7 +474,8 @@ padding-top: 100px;}
             color: #333;}
             /* 모두보기 버튼 입니다 */
             .Attractions hr{width: 70%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
-            .Attractions .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;}
+            .Attractions .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;background-color: #f4feff;
+                padding-left: 3px;}
             .Attractions .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
             color: rgb(160, 160, 160);}
             .Attractions .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
@@ -184,10 +494,11 @@ padding-top: 100px;}
                 background-position: center;background-size: cover;
                 border-radius: 60px; margin: 7px 12px; float: left;}
                 .Goods h4{font-size: 19px; margin-top: 20px;}
-                .Goods p{font-size: 15px; color: rgb(110, 110, 110); margin-top: 6px;}
+                .Goods p{font-size: 13px; color: rgb(110, 110, 110); margin-top: 6px;}
                 /* 모두보기 버튼 입니다 */
                 .Goods-box hr{width: 65%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
-                .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;}
+                .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 10px; background-color: #f4feff;
+                padding-left: 3px;}
                 .Goods-box .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
                     color: rgb(160, 160, 160);}
                 .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
@@ -202,8 +513,8 @@ padding-top: 100px;}
 /* 비디오 섹션 입니다   //////////////
 /////////////////////////////////////
 /////////////////////////////////////*/
-#Videos-outside{width: 100%; height: 1100px;padding-top: 200px;}
-#Videos{width: 1400px;height: 900px; margin: 0 auto;}
+#Videos-outside{width: 100%; height: 1100px;padding-top: 100px;}
+#Videos{width: 100%;height: 900px; margin: 0 auto; padding: 0 20px;}
     /* 비디오 제목 입니다 */
     .Videos-text{width: 100%; height: 200px;}
     .Videos-text h2{font-size: 35px; margin-bottom: 15px; font-family:"Blacksword";font-weight: normal;}
@@ -215,10 +526,10 @@ padding-top: 100px;}
     /* 비디오 박스 입니다 */
     .Videos-box{width: 100%; height: 600px;display: flex;
     flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
-    .Videos{background-color: skyblue; border-radius: 10px;
+    .Videos{background-color: skyblue; border-radius: 10px;overflow: hidden;
     position: relative;}
     .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
-    .Videos h3{position: absolute; top: 20px;left: 20px; font-size: 20px;color: white;}
+    .Videos h3{position: absolute; top: 20px;left: 15px; font-size: 15px;color: white;}
     .Videos span{width: 70px; height: 70px; border: solid white 1px; border-radius: 70px;
     position: absolute; right: 20px; bottom: 20px; cursor: pointer;}
     .Videos span img{width: 25px; margin: 20px 23px;}
@@ -227,10 +538,10 @@ padding-top: 100px;}
     /* 비디오 박스 크기 입니다 */
     .Videos:nth-of-type(1){height: 48.5%; width: 54.5%;}
     .Videos:nth-of-type(2){height: 48.5%; width: 44.2%;}
-    .Videos:nth-of-type(3){height: 48.5%; width: 20%;}
-    .Videos:nth-of-type(4){height: 48.5%; width: 35%;}
-    .Videos:nth-of-type(5){height: 48.5%; width: 23%;}
-    .Videos:nth-of-type(6){height: 48.5%; width: 18%;}
+    .Videos:nth-of-type(3){height: 48.5%; width: 25%;}
+    .Videos:nth-of-type(4){height: 48.5%; width: 26%;}
+    .Videos:nth-of-type(5){height: 48.5%; width: 22%;}
+    .Videos:nth-of-type(6){height: 48.5%; width: 23%;}
     /* 비디오 박스 사진 입니다 */
     .Videos:nth-of-type(1) div{background-image: url(../img/main/비디오/피노키오.webp);}
     .Videos:nth-of-type(2) div{background-image: url(../img/main/비디오/스타워즈.webp);}
@@ -247,40 +558,40 @@ padding-top: 100px;}
 overflow: hidden;}
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
-#reservation{width: 1400px;height: 100%;position: absolute; left: 50%;margin-left: -700px;top: 0;
+#reservation{width: 100%;height: 100%;position: absolute; left: 0;top: 0;
 padding-top: 190px;}
     /* 예약 제목 입니다 */
-    .reservation-text{width: 800px; height: 400px;float: left;
-        padding-top: 165px;}
-        .reservation-text h2{font-size: 38px;color: white; margin-bottom: 15px;
+    .reservation-text{width: 45%; height: 400px;float: left;
+        padding-top: 150px; padding-left: 20px;}
+        .reservation-text h2{font-size: 28px;color: white; margin-bottom: 15px;
             text-shadow:rgb(0, 156, 218) 0 0 3px ;}
-        .reservation-text p{color: white; width: 600px;}
+        .reservation-text p{color: white; width: 100%; font-size: 13px;}
     
         /* 달력 입니다 */
-        .calendar{width: 500px; height: auto; border-radius: 20px;overflow: hidden; 
+        .calendar{width: 45%; height: auto; border-radius: 10px;overflow: hidden;margin-right: 20px; 
         float: right;box-shadow: rgb(141, 141, 141) 15px 15px 20px 1px;}
         /* 달력 년도 입니다 */
-        .calendar .year{width: 100%; height: 100px; background-color: rgb(66, 154, 255)}
-        .calendar .year h2{font-size: 30px; width: 50%;float: left;line-height: 90px;
+        .calendar .year{width: 100%; height: 60px; background-color: rgb(66, 154, 255)}
+        .calendar .year h2{font-size: 25px; width: 70%;float: left;line-height: 60px;
         text-align: center; color: white;}
         .calendar .year button:nth-of-type(1){border: none; background: none; float: left;
-        width: 25%;padding-top: 30px;text-align: right;cursor: pointer;padding-right: 10px;}
+        width: 15%;padding-top: 24px;text-align: right;cursor: pointer;padding-right: 10px;}
         .calendar .year button:nth-of-type(2){border: none; background: none; float: right;
-        width: 25%;padding-top: 30px;text-align: left;cursor: pointer;padding-left: 10px;}
-        .calendar .year button img{height: 30px;opacity: 0.7;}
+        width: 15%;padding-top: 24px;text-align: left;cursor: pointer;padding-left: 10px;}
+        .calendar .year button img{height: 15px;opacity: 0.7;}
         /* 달력 입니다 */
         .calendar table{width: 100%; height:auto; background-color: white;}
-        .calendar table th{font-size: 25px; padding: 15px 0;}
-        .calendar table td{text-align: center; font-size: 22px; font-weight: bold; cursor: pointer;
+        .calendar table th{font-size: 20px; padding: 15px 0;}
+        .calendar table td{text-align: center; font-size: 15px; font-weight: bold; cursor: pointer;
         padding: 10px 0;}
         .calendar table,td,tr{border: solid rgb(204, 204, 204) 1px;  border-collapse: collapse;
         border-style: solid none;}
         .calendar table .Saturday{color: rgb(42, 42, 255);}
         .calendar table .Sunday{color: rgb(170, 0, 0);}
         /* 달력 선택완료 입니다 */
-        .calendar .select{width: 100%; height: 100px;background-color: white;}
+        .calendar .select{width: 100%; height: 60px;background-color: white;}
         .calendar .select button{width: 50%;height: 100%; float: left; background: none;
-        border: none; font-weight: bold;font-size: 20px;cursor: pointer;}
+        border: none; font-weight: bold;font-size: 15px;cursor: pointer;}
         .calendar .select button:nth-of-type(2){background-color: rgb(66, 154, 255);
         color: white;;}
     
@@ -289,22 +600,22 @@ padding-top: 190px;}
 //////////////////////////////////////////////
 ////////////////////////////////////////////// */
 #event-outside{width: 100%; height: 600px;}
-#event{width: 1400px; height: 100%; margin: 0 auto; }
+#event{width: 100%; height: 100%; margin: 0 auto; padding: 0 20px;}
 .event-text{width: 50%; height: 100%; float: left; padding-top: 170px;}
-.event-text h2{font-size: 30px;margin-bottom: 10px; }
-.event-text p{font-size: 15px; color: rgb(110, 110, 110);}
+.event-text h2{font-size: 25px;margin-bottom: 10px; }
+.event-text p{font-size: 13px; color: rgb(110, 110, 110);}
 .event-text span{width: 110px;height: 40px;font-weight: bold;color: white;background-color: black;
 border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;line-height: 37px;
 margin-top: 20px;}
-.event-photo{width: 50%; height: 100%; float: right; position: relative;}
-.event-photo .photo1{width: 400px;height: 350px; position: absolute;background-position: center;
+.event-photo{width: 50%; height: 100%; float: right; position: relative; }
+.event-photo .photo1{width: 65%;height: 235px; position: absolute;background-position: center;
 top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
-.event-photo .photo2{width: 280px;height: 220px; position: absolute;background-position: center;
-top: 150px; right:350px;background-size: cover;}
-.event-photo .photo3{width: 320px;height: 230px; position: absolute;background-position: center;
-top: 240px; right: 200px; background-size: cover;}
-.event-photo .photo4{width: 200px;height: 170px; position: absolute;background-position: center;
-top: 390px; right: 50px; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+.event-photo .photo2{width: 45%;height: 154px; position: absolute;background-position: center;
+top: 170px; right:50%;background-size: cover;}
+.event-photo .photo3{width: 55%;height: 161px; position: absolute;background-position: center;
+top: 240px; right: 30%; background-size: cover;}
+.event-photo .photo4{width: 30%;height: 119px; position: absolute;background-position: center;
+top: 390px; right: 10%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
 /* 이벤트 사진 입니다 */
 .event-photo .photo1{background-image:url(../img/main/인증/인증4.webp);}
 .event-photo .photo2{background-image:url(../img/main/인증/인증3.jpg);}
@@ -327,7 +638,7 @@ top: 390px; right: 50px; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;backgro
 
 
 
-@media(min-width:1200px){
+@media(min-width:1425px){
 /* 실행 영상들 css 입니다   //////////////////////////////
 /////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////// */

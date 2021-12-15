@@ -95,6 +95,25 @@
             });
 
 
+            if(matchMedia("screen and (max-width: 599px)").matches){
+                $(function(){
+                    $("#logo img").attr("src","img/common/logo1.png");
+                });
+
+                $(window).on('scroll',function(){
+                if($(window).scrollTop()){ 
+                    $('header').addClass('active');
+                    $('img[alt="logo8"]').attr("src","img/common/logo1.png");
+                }else{ 
+                    $('header').removeClass('active');
+                    $('img[alt="logo8"]').attr("src","img/common/logo1.png"); 
+                } 
+            });
+
+        }
+
+
+
 
         // 만화속 세상 스크롤 내리면 제이쿼리
         function isElementUnderBottom(elem, triggerDiff) {
@@ -464,6 +483,8 @@
 
 
         // 스크롤 내릴떄 애니메이션
+
+
         $(function(){
             var x = $(document).scrollTop(0);
             $(document).scroll(function(){
@@ -488,6 +509,77 @@
 
             });
         });
+
+
+
+
+
+
+
+
+        if(matchMedia("screen and (max-width: 1429px)").matches)
+        {
+
+            $(function(){
+                var x = $(document).scrollTop(0);
+                $(document).scroll(function(){
+                    var y = $(document).scrollTop();
+                    var z = y-x;
+
+                    if(y<3300 || z<0){
+                        $(".photo1").stop().animate({top:"150px"});
+                        $(".photo2").stop().animate({top:"30px"});
+                        $(".photo4").stop().animate({top:"240px"});
+                    }
+                    if(y>=3400 || z>=0){
+                        $(".photo1").stop().animate({top:"75px"});
+                        $(".photo2").stop().animate({top:"75px"});
+                        $(".photo4").stop().animate({top:"315px"});
+                    }
+                    if(y>=3500 || z>=0){
+                        $(".photo1").stop().animate({top:"70px"});
+                        $(".photo2").stop().animate({top:"110px"});
+                        $(".photo4").stop().animate({top:"320px"});
+                    }
+
+                });
+            });
+
+        }
+
+
+
+        if(matchMedia("screen and (max-width: 599px)").matches)
+        {
+
+            $(function(){
+                var x = $(document).scrollTop(0);
+                $(document).scroll(function(){
+                    var y = $(document).scrollTop();
+                    var z = y-x;
+
+                    if(y<4200 || z<0){
+                        $(".photo1").stop().animate({top:"150px"});
+                        $(".photo2").stop().animate({top:"30px"});
+                        $(".photo4").stop().animate({top:"240px"});
+                    }
+                    if(y>=4300 || z>=0){
+                        $(".photo1").stop().animate({top:"75px"});
+                        $(".photo2").stop().animate({top:"75px"});
+                        $(".photo4").stop().animate({top:"315px"});
+                    }
+                    if(y>=4400 || z>=0){
+                        $(".photo1").stop().animate({top:"0px"});
+                        $(".photo2").stop().animate({top:"60px"});
+                        $(".photo4").stop().animate({top:"250px"});
+                    }
+
+                });
+            });
+
+        }
+
+        
 
     </script>
 
@@ -1065,7 +1157,7 @@
         <div id="event">
             <div class="event-text , opacity">
                 <h2>나만의 사진을 찍어보세요</h2>
-                <p>나만의 사진을 찍어보세요 참여하기 버튼을 클릭한후<br>
+                <p>나만의 사진을 찍어보세요 참여하기 버튼을 클릭한후 
                 디즈니 랜드에서 찍은 나만의 사진과 가장 좋았던 월드 그리고 사연을 올려주세요<br>
                 디즈니 랜드 사이트에 공게적으로 투포를 한 후 당첨되신 분에게 다양한 선물을 드립니다.
                 </p>
