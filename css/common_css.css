@@ -14,6 +14,14 @@ header{width: 100%; height: 55px;padding: 10px 0;background-color: white;
         #main .hamburger{float: right; cursor: pointer;}
         #main .hamburger img{width: 40px;height: 43px; margin-top: -4px;}
 
+#Manu{width: 100%;height: auto; position: fixed;background-color: white; margin-top: 8px; display: none;}
+#Manu .Manu{width: 80%;height: 100%; padding-top: 20px; margin: 0 auto;}
+#Manu .Manu a{width: 100%; display: block;text-align: center;margin:20px 0; font-weight: bold;font-size: 16px;}
+#Manu .Manu a:hover{text-decoration: underline;}
+#Manu .Manu .login a:nth-of-type(2){background-color: black; color: white;width: 100%;height: 100%;padding: 10px 0;
+margin-top: 30px; border-radius: 10px; transition: 0.5s; margin-bottom: 40px;}
+#Manu .Manu .login a:nth-of-type(2):hover{text-decoration: none; background-color: rgb(0, 68, 255);}
+
     
     /* 푸터입니다.  //////////////////////
     /////////////////////////////////////*/
@@ -49,6 +57,7 @@ header{width: 100%; height: 55px;padding: 10px 0;background-color: white;
 @media(min-width:600px) and (max-width:1424.99px) {
 /* 헤더입니다.  /////////////////////
 ////////////////////////////////////*/
+
 header{width: 100%; height: 55px;padding: 10px 0;
     position: absolute;z-index: 10; position: fixed;}
         #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
@@ -62,7 +71,14 @@ header{width: 100%; height: 55px;padding: 10px 0;
         /* 햄버거 매뉴입니다 */
         #main .hamburger{float: right; cursor: pointer;}
         #main .hamburger img{width: 40px;height: 43px; margin-top: -4px;}
-
+/* 사이드 메뉴 입니다 */
+#Manu{width: 100%;height: auto; position: fixed;background-color: white; margin-top: 8px; display: none;}
+    #Manu .Manu{width: 80%;height: 100%; padding-top: 20px; margin: 0 auto;}
+    #Manu .Manu a{width: 100%; display: block;text-align: center;margin:30px 0; font-weight: bold;font-size: 19px;}
+    #Manu .Manu a:hover{text-decoration: underline;}
+    #Manu .Manu .login a:nth-of-type(2){background-color: black; color: white;width: 100%;height: 100%;padding: 10px 0;
+    margin-top: 30px; border-radius: 10px; transition: 0.5s; margin-bottom: 40px;}
+    #Manu .Manu .login a:nth-of-type(2):hover{text-decoration: none; background-color: rgb(0, 68, 255);}
     
     /* 푸터입니다.  //////////////////////
     /////////////////////////////////////*/

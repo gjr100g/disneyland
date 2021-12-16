@@ -120,7 +120,7 @@ transition: 5s;}
 /////////////////////////////////////////////////////////////*/
 #suggestion-outside{width: 100%; height: auto;}
 #suggestion{width: 100%; height: 1850px;margin: 0 auto;padding: 0 20px;
-padding-top: 70px;}
+padding-top:0;}
     /* 추천 박스 입니다 */
     .suggestion-box{width: 100%; height: 1000px; margin-bottom: 150px;}
     .suggestion-box h2{font-size: 35px;margin-bottom: 25px;font-family:"Blacksword";font-weight: normal;}

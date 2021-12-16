@@ -558,17 +558,17 @@
                     var y = $(document).scrollTop();
                     var z = y-x;
 
-                    if(y<4200 || z<0){
+                    if(y<4700 || z<0){
                         $(".photo1").stop().animate({top:"150px"});
-                        $(".photo2").stop().animate({top:"30px"});
+                        $(".photo2").stop().animate({top:"120px"});
                         $(".photo4").stop().animate({top:"240px"});
                     }
-                    if(y>=4300 || z>=0){
+                    if(y>=4750 || z>=0){
                         $(".photo1").stop().animate({top:"75px"});
                         $(".photo2").stop().animate({top:"75px"});
                         $(".photo4").stop().animate({top:"315px"});
                     }
-                    if(y>=4400 || z>=0){
+                    if(y>=4800 || z>=0){
                         $(".photo1").stop().animate({top:"0px"});
                         $(".photo2").stop().animate({top:"60px"});
                         $(".photo4").stop().animate({top:"250px"});
@@ -579,7 +579,26 @@
 
         }
 
+
+        // 햄버거메뉴 누르기 제이쿼리///////////////////
+        $(function(){
+            $(".hamburger").click(function(){
+                $("#Manu").slideToggle(700);
+            });
+        });
         
+        // 새로고침 자바
+
+        if(matchMedia("screen and (max-width: 599px)").matches){ 
+            console.log("mobile"); 
+        }else if(matchMedia("screen and (max-width: 1424.99px)").matches){ 
+            console.log("tablet"); 
+        }else if(matchMedia("screen and (min-width: 1425px)").matches){ 
+            console.log("desktop"); 
+        } 
+        window.onresize = function(){ 
+            document.location.reload(); 
+        };
 
     </script>
 
@@ -596,7 +615,7 @@
     <header>
         <div id="main">
             <!-- 로고 입니다. -->
-            <a href="#"><div id="logo">
+            <a href="index.html"><div id="logo">
                 <img src="img/common/logo8.gif" alt="logo8">
             </div></a>
 
@@ -613,7 +632,22 @@
             </nav>
             <span class="hamburger"><img src="img/common/햄버거매뉴.png" alt=""></span>
         </div>
+        <div id="Manu">
+            <div class="Manu">
+                <a href="#">이용정보</a>
+                <a href="#">즐길거리</a>
+                <a href="#">할인&이벤트</a>
+                <a href="#">참여프로그램</a>
+                <a href="#">멘버쉽</a>
+                <div class="login">
+                    <a href="#">로그인</a>
+                    <a href="#"><span>나의 디즈니랜드</span></a>
+                </div>
+            </div>
+        </div>
     </header>
+
+
 
  <!-- 영상들 입니다 -->
 
