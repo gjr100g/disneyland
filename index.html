@@ -588,13 +588,11 @@
         });
         
         // 새로고침 자바
-
-
-
-        $(window).resize(function (){
-            // width값을 가져오기
+        $(function(){
+            $(window).resize(function (){
+  
             var width_size = window.outerWidth;
-            // 800 이하인지 if문으로 확인
+
             if (width_size=599) {
                 document.location.reload();
             }
@@ -605,6 +603,9 @@
                 document.location.reload();
             }
         })
+        });
+
+
 
     </script>
 

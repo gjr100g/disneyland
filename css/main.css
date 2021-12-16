@@ -17,9 +17,6 @@ margin: -200px -40%;}
 .main1 span{display: inline-block; position: absolute; right: 60px;top: 30px;
 font-size: 50px; font-weight: bold; color: white; cursor: pointer;}
 
-/* 스크롤 액션 */
-
-
 
 /* 디즈니 메인 섹션입니다    ////////////////////
 /////////////////////////////////////////////////
@@ -136,7 +133,7 @@ padding-top:0;}
         background-color: white;}
 
             /* 상점추천 사진 입니다 */
-            .Attractions-box .photo{height: 100%;width: 45%; background-color: lawngreen;overflow: hidden;
+            .Attractions-box .photo{height: 100%;width: 45%;overflow: hidden;
             border-radius: 5px;float: left;}
             .Attractions-box .photo div{width: 100%; height: 100%;background-position: center;
             background-size: cover;transition: 2s;}
