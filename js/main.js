@@ -269,25 +269,31 @@
                         $(".date").eq(index).addClass('colToday');
                     }
                 }) 
+
+                $(function(){
+                    // 달력 선택 입니다
+                    $(function(){
+                        $(".calendar tbody td").click(function(){
+                            $(this).toggleClass("aa");
+                        });
+                    });
+    
+                    // 선택취소
+                    $(function(){
+                        $(".calendar .select button:nth-of-type(1)").click(function(){
+                        $(".calendar tbody td").removeClass("aa") 
+                        });
+                    });
+                });
+
+
             }
             buildCalendar();
 
+        
 
         })
-        // 달력 제이쿼리 입니다
-        $(function(){
-            $(".calendar table .date").click(function(){
-                $(this).toggleClass("aa");
-            });
-        });
 
-        // 선택취소
-        $(function(){
-            $(".calendar .select button:nth-of-type(1)").click(function(){
-               $(".calendar table .date").removeClass("aa") 
-            });
-        });
-        
 
         // 스크롤에 따른 제이쿼리 입니다
         $(document).ready(function() {
@@ -448,22 +454,22 @@
         // 추천 섹션 제이쿼리 입니다
         $(function(){
             $(document).ready(function(){
-                $(".suggestion-box span:nth-of-type(1)").css({"color":"rgb(0, 156, 218)"});
+                $("#sh").css({"color":"rgb(0, 156, 218)"});
             });
         });
 
         $(function(){
-            $(".suggestion-box span:nth-of-type(2)").click(function(){
-                $(".suggestion-box span:nth-of-type(2)").css({"color":"rgb(0, 156, 218)"});
-                $(".suggestion-box span:nth-of-type(1)").css({"color":"#999"});
+            $("#le").click(function(){
+                $("#le").css({"color":"rgb(0, 156, 218)"});
+                $("#sh").css({"color":"#999"});
                 $(".Attractions:nth-of-type(2)").fadeIn();
                 $(".Attractions:nth-of-type(1)").hide();
             });
         });
         $(function(){
-            $(".suggestion-box span:nth-of-type(1)").click(function(){
-                $(".suggestion-box span:nth-of-type(1)").css({"color":"rgb(0, 156, 218)"});
-                $(".suggestion-box span:nth-of-type(2)").css({"color":"#999"});
+            $("#sh").click(function(){
+                $("#sh").css({"color":"rgb(0, 156, 218)"});
+                $("#le").css({"color":"#999"});
                 $(".Attractions:nth-of-type(1)").fadeIn();
                 $(".Attractions:nth-of-type(2)").hide();
             });
@@ -549,20 +555,20 @@
                     var y = $(document).scrollTop();
                     var z = y-x;
 
-                    if(y<4700 || z<0){
-                        $(".photo1").stop().animate({top:"150px"});
-                        $(".photo2").stop().animate({top:"120px"});
-                        $(".photo4").stop().animate({top:"240px"});
+                    if(y<4500 || z<0){
+                        $(".photo1").stop().animate({top:"170px"});
+                        $(".photo2").stop().animate({top:"170px"});
+                        $(".photo4").stop().animate({top:"450px"});
                     }
-                    if(y>=4750 || z>=0){
-                        $(".photo1").stop().animate({top:"75px"});
-                        $(".photo2").stop().animate({top:"75px"});
-                        $(".photo4").stop().animate({top:"315px"});
+                    if(y>=4550 || z>=0){
+                        $(".photo1").stop().animate({top:"115px"});
+                        $(".photo2").stop().animate({top:"115px"});
+                        $(".photo4").stop().animate({top:"355px"});
                     }
-                    if(y>=4800 || z>=0){
-                        $(".photo1").stop().animate({top:"0px"});
-                        $(".photo2").stop().animate({top:"60px"});
-                        $(".photo4").stop().animate({top:"250px"});
+                    if(y>=4600 || z>=0){
+                        $(".photo1").stop().animate({top:"40px"});
+                        $(".photo2").stop().animate({top:"100px"});
+                        $(".photo4").stop().animate({top:"290px"});
                     }
 
                 });

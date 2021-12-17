@@ -42,7 +42,7 @@ cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
 
 /* 테마 메인입니다 */
 #LANDS .main-outside{width: 100%; height: 300px; overflow: hidden;margin-bottom: 60px;
-position: relative; background-color: antiquewhite;}
+position: relative;}
 #LANDS .main-s{width: 100%;height: 100%; display: none;}
 #LANDS .main-s:nth-of-type(1){display: block;}
 #LANDS .main{width: 100%; height: 100%;
@@ -158,11 +158,11 @@ padding-top:0;}
             /* 모두보기 버튼 입니다 */
             .Attractions hr{width: 70%; position: absolute;bottom: 46px; border: solid rgb(206, 206, 206) 1px;}
             .Attractions .VIEW_ALL{position: absolute;right: 0;bottom: 40px;background-color: #f4feff;
-                padding-left: 3px;}
-            .Attractions .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+                padding-left: 3px;font-size: 14px;font-weight: normal;}
+            .Attractions .VIEW_ALL p{float: left; font-size: 14px;
             color: rgb(160, 160, 160);}
-            .Attractions .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-            .Attractions .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+            .Attractions .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px; margin-left: 5px;}
+            .Attractions .VIEW_ALL:hover{color: rgb(0, 156, 218);}
            
             /* 케릭터 입니다. */
             .shop{width: 100%; height: 650px;margin-top: 80px;}
@@ -182,10 +182,10 @@ padding-top:0;}
                 .Goods-box hr{width: 70%; position: absolute;bottom: 36px; border: solid rgb(206, 206, 206) 1px;}
                 .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 30px; background-color: #f4feff;
                 padding-left: 3px;}
-                .Goods-box .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+                .Goods-box .VIEW_ALL{float: left; font-size: 14px;
                     color: rgb(160, 160, 160);}
-                .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-                .Goods-box .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+                .Goods-box .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px; margin-left: 5px;}
+                .Goods-box .VIEW_ALL:hover{color: rgb(0, 156, 218);}
                 /* 케릭터 사진 입니다. */
                 .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/캐릭터/도널드넉.jpg);}
                 .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/캐릭터/미키마우슥.jpg);}
@@ -202,14 +202,14 @@ padding-top:0;}
     .Videos-text{width: 100%; height: 200px;}
     .Videos-text h2{font-size: 35px; margin-bottom: 15px; font-family:"Blacksword";font-weight: normal;}
     .Videos-text p{font-size: 16px; color: rgb(73, 73, 73); margin-bottom: 15px;}
-    .Videos-text .VIEW_ALL p{float: left; font-size: 18px;line-height: 22px; margin-right: 10px;
+    .Videos-text .VIEW_ALL{float: left; font-size: 18px;
     color: #555;}
-    .Videos-text .VIEW_ALL img{height: 22px; float: left;}
-    .Videos-text .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+    .Videos-text .VIEW_ALL img{height: 22px; margin-left: 5px; margin-bottom: -4px;}
+    .Videos-text .VIEW_ALL:hover{color: rgb(0, 156, 218);}
     /* 비디오 박스 입니다 */
     .Videos-box{width: 100%; height: 900px;display: flex;
     flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
-    .Videos{background-color: skyblue; border-radius: 10px;overflow: hidden;
+    .Videos{ border-radius: 10px;overflow: hidden;
     position: relative;}
     .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
     .Videos h3{position: absolute; top: 20px;left: 15px; font-size: 15px;color: white;}
@@ -237,7 +237,7 @@ padding-top:0;}
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 900px;position: relative;}
-#reservation-outside .photo{width: 100; height: 100%; background-color: palegoldenrod;
+#reservation-outside .photo{width: 100; height: 100%; 
 overflow: hidden;}
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
@@ -283,9 +283,9 @@ background-position: center; background-repeat: no-repeat; background-size: cove
 /* 이벤트 섹션 입니다.   ///////////////////////
 //////////////////////////////////////////////
 ////////////////////////////////////////////// */
-#event-outside{width: 100%; height: 800px;}
+#event-outside{width: 100%; height: 700px;}
 #event{width: 100%; height: 100%; margin: 0 auto; padding: 0 20px;}
-.event-text{width: 100%; height: 300px;padding-top: 50px;}
+.event-text{width: 100%; height: 300px;padding-top: 30px;}
 .event-text h2{font-size: 25px;margin-bottom: 10px; }
 .event-text p{font-size: 13px; color: rgb(110, 110, 110);}
 .event-text span{width: 110px;height: 40px;font-weight: bold;color: white;background-color: black;
@@ -356,7 +356,7 @@ cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
 
 /* 테마 메인입니다 */
 #LANDS .main-outside{width: 35%; height: 100%;float: left; overflow: hidden;
-border-radius: 0 120px 0 0; position: relative; background-color: antiquewhite;}
+border-radius: 0 120px 0 0; position: relative;}
 #LANDS .main-s{width: 100%;height: 100%; display: none;}
 #LANDS .main-s:nth-of-type(1){display: block;}
 #LANDS .main{width: 100%; height: 100%;
@@ -447,7 +447,7 @@ padding-top: 70px;}
         background-color: white;}
 
             /* 상점추천 사진 입니다 */
-            .Attractions-box .photo{height: 100%;width: 45%; background-color: lawngreen;overflow: hidden;
+            .Attractions-box .photo{height: 100%;width: 45%; overflow: hidden;
             border-radius: 5px;float: left;}
             .Attractions-box .photo div{width: 100%; height: 100%;background-position: center;
             background-size: cover;transition: 2s;}
@@ -473,10 +473,10 @@ padding-top: 70px;}
             .Attractions hr{width: 70%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
             .Attractions .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;background-color: #f4feff;
                 padding-left: 3px;}
-            .Attractions .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+            .Attractions .VIEW_ALL {float: left; font-size: 14px;
             color: rgb(160, 160, 160);}
-            .Attractions .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-            .Attractions .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+            .Attractions .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px;margin-left: 5px;}
+            .Attractions .VIEW_ALL:hover{color: rgb(0, 156, 218);}
            
             /* 케릭터 입니다. */
             .shop{width: 38%; height: 650px; float: right;margin-top: 80px;}
@@ -496,10 +496,10 @@ padding-top: 70px;}
                 .Goods-box hr{width: 65%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
                 .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 10px; background-color: #f4feff;
                 padding-left: 3px;}
-                .Goods-box .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+                .Goods-box .VIEW_ALL{float: left; font-size: 14px;
                     color: rgb(160, 160, 160);}
-                .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-                .Goods-box .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+                .Goods-box .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px;margin-left: 5px;}
+                .Goods-box .VIEW_ALL:hover{color: rgb(0, 156, 218);}
                 /* 케릭터 사진 입니다. */
                 .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/캐릭터/도널드넉.jpg);}
                 .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/캐릭터/미키마우슥.jpg);}
@@ -516,14 +516,14 @@ padding-top: 70px;}
     .Videos-text{width: 100%; height: 200px;}
     .Videos-text h2{font-size: 35px; margin-bottom: 15px; font-family:"Blacksword";font-weight: normal;}
     .Videos-text p{font-size: 16px; color: rgb(73, 73, 73); margin-bottom: 15px;}
-    .Videos-text .VIEW_ALL p{float: left; font-size: 18px;line-height: 22px; margin-right: 10px;
+    .Videos-text .VIEW_ALL{float: left; font-size: 18px;
     color: #555;}
-    .Videos-text .VIEW_ALL img{height: 22px; float: left;}
-    .Videos-text .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+    .Videos-text .VIEW_ALL img{height: 22px;margin-bottom: -4px; margin-left: 5px;}
+    .Videos-text .VIEW_ALL:hover {color: rgb(0, 156, 218);}
     /* 비디오 박스 입니다 */
     .Videos-box{width: 100%; height: 600px;display: flex;
     flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
-    .Videos{background-color: skyblue; border-radius: 10px;overflow: hidden;
+    .Videos{ border-radius: 10px;overflow: hidden;
     position: relative;}
     .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
     .Videos h3{position: absolute; top: 20px;left: 15px; font-size: 15px;color: white;}
@@ -551,7 +551,7 @@ padding-top: 70px;}
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
-#reservation-outside .photo{width: 65%; height: 100%; background-color: palegoldenrod;
+#reservation-outside .photo{width: 65%; height: 100%; 
 overflow: hidden;}
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
@@ -691,7 +691,7 @@ cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
 
 /* 테마 메인입니다 */
 #LANDS .main-outside{width: 35%; height: 100%;float: left; overflow: hidden;
-border-radius: 0 120px 0 0; position: relative; background-color: antiquewhite;}
+border-radius: 0 120px 0 0; position: relative;}
 #LANDS .main-s{width: 100%;height: 100%; display: none;}
 #LANDS .main-s:nth-of-type(1){display: block;}
 #LANDS .main{width: 100%; height: 100%;
@@ -782,7 +782,7 @@ padding-top: 100px;}
             .Attractions-box:hover{box-shadow: rgb(199, 199, 199) 0 0 10px 1px;transition: 0.5s;
             background-color: white;}
             /* 상점추천 사진 입니다 */
-            .Attractions-box .photo{height: 100%;width: 45%; background-color: lawngreen;overflow: hidden;
+            .Attractions-box .photo{height: 100%;width: 45%;overflow: hidden;
             border-radius: 5px;float: left;}
             .Attractions-box .photo div{width: 100%; height: 100%;background-position: center;
             background-size: cover;transition: 2s;}
@@ -807,11 +807,10 @@ padding-top: 100px;}
             /* 모두보기 버튼 입니다 */
             .Attractions hr{width: 82%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
             .Attractions .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;}
-            .Attractions .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; 
-            margin-right: 10px; color: rgb(163, 163, 163);}
-            .Attractions .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-            .Attractions .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
-           
+            .Attractions .VIEW_ALL{float: left; font-size: 14px;color: rgb(163, 163, 163);}
+            .Attractions .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px;margin-left: 5px;}
+            .Attractions .VIEW_ALL:hover{color: rgb(0, 156, 218);}
+        
             /* 케릭터 입니다. */
             .shop{width: 30%; height: 650px; float: right;margin-top: 80px;}
                 .shop-text{width: 100%; height: 50px; font-size: 18px;
@@ -829,10 +828,10 @@ padding-top: 100px;}
                 /* 모두보기 버튼 입니다 */
                 .Goods-box hr{width: 71%; position: absolute;bottom: 16px; border: solid rgb(206, 206, 206) 1px;}
                 .Goods-box .VIEW_ALL{position: absolute;right: 20px;bottom: 10px;}
-                .Goods-box .VIEW_ALL p{float: left; font-size: 14px;line-height: 18px; margin-right: 10px;
+                .Goods-box .VIEW_ALL {float: left; font-size: 14px;
                 color: rgb(163, 163, 163);;}
-                .Goods-box .VIEW_ALL img{height: 18px; float: left; transition: 0.5s;}
-                .Goods-box .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+                .Goods-box .VIEW_ALL img{height: 18px;transition: 0.5s;margin-bottom: -3px;margin-left: 5px;}
+                .Goods-box .VIEW_ALL:hover{color: rgb(0, 156, 218);}
                 /* 케릭터 사진 입니다. */
                 .Goods-box a:nth-of-type(1) .Goods div{background-image: url(../img/main/캐릭터/도널드넉.jpg);}
                 .Goods-box a:nth-of-type(2) .Goods div{background-image: url(../img/main/캐릭터/미키마우슥.jpg);}
@@ -849,14 +848,14 @@ padding-top: 100px;}
     .Videos-text{width: 100%; height: 200px;}
     .Videos-text h2{font-size: 35px; margin-bottom: 15px; font-family:"Blacksword";font-weight: normal;}
     .Videos-text p{font-size: 16px; color: rgb(73, 73, 73); margin-bottom: 15px;}
-    .Videos-text .VIEW_ALL p{float: left; font-size: 18px;line-height: 22px; margin-right: 10px;
+    .Videos-text .VIEW_ALL{float: left; font-size: 18px;
     color: #555;}
-    .Videos-text .VIEW_ALL img{height: 22px; float: left;}
-    .Videos-text .VIEW_ALL:hover p{color: rgb(0, 156, 218);}
+    .Videos-text .VIEW_ALL img{height: 22px;margin-bottom: -3px;margin-left: 5px;}
+    .Videos-text .VIEW_ALL:hover {color: rgb(0, 156, 218);}
     /* 비디오 박스 입니다 */
     .Videos-box{width: 100%; height: 600px;display: flex;
     flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
-    .Videos{background-color: skyblue; border-radius: 10px;
+    .Videos{ border-radius: 10px;
     position: relative;}
     .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
     .Videos h3{position: absolute; top: 20px;left: 20px; font-size: 20px;color: white;}
@@ -884,7 +883,7 @@ padding-top: 100px;}
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
-#reservation-outside .photo{width: 65%; height: 100%; background-color: palegoldenrod;
+#reservation-outside .photo{width: 65%; height: 100%;
 overflow: hidden;}
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
