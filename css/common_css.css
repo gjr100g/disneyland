@@ -55,24 +55,26 @@ margin-top: 30px; border-radius: 10px; transition: 0.5s; margin-bottom: 40px;}
 
 
 @media(min-width:600px) and (max-width:1424.99px) {
+
 /* 헤더입니다.  /////////////////////
 ////////////////////////////////////*/
 
-header{width: 100%; height: 55px;padding: 10px 0;
+header{width: 100%; height: 55px;padding: 10px 0; background-color: white;
     position: absolute;z-index: 10; position: fixed;}
         #main{width: 96%; height: 38px; margin: 0 auto;position: relative;}
+      
         /* 로고 입니다 */
         #logo{float: left;}
         #logo img{width: 130px; height: 35px;}
     
         /* 네비게이션 입니다 */
         nav{display: none;}
-        .active{background-color: white;}
+
         /* 햄버거 매뉴입니다 */
         #main .hamburger{float: right; cursor: pointer;}
         #main .hamburger img{width: 40px;height: 43px; margin-top: -4px;}
 /* 사이드 메뉴 입니다 */
-#Manu{width: 100%;height: auto; position: fixed;background-color: white; margin-top: 8px; display: none;}
+#Manu{width: 100%;height: auto; position: fixed;background-color: white;  display: none;}
     #Manu .Manu{width: 80%;height: 100%; padding-top: 20px; margin: 0 auto;}
     #Manu .Manu a{width: 100%; display: block;text-align: center;margin:30px 0; font-weight: bold;font-size: 19px;}
     #Manu .Manu a:hover{text-decoration: underline;}
