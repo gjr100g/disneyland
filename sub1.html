@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset_css.css">
-    <link rel="stylesheet" href="css/common_css.css">
-    <link rel="stylesheet" href="css/sub1.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/sub1.js"></script>
@@ -30,7 +27,6 @@
             $('.sub-button span:nth-of-type(1)').click(function(){
                 // 텍스트 색 바꾸기
                 $('.sub-button span:nth-of-type(1)').css({"color":"rgb(0, 156, 218)"});
-                $('.sub-button').not(this).css({"color":"#111"})
                 // 창 바꾸기
                 $('.all').fadeIn(500);
                 $('.Attractions-box').not('.all').fadeOut();
@@ -40,7 +36,7 @@
             $('.sub-button span:nth-of-type(2)').click(function(){
                 // 텍스트 색 바꾸기
                 $('.sub-button span:nth-of-type(2)').css({"color":"rgb(0, 156, 218)"});
-                $('.sub-button').not(this).css({"color":"#111"})
+
                 // 창 바꾸기
                 $('.fantasy').fadeIn(500);
                 $('.Attractions-box').not('.fantasy').fadeOut();
@@ -49,7 +45,6 @@
             // 프론티어 랜드
             $('.sub-button span:nth-of-type(3)').click(function(){
                 // 텍스트 색 바꾸기
-                $('.sub-button').not(this).css({"color":"#333"})
                 $('.sub-button span:nth-of-type(3)').css({"color":"rgb(0, 156, 218)"});
                 // 창 바꾸기
                 $('.Frontier').fadeIn(500);
@@ -57,6 +52,9 @@
             });
         });
     </script>
+        <link rel="stylesheet" href="css/reset_css.css">
+        <link rel="stylesheet" href="css/common_css.css">
+        <link rel="stylesheet" href="css/sub1.css">
 </head>
 <body>
       <!-- 헤더입니다.    /////////////////////////
