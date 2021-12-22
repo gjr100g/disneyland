@@ -136,6 +136,7 @@ position: absolute;z-index: 10; position: fixed;}
     #login a:nth-of-type(2){color: white; background-color: #333;border-radius: 10px;
     height: 100%; display: inline-block;}
     .active{background-color: white;}
+    .nav{color: black;}
     #main .hamburger{display: none;}
 
 /* 푸터입니다.  //////////////////////
