@@ -884,9 +884,10 @@ padding-top: 100px;}
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
 #reservation-outside .photo{width: 65%; height: 100%;
-overflow: hidden;}
+overflow: hidden; }
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
-background-position: center; background-repeat: no-repeat; background-size: cover;}
+background-position: center; background-repeat: no-repeat; background-size: cover;
+;}
 #reservation{width: 1400px;height: 100%;position: absolute; left: 50%;margin-left: -700px;top: 0;
 padding-top: 190px;}
     /* 예약 제목 입니다 */

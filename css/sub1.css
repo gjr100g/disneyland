@@ -19,7 +19,7 @@ nav>a{color: white;}
     #slide .text{position: absolute;
     left: 50%; top: 150px;width: 1400px;transform: translateX(-50%);}
     #slide .text h2{font-size: 60px;color: white;text-shadow: rgb(0, 156, 218) 0 0 5px;}
-    #slide .text p{font-size: 25px;width: 800px; color: white;
+    #slide .text p{font-size: 20px;width: 800px; color: white;font-weight: bold;
     margin-top: 20px;text-shadow: rgb(0, 156, 218) 0 0 5px;}
     #slide .text button{width: 150px;height: 45px;background-color: black;color: white;
     font-size: 18px;margin-top: 40px;cursor: pointer;}
@@ -30,36 +30,65 @@ nav>a{color: white;}
 ///////////////////////////// */
 .main{width: 1400px;height: auto;background-color:#f4feff;
 margin: -100px auto;position: relative;padding-top: 100px;
-margin-bottom: 1px; border-radius: 20px;}
+margin-bottom:50px; border-radius: 20px; }
     /* 메인버튼 */
     .main-button-border{width: 1600px;background-color:#f4feff;height: 100px;
     position: absolute;top: 0;left: 50%;transform: translateX(-50%);border-radius: 20px 20px 0 0;}
     .main-button{width:auto;height: 100px;position: absolute;top: 0;left: 50%;
     line-height: 110px;transform: translateX(-50%);}
     .main-button button{font-size: 30px; padding: 5px 10px;cursor: pointer;
-    margin: 0 15px;font-weight: bold;transition: 0.4s;}
+    margin: 0 15px;font-weight: bold;transition: 0.1s;}
     .main-button button:hover{color: rgb(0, 156, 218);}
     /* 검색창 */
     .Search{width: 100%;height: 50px;}
-    .Search button{font-size: 18px;line-height: 50px;cursor: pointer;}
+    .Search button{font-size: 15px;font-weight: bold; line-height: 50px;cursor: pointer;}
+    .Search button img{height: 18px;}
     .Search button:hover{color: rgb(0, 156, 218);}
-    .Search .input{float: right; height: 100%;width: 400px;}
-    .Search .input input[type="search"]{width: 78%;height: 100%;border: none;
+    .Search .input{float: right; height: 100%;width: 350px;}
+    .Search .input input[type="search"]{width: 82%;height: 100%;border: none;
     font-size: 18;padding-left: 15px;}
-    .Search .input input[type="submit"]{width: 20%;height: 100%;border: none;}
+    .Search .input input[type="submit"]{height: 100%; width: 16%; border: none;border-radius: 10px;
+    cursor: pointer; background-image: url(../img/sub1/아이콘/독보기.png);background-position: center;
+    background-size: 30px;background-repeat: no-repeat;background-color: rgb(0, 156, 218);}
     /* 서브버튼 입니다 */
     .sub-button{width: 100%; height: 70px;line-height: 70px;}
     .sub-button span{font-size: 22px;font-weight: bold;padding-right:20px;cursor: pointer;}
     .sub-button span:hover{color: rgb(0, 156, 218);}
     /* 어트렉션 기구들 */
-    .Attractions-box{width: 100%;height: auto;
-    display: flex; flex-direction: row; flex-wrap: wrap;justify-content:space-between;
+    .Attractions-box{width: 1485px;height: auto;
+    display: flex; flex-direction: row; flex-wrap: wrap;justify-content:flex-start;
     align-content:space-between;}
-    .Attractions-box .box{width: 30%;height: 300px;margin-top: 30px;cursor: pointer;}
-    .Attractions-box .box .Photo{width: 100%;height:250px;background-color: cyan;}
+    /* 어트렉션 박스 */
+    .Attractions-box .box{width: 419.95px;height: 300px;margin-top: 30px;cursor: pointer;transition: 0.5s;
+    margin-right: 5%;}
+    .Attractions-box .box .Photo{width: 100%;height:250px;background-position: center;
+    background-size: cover;}
     .Attractions-box .box .text{font-size: 18px;font-weight: bold;height: 50px;line-height: 50px;}
-    .Attractions-box .box .text span{border: solid rgb(0, 156, 218) 3px;
-    border-radius: 20px;padding: 2px 10px;color: rgb(0, 156, 218);margin-right: 5px;}
+    .Attractions-box .box .text span{border: solid 2px; font-size: 15px;
+    border-radius: 20px;padding: 2px 10px;margin-right: 5px;}
+    .Fantasyland span{color: rgb(0, 156, 218); border: rgb(0, 156, 218);transition: 0.4s;}
+    .Fantasyland:hover span{color: white; background-color: rgb(0, 156, 218);}
+
+    .Frontierland span{color:sienna; border:sienna;transition: 0.4s;}
+    .Frontierland:hover span{color: white; background-color: sienna;}
+
+    .Toontown span{color:mediumvioletred; border:mediumvioletred;transition: 0.4s;}
+    .Toontown:hover span{color: white; background-color: mediumvioletred;}
+
+    .Critter span{color: rgb(177, 150, 0);border: rgb(177, 150, 0);transition: 0.4s;}
+    .Critter:hover span{color: white; background-color: rgb(177, 150, 0);}
+
+    .Adventureland span{color: purple;border:purple;transition: 0.4s;}
+    .Adventureland:hover span{color: white; background-color:purple;}
+
+    .Orleans span{color: #111;border:#111;transition: 0.4s;}
+    .Orleans:hover span{color: white; background-color:#111;}
+
+    .USA span{color: red;border:red;transition: 0.4s;}
+    .USA:hover span{color: white; background-color:red;}
+
+    
+    /* 어트렉션 APP 안내 */
     .reservation-outside{width: 100%;height: 200px;
     position: relative;}
     .reservation{text-align: center;padding: 15px 0;position: absolute;
@@ -67,6 +96,54 @@ margin-bottom: 1px; border-radius: 20px;}
     border: solid #333 2px;cursor: pointer;transition: 0.7s;
     transform: translateX(-50%) translateY(-50%);}
     .reservation:hover{background-color: rgb(0, 156, 218); color: white; border: none;}
-    /* 어트랙션*/
-    .Attractions-box:not(.all){display: none;}
-    .fantasy .box{}
+    /* 어트랙션 서브제목 color */
+    .sub-color{color: rgb(0, 156, 218);}
+
+    /* 어트랙션 사진 */
+
+    /* 판타지랜드 */
+    .Fantasyland:nth-of-type(1) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/이상한나라.jpg);}
+    .Fantasyland:nth-of-type(2) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/서커스기차.webp);}
+    .Fantasyland:nth-of-type(3) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/코끼리\ 덤보.webp);}
+    .Fantasyland:nth-of-type(4) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/휴일.jpg);}
+    .Fantasyland:nth-of-type(5) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/아서.jpg);}
+    .Fantasyland:nth-of-type(6) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/티파티.webp);}
+    .Fantasyland:nth-of-type(7) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/봅슬레이.jpg);}
+    .Fantasyland:nth-of-type(8) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/야생마차.webp);}
+    .Fantasyland:nth-of-type(9) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피터팬.jpg);}
+    .Fantasyland:nth-of-type(10) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피노키오.webp);}
+    .Fantasyland:nth-of-type(11) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/잠자는.webp);}
+    .Fantasyland:nth-of-type(12) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/백설공주.webp);}
+    .Fantasyland:nth-of-type(13) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/스토리북.webp);}
+        
+    /* 프론티어랜드 */
+    .Frontierland:nth-of-type(14) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/레일로드.jpg);}
+    .Frontierland:nth-of-type(15) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/사격.jpg);}
+    .Frontierland:nth-of-type(16) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/리버보트.webp);}
+    .Frontierland:nth-of-type(17) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/해적소굴.jpg);}
+    .Frontierland:nth-of-type(18) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/콜롬비아.webp);}
+
+    /* 미키즈 툰타운 */
+    .Toontown:nth-of-type(19) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/트리하우스.webp);}
+    .Toontown:nth-of-type(20) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/코스터.jpg);}
+    .Toontown:nth-of-type(21) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/툰스핀.jpg);}
+
+    /* 크리터 컨트리 */
+    .Critter:nth-of-type(22) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/카누.jpg);}
+    .Critter:nth-of-type(23) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/곰돌이푸.webp);}
+    .Critter:nth-of-type(24) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/마운틴.webp);}
+
+    /* 어드밴처 랜드 */
+    .Adventureland:nth-of-type(25) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/인이아나존스.webp);}
+    .Adventureland:nth-of-type(26) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/크루즈.webp);}
+    .Adventureland:nth-of-type(27) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/티키룸.webp);}
+
+    /* 뉴 올리언스 광장 */
+    .Orleans:nth-of-type(28) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/홀리데이.jpg);}
+    .Orleans:nth-of-type(29) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/캐르비안의.webp);}
+
+    /* 메인 스트리트, 미국 */
+    .USA:nth-of-type(30) .Photo{background-image: url(../img/sub1/어트렉션/USA/링컨.jpg);}
+    .USA:nth-of-type(31) .Photo{background-image: url(../img/sub1/어트렉션/USA/겔러리.jpg);}
+    .USA:nth-of-type(32) .Photo{background-image: url(../img/sub1/어트렉션/USA/시네마.webp);}
+    .USA:nth-of-type(33) .Photo{background-image: url(../img/sub1/어트렉션/USA/차량.webp);}

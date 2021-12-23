@@ -23,34 +23,109 @@
         
         // 어트랙션 서브 버튼
         $(function(){
-            // #ALL
+            // # ALL
             $('.sub-button span:nth-of-type(1)').click(function(){
-                // 텍스트 색 바꾸기
-                $('.sub-button span:nth-of-type(1)').css({"color":"rgb(0, 156, 218)"});
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(1)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
                 // 창 바꾸기
-                $('.all').fadeIn(500);
-                $('.Attractions-box').not('.all').fadeOut();
+                $('.box').fadeIn();
             });
 
-            // 판타지 랜드
+            // # 판타지 랜드
             $('.sub-button span:nth-of-type(2)').click(function(){
-                // 텍스트 색 바꾸기
-                $('.sub-button span:nth-of-type(2)').css({"color":"rgb(0, 156, 218)"});
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(2)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
 
                 // 창 바꾸기
-                $('.fantasy').fadeIn(500);
-                $('.Attractions-box').not('.fantasy').fadeOut();
+                $('.Fantasyland').fadeIn();
+                $('.box').not('.Fantasyland').hide();
             });
 
-            // 프론티어 랜드
+            // # 프론티어 랜드
             $('.sub-button span:nth-of-type(3)').click(function(){
-                // 텍스트 색 바꾸기
-                $('.sub-button span:nth-of-type(3)').css({"color":"rgb(0, 156, 218)"});
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(3)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
                 // 창 바꾸기
-                $('.Frontier').fadeIn(500);
-                $('.Attractions-box').not('.Frontier').fadeOut();
+                $('.Frontierland').fadeIn();
+                $('.box').not('.Frontierland').hide();
+            });
+
+            // 미키의 툰타운
+            $('.sub-button span:nth-of-type(4)').click(function(){
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(4)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
+                // 창 바꾸기
+                $('.Toontown').fadeIn();
+                $('.box').not('.Toontown').hide();
+            });           
+
+            // 크리터 컨트리
+            $('.sub-button span:nth-of-type(5)').click(function(){
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(5)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
+                // 창 바꾸기
+                $('.Critter').fadeIn();
+                $('.box').not('.Critter').hide();
+            });   
+            
+            // 어드밴처 랜드
+            $('.sub-button span:nth-of-type(6)').click(function(){
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(6)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
+                // 창 바꾸기
+                $('.Adventureland').fadeIn();
+                $('.box').not('.Adventureland').hide();
+            });   
+            
+            // 뉴 올리언스 광장
+            $('.sub-button span:nth-of-type(7)').click(function(){
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(7)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
+                // 창 바꾸기
+                $('.Orleans').fadeIn();
+                $('.box').not('.Orleans').hide();
+            });        
+
+            // 메인 스트리트, 미국
+            $('.sub-button span:nth-of-type(8)').click(function(){
+                // 서브제목 색 바꾸기
+                $('.sub-button span:nth-of-type(8)').addClass('sub-color');
+                $('.sub-button span').not(this).removeClass('sub-color');
+
+                // 창 바꾸기
+                $('.USA').fadeIn();
+                $('.box').not('.USA').hide();
+            });   
+            
+        // 가이드맵 이비지 색 바꾸기
+        $(function(){
+            $('.Search button').hover(function(){
+                $('.Search button img').attr('src','img/sub1/아이콘/지도2.png');
+            });
+            $('.Search button').mouseout(function(){
+                $('.Search button img').attr('src','img/sub1/아이콘/지도.png');
             });
         });
+
+
+        });
+
+
+
+
     </script>
         <link rel="stylesheet" href="css/reset_css.css">
         <link rel="stylesheet" href="css/common_css.css">
@@ -73,11 +148,12 @@
                 <a href="#">할인&이벤트</a>
                 <a href="#">참여프로그램</a>
                 <a href="#">멘버쉽</a>
-                <div id="login">
-                    <a href="#">로그인</a>
-                    <a href="#"><span>나의 디즈니랜드</span></a>
-                </div>
             </nav>
+
+            <div id="login">
+                <a href="#">로그인</a>
+                <a href="#"><span>나의 디즈니랜드</span></a>
+            </div>
             <span class="hamburger"><img src="img/common/햄버거매뉴.png" alt=""></span>
         </div>
         <div id="Manu">
@@ -106,10 +182,11 @@
         <div class="text">
             <h2>디즈니랜드 의<br>
             어트랙션 안내입니다.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Suspendisse varius enim in eros elementum tristique. Duis 
-                 cursus, mi quis viverra ornare, eros dolor interdum nulla, 
-                 ut commodo diam libero vitae erat.</p>
+            <p>디즈니랜드 리조트에 입장하기 전에 모든 투숙객에게 백신 접종을 완료하거나
+                 COVID-19 음성 검사를 받을 것을 강력히 권장합니다. 예방 접종 상태에 관계없이
+                  많은 명소와 밀폐된 운송 차량을 포함하여 실내에 있는 모든 투숙객(2세 이상)은 
+                  얼굴 가리개를 착용해야 합니다. 야외 공용 공간의 모든 투숙객은 얼굴 가리개를 
+                  선택 사항으로 유지합니다.</p>
             <button>링크 입니다</button>
         </div>
     </div>
@@ -131,15 +208,15 @@
 
         <!-- 검색창 입니다 -->
         <div class="Search">
-            <button>가이드맴에서 확인</button>
+            <button><img src="img/sub1/아이콘/지도.png" alt=""> 가이드맴에서 확인</button>
             <div class="input">
                 <input type="search" placeholder="어트렉션명을 입력해 주세요">
-                <input type="submit">
+                <input type="submit" value=" ">
             </div>
         </div>
         <!-- 서브버튼 입니다 -->
         <div class="sub-button">
-            <span>#ALL</span>
+            <span class="sub-color">#ALL</span>
             <span>#판타지랜드</span>
             <span>#프론티어랜드</span>
             <span>#미키즈툰타운</span>
@@ -150,480 +227,249 @@
         </div>
 
         <!-- 모든 놀이기구 -->
-        <div class="all Attractions-box">
-            <div class="box">
+        <div class="Attractions-box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
                     이상한나라의 앨리스
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    케이시 주니어 서커스 기차
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    하늘을 나는 코끼리 덤보
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    "작은 세상" 휴일
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    아서 캐러셀 왕
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    미친 티 파티
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    마터호른 봅슬레이
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    미스터 토드의 야생마차
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    피터팬의 비행
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    피노키오의 대담한 여정
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    잠자는 숲속의 공주
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    백설공주의 마법에 걸린 소원
                 </div>
             </div>
-            <div class="box">
+            <div class="box Fantasyland">
                 <div class="Photo"></div>
                 <div class="text">
                     <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    스토리북 육지 운하 보트
                 </div>
             </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-        </div>
-        <!-- 판타지 랜드 -->
-        <div class="fantasy Attractions-box">
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-        </div>        
-        <!-- 프론티어 랜드 -->
-        <div class="Frontier Attractions-box">
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
 
-            </div>
-        </div>
-        <!-- 미키 툰타운 -->
-        <div class="Mickey Attractions-box">
-            <div class="box">
+            <!-- 프론티어 랜드 -->
+            <div class="box Frontierland">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>프론티어랜드</span>
+                    빅 썬더 마운틴 레일로드
                 </div>
             </div>
-            <div class="box">
+            <div class="box Frontierland">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>프론티어랜드</span>
+                    프론티어랜드 사격 박람회
                 </div>
             </div>
-            <div class="box">
+            <div class="box Frontierland">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>프론티어랜드</span>
+                    마크 트웨인 리버보트
                 </div>
             </div>
-        </div>
-        <!-- 크리터 컨트리 -->
-        <div class="Critter Attractions-box">
-            <div class="box">
+            <div class="box Frontierland">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>프론티어랜드</span>
+                    톰 소여 섬의 해적소굴
                 </div>
             </div>
-            <div class="box">
+            <div class="box Frontierland">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>프론티어랜드</span>
+                    범선 콜롬비아
                 </div>
             </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-        </div>
-        <!-- 어드벤처 랜드 -->
-        <div class="Adventure Attractions-box">
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-        </div>
-        <!-- 뉴올리언스 광장 -->
-        <div class="Square Attractions-box">
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
 
-            </div>
-        </div>
-        <!-- 미국 메인 스트리트 -->
-        <div class="usa Attractions-box">
-            <div class="box">
+            <!-- 미키즈 툰타운 -->
+            <div class="box Toontown">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>미키의 툰타운</span>
+                    칩 앤 데일 트리하우스
                 </div>
             </div>
-            <div class="box">
+            <div class="box Toontown">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>미키의 툰타운</span>
+                    가젯의 고 코스터
                 </div>
             </div>
-            <div class="box">
+            <div class="box Toontown">
                 <div class="Photo"></div>
                 <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+                    <span>미키의 툰타운</span>
+                    로저 래빗의 자동차 툰 스핀
                 </div>
             </div>
-            <div class="box">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
-                </div>
-            </div>
-            <div class="box">
 
+            <!-- 크리터 컨트리 -->
+            <div class="box Critter">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>크리터컨트리</span>
+                    익스플로러 카누
+                </div>
             </div>
-            <div class="box">
+            <div class="box Critter">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>크리터컨트리</span>
+                    곰돌이 푸의 많은 모험
+                </div>
+            </div>
+            <div class="box Critter">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>크리터컨트리</span>
+                    스플래쉬 마운틴
+                </div>
+            </div>
 
+            <!-- 어드밴처 랜드 -->
+            <div class="box Adventureland">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>어드벤처랜드</span>
+                    인디아나존스 어드벤처
+                </div>
+            </div>
+            <div class="box Adventureland">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>어드벤처랜드</span>
+                    정글 크루즈
+                </div>
+            </div>
+            <div class="box Adventureland">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>어드벤처랜드</span>
+                    디즈니의 마법에 걸린 티키 룸
+                </div>
+            </div>
+
+            <!-- 뉴 올리언스 광장 -->
+            <div class="box Orleans">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>뉴올리언스광장</span>
+                    헌티드 맨션 홀리데이
+                </div>
+            </div>
+            <div class="box Orleans">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>뉴올리언스광장</span>
+                    캐르비안의 해적
+                </div>
+            </div>
+
+            <!-- 메인 스트리트, 미국 -->
+            <div class="box USA">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>메인스트리트</span>
+                    링컨 디즈니랜드 스토리
+                </div>
+            </div>
+            <div class="box USA">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>메인스트리트</span>
+                    디즈니 갤러리
+                </div>
+            </div>
+            <div class="box USA">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>메인스트리트</span>
+                    메인 스트리트 시네마
+                </div>
+            </div>
+            <div class="box USA">
+                <div class="Photo"></div>
+                <div class="text">
+                    <span>메인스트리트</span>
+                    메인 스트리트 차량
+                </div>
             </div>
         </div>
 
