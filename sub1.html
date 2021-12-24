@@ -8,125 +8,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/sub1.js"></script>
-    <script>
-        // 슬라이더 페이드 인
-        var i=0;
-        function slide(){
-            i++;
-            if(i>$('#slide .Photo:last').index()){
-                i=0;
-            }
-            $('#slide .Photo').eq(i).stop().fadeIn(500);
-            $('#slide .Photo').eq(i-1).stop().fadeOut();
-        }
-        setInterval(slide,5000);
-        
-        // 어트랙션 서브 버튼
-        $(function(){
-            // # ALL
-            $('.sub-button span:nth-of-type(1)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(1)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
 
-                // 창 바꾸기
-                $('.box').fadeIn();
-            });
-
-            // # 판타지 랜드
-            $('.sub-button span:nth-of-type(2)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(2)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Fantasyland').fadeIn();
-                $('.box').not('.Fantasyland').hide();
-            });
-
-            // # 프론티어 랜드
-            $('.sub-button span:nth-of-type(3)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(3)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Frontierland').fadeIn();
-                $('.box').not('.Frontierland').hide();
-            });
-
-            // 미키의 툰타운
-            $('.sub-button span:nth-of-type(4)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(4)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Toontown').fadeIn();
-                $('.box').not('.Toontown').hide();
-            });           
-
-            // 크리터 컨트리
-            $('.sub-button span:nth-of-type(5)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(5)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Critter').fadeIn();
-                $('.box').not('.Critter').hide();
-            });   
-            
-            // 어드밴처 랜드
-            $('.sub-button span:nth-of-type(6)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(6)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Adventureland').fadeIn();
-                $('.box').not('.Adventureland').hide();
-            });   
-            
-            // 뉴 올리언스 광장
-            $('.sub-button span:nth-of-type(7)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(7)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.Orleans').fadeIn();
-                $('.box').not('.Orleans').hide();
-            });        
-
-            // 메인 스트리트, 미국
-            $('.sub-button span:nth-of-type(8)').click(function(){
-                // 서브제목 색 바꾸기
-                $('.sub-button span:nth-of-type(8)').addClass('sub-color');
-                $('.sub-button span').not(this).removeClass('sub-color');
-
-                // 창 바꾸기
-                $('.USA').fadeIn();
-                $('.box').not('.USA').hide();
-            });   
-            
-        // 가이드맵 이비지 색 바꾸기
-        $(function(){
-            $('.Search button').hover(function(){
-                $('.Search button img').attr('src','img/sub1/아이콘/지도2.png');
-            });
-            $('.Search button').mouseout(function(){
-                $('.Search button img').attr('src','img/sub1/아이콘/지도.png');
-            });
-        });
-
-
-        });
-
-
-
-
-    </script>
         <link rel="stylesheet" href="css/reset_css.css">
         <link rel="stylesheet" href="css/common_css.css">
         <link rel="stylesheet" href="css/sub1.css">
@@ -178,313 +60,691 @@
         <div class="Photo"></div>
         <div class="Photo"></div>
         <div class="Photo"></div>
+        <div class="Photo"></div>
+        <div class="Photo"></div>
+        <div class="Photo"></div>
+        <div class="Photo"></div>
         <!-- 슬라이드 택스트 입니다 -->
         <div class="text">
             <h2>디즈니랜드 의<br>
-            어트랙션 안내입니다.</h2>
+            <strong>어트랙션</strong> 안내입니다.</h2>
             <p>디즈니랜드 리조트에 입장하기 전에 모든 투숙객에게 백신 접종을 완료하거나
                  COVID-19 음성 검사를 받을 것을 강력히 권장합니다. 예방 접종 상태에 관계없이
                   많은 명소와 밀폐된 운송 차량을 포함하여 실내에 있는 모든 투숙객(2세 이상)은 
                   얼굴 가리개를 착용해야 합니다. 야외 공용 공간의 모든 투숙객은 얼굴 가리개를 
                   선택 사항으로 유지합니다.</p>
-            <button>링크 입니다</button>
         </div>
     </div>
 
 
     <!-- 메인 섹션 입니다  ////////////////
-    /////////////////////////////////////
--->
+    ///////////////////////////////////-->
 
     <div id="Attractions" class="main">
+
         <!-- 메인버튼 입니다 -->
         <div class="main-button-border">
             <div class="main-button">
-                <button>어트랙션</button>
-                <button>정검시설</button>
+                <button class="sub-color">어트랙션</button>
+                <button>점검시설</button>
                 <button>추천코스</button>
             </div>
         </div>
 
-        <!-- 검색창 입니다 -->
-        <div class="Search">
-            <button><img src="img/sub1/아이콘/지도.png" alt=""> 가이드맴에서 확인</button>
-            <div class="input">
-                <input type="search" placeholder="어트랙션명을 입력해 주세요">
-                <input type="submit" value=" ">
+        <!-- 어트렉션 입니다  ///////////////////////
+        ///////////////////////////////////////////-->
+        <div class="Attractions">
+            <!-- 검색창 입니다 -->
+            <div class="Search">
+                <button><img src="img/sub1/아이콘/지도.png" alt=""> 가이드맴에서 확인</button>
+                <div class="input">
+                    <input type="search" placeholder="어트랙션명을 입력해 주세요">
+                    <input type="submit" value=" ">
+                </div>
             </div>
+            <!-- 서브버튼 입니다 -->
+            <div class="sub-button">
+                <span class="sub-color">#ALL</span>
+                <span>#판타지랜드</span>
+                <span>#프론티어랜드</span>
+                <span>#미키즈툰타운</span>
+                <span>#크러터컨트리</span>
+                <span>#어드벤처랜드</span>
+                <span>#뉴올리언스광장</span>
+                <span>#미국메인스트리트</span>
+            </div>
+
+            <!-- 모든 놀이기구 -->
+            <div class="Attractions-box">
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        이상한나라의 앨리스
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        케이시 주니어 서커스 기차
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        하늘을 나는 코끼리 덤보
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        "작은 세상" 휴일
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        아서 캐러셀 왕
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        미친 티 파티
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        마터호른 봅슬레이
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        미스터 토드의 야생마차
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        피터팬의 비행
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        피노키오의 대담한 여정
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        잠자는 숲속의 공주
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        백설공주의 마법에 걸린 소원
+                    </div>
+                </div>
+                <div class="box park Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        스토리북 육지 운하 보트
+                    </div>
+                </div>
+
+                <!-- 프론티어 랜드 -->
+                <div class="box park Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        빅 썬더 마운틴 레일로드
+                    </div>
+                </div>
+                <div class="box park Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        프론티어랜드 사격 박람회
+                    </div>
+                </div>
+                <div class="box park Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        마크 트웨인 리버보트
+                    </div>
+                </div>
+                <div class="box park Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        톰 소여 섬의 해적소굴
+                    </div>
+                </div>
+                <div class="box park Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        범선 콜롬비아
+                    </div>
+                </div>
+
+                <!-- 미키즈 툰타운 -->
+                <div class="box park Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        칩 앤 데일 트리하우스
+                    </div>
+                </div>
+                <div class="box park Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        가젯의 고 코스터
+                    </div>
+                </div>
+                <div class="box park Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        로저 래빗의 자동차 툰 스핀
+                    </div>
+                </div>
+
+                <!-- 크리터 컨트리 -->
+                <div class="box park Critter">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>크리터컨트리</span>
+                        익스플로러 카누
+                    </div>
+                </div>
+                <div class="box park Critter">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>크리터컨트리</span>
+                        곰돌이 푸의 많은 모험
+                    </div>
+                </div>
+                <div class="box park Critter">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>크리터컨트리</span>
+                        스플래쉬 마운틴
+                    </div>
+                </div>
+
+                <!-- 어드밴처 랜드 -->
+                <div class="box park Adventureland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>어드벤처랜드</span>
+                        인디아나존스 어드벤처
+                    </div>
+                </div>
+                <div class="box park Adventureland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>어드벤처랜드</span>
+                        정글 크루즈
+                    </div>
+                </div>
+                <div class="box park Adventureland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>어드벤처랜드</span>
+                        디즈니의 마법에 걸린 티키 룸
+                    </div>
+                </div>
+
+                <!-- 뉴 올리언스 광장 -->
+                <div class="box park Orleans">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>뉴올리언스광장</span>
+                        헌티드 맨션 홀리데이
+                    </div>
+                </div>
+                <div class="box park Orleans">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>뉴올리언스광장</span>
+                        캐르비안의 해적
+                    </div>
+                </div>
+
+                <!-- 메인 스트리트, 미국 -->
+                <div class="box park USA">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>메인스트리트</span>
+                        링컨 디즈니랜드 스토리
+                    </div>
+                </div>
+                <div class="box park USA">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>메인스트리트</span>
+                        디즈니 갤러리
+                    </div>
+                </div>
+                <div class="box park USA">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>메인스트리트</span>
+                        메인 스트리트 시네마
+                    </div>
+                </div>
+                <div class="box park USA">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>메인스트리트</span>
+                        메인 스트리트 차량
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- 예약 칸 입니다 -->
+            <div class="reservation-outside">
+                <div class="reservation">
+                    <h2>디즈니랜드 어트렉션 APP 안내</h2>
+                </div>
+            </div>
+
         </div>
-        <!-- 서브버튼 입니다 -->
-        <div class="sub-button">
-            <span class="sub-color">#ALL</span>
-            <span>#판타지랜드</span>
-            <span>#프론티어랜드</span>
-            <span>#미키즈툰타운</span>
-            <span>#크러터컨트리</span>
-            <span>#어드벤처랜드</span>
-            <span>#뉴올리언스광장</span>
-            <span>#미국메인스트리트</span>
-        </div>
 
-        <!-- 모든 놀이기구 -->
-        <div class="Attractions-box">
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    이상한나라의 앨리스
+        <!-- 점검시설 입니다 //////////////////////////////
+        /////////////////////////////////////////////////-->
+
+       <div class="inspection">
+            <!-- 날자 텍스트 입니다 -->
+            <div class="calendar-text">
+                <h2>원하는 날짜를 선택해 주세요</h2>
+            </div>
+            <div class="calendar">
+                <div class="calendar-box">
+                    <span class="sub-color">24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span>21</span>
                 </div>
             </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    케이시 주니어 서커스 기차
-                </div>
+            <!-- 서브버튼 입니다 -->
+            <div class="sub-button">
+                <span class="sub-color">#ALL</span>
+                <span>#판타지랜드</span>
+                <span>#프론티어랜드</span>
+                <span>#미키즈툰타운</span>
+                <span>#크러터컨트리</span>
+                <span>#어드벤처랜드</span>
+                <span>#뉴올리언스광장</span>
+                <span>#미국메인스트리트</span>
             </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    하늘을 나는 코끼리 덤보
+
+            <!-- 모든 놀이기구 -->
+            <div class="Attractions-box">
+                <div class="box check Fantasyland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>판타지랜드</span>
+                        작은 세상
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    "작은 세상" 휴일
+
+                <!-- 프론티어 랜드 -->
+                <div class="box check Frontierland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>프론티어랜드</span>
+                        범선 콜롬비아
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    아서 캐러셀 왕
+
+                <!-- 미키즈 툰타운 -->
+                <div class="box check Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        도날드의 보트
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    미친 티 파티
+                <div class="box check Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        구피의 놀이터
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    마터호른 봅슬레이
+                <div class="box check Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        미키의 집과 미키를 만나다
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    미스터 토드의 야생마차
+                <div class="box check Toontown">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>미키의 툰타운</span>
+                        미니의 집과 미니를 만나다
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    피터팬의 비행
+
+                <!-- 크리터 컨트리 -->
+
+                <!-- 어드밴처 랜드 -->
+                <div class="box check Adventureland">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>어드벤처랜드</span>
+                        타잔의 나무집
+                    </div>
                 </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    피노키오의 대담한 여정
-                </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    잠자는 숲속의 공주
-                </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    백설공주의 마법에 걸린 소원
-                </div>
-            </div>
-            <div class="box Fantasyland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>판타지랜드</span>
-                    스토리북 육지 운하 보트
+
+                <!-- 메인 스트리트, 미국 -->
+                <div class="box check USA">
+                    <div class="Photo"></div>
+                    <div class="text">
+                        <span>메인스트리트</span>
+                        메인 스트리트 호박 축제
+                    </div>
                 </div>
             </div>
 
-            <!-- 프론티어 랜드 -->
-            <div class="box Frontierland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>프론티어랜드</span>
-                    빅 썬더 마운틴 레일로드
-                </div>
-            </div>
-            <div class="box Frontierland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>프론티어랜드</span>
-                    프론티어랜드 사격 박람회
-                </div>
-            </div>
-            <div class="box Frontierland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>프론티어랜드</span>
-                    마크 트웨인 리버보트
-                </div>
-            </div>
-            <div class="box Frontierland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>프론티어랜드</span>
-                    톰 소여 섬의 해적소굴
-                </div>
-            </div>
-            <div class="box Frontierland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>프론티어랜드</span>
-                    범선 콜롬비아
-                </div>
-            </div>
-
-            <!-- 미키즈 툰타운 -->
-            <div class="box Toontown">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>미키의 툰타운</span>
-                    칩 앤 데일 트리하우스
-                </div>
-            </div>
-            <div class="box Toontown">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>미키의 툰타운</span>
-                    가젯의 고 코스터
-                </div>
-            </div>
-            <div class="box Toontown">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>미키의 툰타운</span>
-                    로저 래빗의 자동차 툰 스핀
-                </div>
-            </div>
-
-            <!-- 크리터 컨트리 -->
-            <div class="box Critter">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>크리터컨트리</span>
-                    익스플로러 카누
-                </div>
-            </div>
-            <div class="box Critter">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>크리터컨트리</span>
-                    곰돌이 푸의 많은 모험
-                </div>
-            </div>
-            <div class="box Critter">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>크리터컨트리</span>
-                    스플래쉬 마운틴
-                </div>
-            </div>
-
-            <!-- 어드밴처 랜드 -->
-            <div class="box Adventureland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>어드벤처랜드</span>
-                    인디아나존스 어드벤처
-                </div>
-            </div>
-            <div class="box Adventureland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>어드벤처랜드</span>
-                    정글 크루즈
-                </div>
-            </div>
-            <div class="box Adventureland">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>어드벤처랜드</span>
-                    디즈니의 마법에 걸린 티키 룸
-                </div>
-            </div>
-
-            <!-- 뉴 올리언스 광장 -->
-            <div class="box Orleans">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>뉴올리언스광장</span>
-                    헌티드 맨션 홀리데이
-                </div>
-            </div>
-            <div class="box Orleans">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>뉴올리언스광장</span>
-                    캐르비안의 해적
-                </div>
-            </div>
-
-            <!-- 메인 스트리트, 미국 -->
-            <div class="box USA">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>메인스트리트</span>
-                    링컨 디즈니랜드 스토리
-                </div>
-            </div>
-            <div class="box USA">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>메인스트리트</span>
-                    디즈니 갤러리
-                </div>
-            </div>
-            <div class="box USA">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>메인스트리트</span>
-                    메인 스트리트 시네마
-                </div>
-            </div>
-            <div class="box USA">
-                <div class="Photo"></div>
-                <div class="text">
-                    <span>메인스트리트</span>
-                    메인 스트리트 차량
-                </div>
-            </div>
         </div>
 
 
+        
+        <!-- 추천 코스 입니다 //////////////////////////////
+        /////////////////////////////////////////////////-->
+        <div class="Recommendation">
 
-
-        <!-- 예약 칸 입니다 -->
-        <div class="reservation-outside">
-            <div class="reservation">
-                <h2>디즈니랜드 어트렉션 APP 안내</h2>
+            <!-- 서브버튼 입니다 -->
+            <div class="Recommendation-sub-button">
+                <span class="sub-color">#처음오는 코스</span>
+                <span>#아이와 즐기는 코스</span>
+                <span>#비 오는날 코스</span>
             </div>
-        </div>
+            <div class="Course">
+                <!-- 처음 오는 코스 -->
+                <div class="Attractions-box First-box">
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="begin">1. 시작</span>
+                            파크 입장
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">2. 어트랙션</span>
+                            스페이스 마운틴
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">3. 어트랙션</span>
+                            미키의 필하매직
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="café">4. 레스토랑</span>
+                            그랜마 사라의 키친
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">5. 어트랙션</span>
+                            스플래시 마운틴
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">6. 어트랙션</span>
+                            블래스터
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="café">7. 레스토랑</span>
+                            그레이트 아메리칸 와플컴퍼니
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">8. 어트랙션</span>
+                            정글 크루즈
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="shop">9. 가게</span>
+                            월드 바자
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">10. 어트랙션</span>
+                            빅 선더 마운틴
+                        </div>
+                    </div>
+                    <div class="box First">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Parade">11. 공연/퍼레이드</span>
+                            불꽃놀이
+                        </div>
+                    </div>
+                </div>
 
+                <!-- 아이와 오는 코스 -->
+                <div class="Attractions-box Child-box">
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="begin">1. 시작</span>
+                            파크 입장
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Service">2. 서비스 시설</span>
+                            베이비센터
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="picture">3. 기념촬영</span>
+                            신데렐라 성 앞에서 기념 촬영
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">4. 어트랙션</span>
+                            정글 크루즈
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">5. 어트랙션</span>
+                            웨스턴 리버 철도
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="café">6. 레스토랑</span>
+                            플라자 파빌리온
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">7. 어트랙션</span>
+                            하늘을 나는 덤보
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">8. 어트랙션</span>
+                            캐슬 캐러셀
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">9. 어트랙션</span>
+                            피터팬의 하늘 여행
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="café">10. 레스토랑</span>
+                            크레오즈
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">11. 어트랙션</span>
+                            도널드의 보트
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">12. 어트랙션</span>
+                            로저래빗의 카툰스핀
+                        </div>
+                    </div>
+                    <div class="box Child">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="shop">13. 가게</span>
+                            선물 구매하기
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 비 오는날 코스 -->
+                <div class="Attractions-box rain-box">
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            버즈 라이트이어의 애스트로 블래스터
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            스티치 인카운터
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            미키의 집
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            미니의 집
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            푸의 허니 헌트
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            정글 카니발
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Attrac">어트랙션</span>
+                            신데렐라의 페어리테일 홀
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Parade">공연/퍼레이드</span>
+                            미키의 필하매직
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="Parade">공연/퍼레이드</span>
+                            나이트폴 글로우
+                        </div>
+                    </div>
+                    <div class="box rain">
+                        <div class="Photo"></div>
+                        <div class="text">
+                            <span class="café">레스토랑</span>
+                            캠프 우드척 키친
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
     </div>
-
 
 
 
