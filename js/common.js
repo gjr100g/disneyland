@@ -25,10 +25,10 @@
                     if (width_size=599) {
                         document.location.reload();
                     }
-                    if (width_size=1424) {
+                    if (width_size=1629) {
                         document.location.reload();
                     }
-                    if (width_size=1425) {
+                    if (width_size=1630) {
                         document.location.reload();
                     }
                 })
@@ -52,7 +52,7 @@
         });
 
 
-        if(matchMedia("screen and (max-width: 1424px)").matches){
+        if(matchMedia("screen and (max-width: 1629px)").matches){
             $(function(){
                 $("#logo img").attr("src","img/common/logo1.png");
             });

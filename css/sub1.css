@@ -10,10 +10,11 @@ nav>a{color: white;}
 
 /* 슬라이드 셉션 ///////////////////////
 //////////////////////////////////////*/
-#slide{width: 100%;height: 500px;}
+#slide{width: 100%;height: 500px;
+    position: relative;}
        /* 슬라이드 사진 */
-       #slide .Photo{width: 100%;height: 100%; background-position: center;
-        background-size: cover;}
+       #slide .Photo{width: 100%;height: 100%;position: absolute;
+       top: 0;left: 0;background-position: center;background-size: cover;}
        #slide .Photo:not(:first-of-type){display: none;}
    
        #slide .Photo:nth-of-type(1){background-image: url(../img/sub1/메인/판타지랜드.jpg);}
@@ -272,16 +273,17 @@ nav>a{color: white;}
 
 
 
-@media(min-width:600px) and (max-width:1424.99px) {
+@media(min-width:600px) and (max-width:1629.99px) {
 
 
 /* 슬라이드 셉션 ///////////////////////
 //////////////////////////////////////*/
-#slide{width: 100%;height: 750px;
+#slide{width: 100%;height: 599px;
     position: relative;}
        /* 슬라이드 사진 */
        #slide .Photo{width: 80%;height: 100%;position: absolute;
-       top: 0;left: 0;border-radius: 0 250px 0 0;background-position: center;background-size: cover;}
+       top: 0;left: 0;border-radius: 0 250px 0 0;background-position: center;background-size: cover;
+        margin-top: 55px;}
        #slide .Photo:not(:first-of-type){display: none;}
    
        #slide .Photo:nth-of-type(1){background-image: url(../img/sub1/메인/판타지랜드.jpg);}
@@ -292,7 +294,7 @@ nav>a{color: white;}
        #slide .Photo:nth-of-type(6){background-image: url(../img/sub1/메인/뉴올리언스\ 스퀘어.jpg);}
        #slide .Photo:nth-of-type(7){background-image: url(../img/sub1/메인/usa.jpg);}
        /* 슬라이트 텍스트 */
-       #slide .text{position: absolute;top: 150px;width: 80%;padding-left: 20px;}
+       #slide .text{position: absolute;top: 150px;width: 80%;padding-left: 5%;}
        #slide .text h2{font-size: 45px;color: white;text-shadow: rgb(0, 156, 218) 0 0 5px;
         width: 100%;}
        #slide .text p{font-size: 16px;width: 70%; color: white;font-weight: bold;
@@ -304,10 +306,10 @@ nav>a{color: white;}
    /* 메인창 입니다//////////////
    ///////////////////////////// */
    .main{width: 100%;height: auto;background: none;
-   margin: -100px auto;position: relative;padding-top: 100px;
+   margin: -45px auto;position: relative;padding-top: 100px;
    margin-bottom:50px; border-radius: 20px;}
        /* 메인버튼 */
-       .main-button-border{width: 90%;background-color:#999;height: 100px;
+       .main-button-border{width: 90%;background-color:#f4feff;height: 100px;
         position: absolute;top: 0;left: 50%;transform: translateX(-50%);border-radius: 20px 20px 0 0;}
        .main-button{width:100%;height: 100px;position: absolute;top: 0;left: 50%;
        line-height: 110px;transform: translateX(-50%);
@@ -437,9 +439,9 @@ nav>a{color: white;}
        .calendar-text h2{font-size: 23px; text-align: center;}
        /* 달력 */
        .calendar{height: 70px; width: 100%;line-height: 70px;border: solid #999 2px;
-       border-style: solid none;}
-       .calendar-box{display: inline-block; margin-left: 50%;
-       transform: translateX(-50%);}
+       border-style: solid none;position: relative;}
+       .calendar-box{display: inline-block;position: absolute;left: 50%;
+       transform: translateX(-50%);width:auto;width: 498px;}
        .calendar-box span{font-size: 23px;font-weight: bold;padding: 0 15px; color: #333;
        cursor: pointer;}
    
@@ -537,14 +539,14 @@ nav>a{color: white;}
 
 
 
-@media(min-width:1425px){
+@media(min-width:1630px){
 
 /* 슬라이드 셉션 ///////////////////////
 //////////////////////////////////////*/
 #slide{width: 100%;height: 750px;
  position: relative;}
     /* 슬라이드 사진 */
-    #slide .Photo{width: 75%;height: 100%;position: absolute;
+    #slide .Photo{width: 80%;height: 100%;position: absolute;
     top: 0;left: 0;border-radius: 0 250px 0 0;background-position: center;background-size: cover;}
     #slide .Photo:not(:first-of-type){display: none;}
 

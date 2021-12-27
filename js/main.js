@@ -481,7 +481,7 @@
 
 
 
-        if(matchMedia("screen and (max-width: 1429px)").matches)
+        if(matchMedia("screen and (max-width: 1629px)").matches)
         {
             $(function(){
                 $("#logo img").attr("src","img/common/logo1.png");
