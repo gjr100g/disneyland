@@ -15,7 +15,7 @@ header{width: 100%; height: 55px;padding: 10px 0;background-color: white;
         #main .hamburger{float: right; cursor: pointer;}
         #main .hamburger img{width: 40px;height: 43px; margin-top: -4px;}
 
-#Manu{width: 100%;height: auto; position: fixed;background-color: white; margin-top: 8px; display: none;}
+#Manu{width: 100%;height: auto; position: fixed;background-color: white; margin-top: 0; display: none;}
 #Manu .Manu{width: 80%;height: 100%; padding-top: 20px; margin: 0 auto;}
 #Manu .Manu a{width: 100%; display: block;text-align: center;margin:20px 0; font-weight: bold;font-size: 16px;}
 #Manu .Manu a:hover{text-decoration: underline;}
