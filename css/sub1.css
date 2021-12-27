@@ -172,7 +172,7 @@ nav>a{color: white;}
        /* 달력 */
        .calendar{height:auto; width: 100%;line-height: 70px;border: solid #999 2px;
        border-style: solid none;}
-       .calendar-box{display: inline-block; margin-left: 50%;
+       .calendar-box{display: inline-block; margin-left: 50%;width: 90%;
        transform: translateX(-50%);}
        .calendar-box span{font-size: 23px;font-weight: bold;padding: 0 15px; color: #333;
        cursor: pointer;}
@@ -486,7 +486,7 @@ nav>a{color: white;}
    
    
        /* 추천코스 서브버튼 */
-       .Recommendation-sub-button{width: 100%; height: 70px;line-height: 70px;margin-top: 20px;}
+       .Recommendation-sub-button{width: 100%; height: 70px;line-height: 70px;margin-top: 20px;margin-left: 5%;}
        .Recommendation-sub-button span{font-size: 22px;font-weight: bold;padding-right:20px;cursor: pointer;}
        .Recommendation-sub-button span:hover{color: rgb(0, 156, 218);}
    
