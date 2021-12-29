@@ -42,7 +42,7 @@ cursor: pointer;position: absolute; top: 0;right: 0;z-index: 2;}
 
 /* 테마 메인입니다 */
 #LANDS .main-outside{width: 100%; height: 300px; overflow: hidden;margin-bottom: 60px;
-position: relative;}
+position: relative;border-radius: 10px;}
 #LANDS .main-s{width: 100%;height: 100%; display: none;}
 #LANDS .main-s:nth-of-type(1){display: block;}
 #LANDS .main{width: 100%; height: 100%;
@@ -85,7 +85,8 @@ position: relative;}
 #LANDS .sub h3{font-size: 20px;}
 #LANDS .sub .overflow{width: 100%; height: 90%; overflow: auto;margin-top: 16px;}
 #LANDS .sub .overflow ul{width: 300%;height: 80%;}
-#LANDS .sub .overflow ul li{width: 15%;height: 100%;overflow: hidden; float: left; margin-right: 10px;}
+#LANDS .sub .overflow ul li{width: 15%;height: 100%;overflow: hidden; float: left; 
+    margin-right: 10px;border-radius: 10px;}
 #LANDS .sub .overflow ul a{width: 100%; height: 100%;display:block;
 border-radius: 10px; position: relative;}
 #LANDS .sub .overflow ul a h3{position: absolute;bottom: 15px;left: 10px;color: rgb(255, 255, 255);
@@ -293,13 +294,15 @@ border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;lin
 margin-top: 20px;}
 .event-photo{width: 100%; height: 400px;position: relative; }
 .event-photo .photo1{width: 75%;height: 235px; position: absolute;background-position: center;
-top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 .event-photo .photo2{width: 50%;height: 154px; position: absolute;background-position: center;
-top: 140px; left: 0;;background-size: cover;}
+top: 140px; left: 0;;background-size: cover;border-radius: 10px;}
 .event-photo .photo3{width: 55%;height: 161px; position: absolute;background-position: center;
-top: 200px; right: 30%; background-size: cover;}
+top: 200px; right: 30%; background-size: cover;border-radius: 10px;}
 .event-photo .photo4{width: 40%;height: 119px; position: absolute;background-position: center;
-top: 390px; right: 5%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 390px; right: 5%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 /* 이벤트 사진 입니다 */
 .event-photo .photo1{background-image:url(../img/main/인증/인증4.webp);}
 .event-photo .photo2{background-image:url(../img/main/인증/인증3.jpg);}
@@ -396,10 +399,11 @@ border-radius: 0 120px 0 0; position: relative;}
 
 /* 테마 서브 입니다 */
 #LANDS .sub{width: 59%; height: 48%;float: right;}
-#LANDS .sub h3{font-size: 20px;}
-#LANDS .sub .overflow{width: 100%; height: 90%; overflow: auto;margin-top: 16px;}
-#LANDS .sub .overflow ul{width: 300%;height: 80%;}
-#LANDS .sub .overflow ul li{width: 15%;height: 100%;overflow: hidden; float: left; margin-right: 10px;}
+#LANDS .sub h3{font-size: 20px;padding-top:10px;}
+#LANDS .sub .overflow{width: 100%; height: 85%; overflow: auto;margin-top: 16px;}
+#LANDS .sub .overflow ul{width: 300%;height: 90%;}
+#LANDS .sub .overflow ul li{width: 15%;height: 100%;overflow: hidden; float: left; margin-right: 10px;
+border-radius: 10px;}
 #LANDS .sub .overflow ul a{width: 100%; height: 100%;display:block;
 border-radius: 10px; position: relative;}
 #LANDS .sub .overflow ul a h3{position: absolute;bottom: 30px;left: 20px;color: rgb(255, 255, 255);
@@ -551,7 +555,7 @@ padding-top: 70px;}
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
-#reservation-outside .photo{width: 65%; height: 100%; 
+#reservation-outside .photo{width: 65%; height: 100%;border-radius: 10px;
 overflow: hidden;}
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;}
@@ -606,13 +610,15 @@ border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;lin
 margin-top: 20px;}
 .event-photo{width: 50%; height: 100%; float: right; position: relative; }
 .event-photo .photo1{width: 65%;height: 235px; position: absolute;background-position: center;
-top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 .event-photo .photo2{width: 45%;height: 154px; position: absolute;background-position: center;
-top: 170px; right:50%;background-size: cover;}
+top: 170px; right:50%;background-size: cover;border-radius: 10px;}
 .event-photo .photo3{width: 55%;height: 161px; position: absolute;background-position: center;
-top: 240px; right: 30%; background-size: cover;}
+top: 240px; right: 30%; background-size: cover;border-radius: 10px;}
 .event-photo .photo4{width: 30%;height: 119px; position: absolute;background-position: center;
-top: 390px; right: 10%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 390px; right: 10%; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 /* 이벤트 사진 입니다 */
 .event-photo .photo1{background-image:url(../img/main/인증/인증4.webp);}
 .event-photo .photo2{background-image:url(../img/main/인증/인증3.jpg);}
@@ -734,7 +740,8 @@ border-radius: 0 120px 0 0; position: relative;}
 #LANDS .sub h3{font-size: 20px;}
 #LANDS .sub .overflow{width: 100%; height: 90%; overflow: auto;margin-top: 16px;}
 #LANDS .sub .overflow ul{width: 2000px;height: 80%;}
-#LANDS .sub .overflow ul li{width: 300px;height: 100%;overflow: hidden; float: left; margin-right: 10px;}
+#LANDS .sub .overflow ul li{width: 300px;height: 100%;overflow: hidden; float: left; margin-right: 10px;
+border-radius: 10px;}
 #LANDS .sub .overflow ul a{width: 100%; height: 100%;display:block;
 border-radius: 10px; position: relative;}
 #LANDS .sub .overflow ul a h3{position: absolute;bottom: 30px;left: 20px;color: rgb(255, 255, 255);
@@ -857,7 +864,8 @@ padding-top: 100px;}
     flex-direction: row;flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
     .Videos{ border-radius: 10px;
     position: relative;}
-    .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;}
+    .Videos div{width: 100%; height: 100%; background-position: center; background-size: cover;
+    border-radius: 10px;}
     .Videos h3{position: absolute; top: 20px;left: 20px; font-size: 20px;color: white;}
     .Videos span{width: 70px; height: 70px; border: solid white 1px; border-radius: 70px;
     position: absolute; right: 20px; bottom: 20px; cursor: pointer;}
@@ -883,7 +891,7 @@ padding-top: 100px;}
 /////////////////////////////////////////
 ///////////////////////////////////////// */
 #reservation-outside{width: 100%; height: 800px;position: relative;}
-#reservation-outside .photo{width: 65%; height: 100%;
+#reservation-outside .photo{width: 65%; height: 100%;border-radius: 10px;
 overflow: hidden; }
 #reservation-outside .photo div{height: 100%; width: 100%;background-image: url(../img/main/디즈니랜드.jpg);
 background-position: center; background-repeat: no-repeat; background-size: cover;
@@ -939,13 +947,15 @@ border-radius: 5px; display: inline-block;text-align: center;font-size: 14px;lin
 margin-top: 20px;}
 .event-photo{width: 50%; height: 100%; float: right; position: relative;}
 .event-photo .photo1{width: 400px;height: 350px; position: absolute;background-position: center;
-top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 0; right: 0; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 .event-photo .photo2{width: 280px;height: 220px; position: absolute;background-position: center;
-top: 150px; right:350px;background-size: cover;}
+top: 150px; right:350px;background-size: cover;border-radius: 10px;}
 .event-photo .photo3{width: 320px;height: 230px; position: absolute;background-position: center;
-top: 240px; right: 200px; background-size: cover;}
+top: 240px; right: 200px; background-size: cover;border-radius: 10px;}
 .event-photo .photo4{width: 200px;height: 170px; position: absolute;background-position: center;
-top: 390px; right: 50px; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;}
+top: 390px; right: 50px; box-shadow: rgb(218, 218, 218) 5px 5px 10px 1px;background-size: cover;
+border-radius: 10px;}
 /* 이벤트 사진 입니다 */
 .event-photo .photo1{background-image:url(../img/main/인증/인증4.webp);}
 .event-photo .photo2{background-image:url(../img/main/인증/인증3.jpg);}
