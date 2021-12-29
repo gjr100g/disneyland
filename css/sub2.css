@@ -50,7 +50,7 @@
     .video{width: 100%; height: auto;padding: 30px 0 40px 0; border: solid rgb(0, 156, 218) 1px; 
         border-style: none none solid none;position: relative;}
     .video h2{font-size: 23px;margin-bottom: 30px;}
-    .video iframe{width: 77.5vw; height: 40vw; border: none; border-radius: 10px;}
+    .video iframe{width: 77.5vw; height: 50vw; border: none; border-radius: 10px;}
     
     
     /* 위치정보 */
@@ -137,7 +137,7 @@
     .video{width: 100%; height: auto;padding: 80px 0 100px 0; border: solid rgb(0, 156, 218) 1px; 
         border-style: none none solid none;position: relative;}
     .video h2{font-size: 30px;margin-bottom: 30px;}
-    .video iframe{width: 74.5vw; height: 40vw; border: none; border-radius: 10px;}
+    .video iframe{width: 74.5vw; height: 50vw; border: none; border-radius: 10px;}
     
     
     /* 위치정보 */
