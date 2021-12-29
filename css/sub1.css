@@ -600,8 +600,10 @@ margin-bottom:50px; border-radius: 20px; }
     display: flex; flex-direction: row; flex-wrap: wrap;justify-content:flex-start;
     align-content:space-between;}
     /* 어트렉션 박스 */
+    .Attractions-box a{margin-right: 5%;}
     .Attractions-box .box{width: 419.95px;height: 300px;margin-top: 30px;cursor: pointer;transition: 0.5s;
-    margin-right: 5%;}
+    }
+
     .Attractions-box .box .Photo{width: 100%;height:250px;background-position: center;
     background-size: cover;}
     .Attractions-box .box .text{font-size: 18px;font-weight: bold;height: 50px;line-height: 50px;}
@@ -643,51 +645,51 @@ margin-bottom:50px; border-radius: 20px; }
     /* 어트랙션 사진 */
 
     /* 판타지랜드 */
-    .Fantasyland:nth-of-type(1) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/이상한나라.jpg);}
-    .Fantasyland:nth-of-type(2) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/서커스기차.webp);}
-    .Fantasyland:nth-of-type(3) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/코끼리\ 덤보.webp);}
-    .Fantasyland:nth-of-type(4) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/휴일.jpg);}
-    .Fantasyland:nth-of-type(5) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/아서.jpg);}
-    .Fantasyland:nth-of-type(6) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/티파티.webp);}
-    .Fantasyland:nth-of-type(7) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/봅슬레이.jpg);}
-    .Fantasyland:nth-of-type(8) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/야생마차.webp);}
-    .Fantasyland:nth-of-type(9) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피터팬.jpg);}
-    .Fantasyland:nth-of-type(10) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피노키오.webp);}
-    .Fantasyland:nth-of-type(11) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/잠자는.webp);}
-    .Fantasyland:nth-of-type(12) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/백설공주.webp);}
-    .Fantasyland:nth-of-type(13) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/스토리북.webp);}
+    a:nth-of-type(1) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/이상한나라.jpg);}
+    a:nth-of-type(2) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/서커스기차.webp);}
+    a:nth-of-type(3) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/코끼리\ 덤보.webp);}
+    a:nth-of-type(4) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/휴일.jpg);}
+    a:nth-of-type(5) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/아서.jpg);}
+    a:nth-of-type(6) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/티파티.webp);}
+    a:nth-of-type(7) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/봅슬레이.jpg);}
+    a:nth-of-type(8) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/야생마차.webp);}
+    a:nth-of-type(9) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피터팬.jpg);}
+    a:nth-of-type(10) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/피노키오.webp);}
+    a:nth-of-type(11) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/잠자는.webp);}
+    a:nth-of-type(12) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/백설공주.webp);}
+    a:nth-of-type(13) .Photo{background-image: url(../img/sub1/어트렉션/판타지랜드/스토리북.webp);}
         
     /* 프론티어랜드 */
-    .Frontierland:nth-of-type(14) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/레일로드.jpg);}
-    .Frontierland:nth-of-type(15) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/사격.jpg);}
-    .Frontierland:nth-of-type(16) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/리버보트.webp);}
-    .Frontierland:nth-of-type(17) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/해적소굴.jpg);}
-    .Frontierland:nth-of-type(18) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/콜롬비아.webp);}
+    a:nth-of-type(14) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/레일로드.jpg);}
+    a:nth-of-type(15) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/사격.jpg);}
+    a:nth-of-type(16) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/리버보트.webp);}
+    a:nth-of-type(17) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/해적소굴.jpg);}
+    a:nth-of-type(18) .Photo{background-image: url(../img/sub1/어트렉션/프론티어랜드/콜롬비아.webp);}
 
     /* 미키즈 툰타운 */
-    .Toontown:nth-of-type(19) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/트리하우스.webp);}
-    .Toontown:nth-of-type(20) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/코스터.jpg);}
-    .Toontown:nth-of-type(21) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/툰스핀.jpg);}
+    a:nth-of-type(19) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/트리하우스.webp);}
+    a:nth-of-type(20) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/코스터.jpg);}
+    a:nth-of-type(21) .Photo{background-image: url(../img/sub1/어트렉션/툰타운/툰스핀.jpg);}
 
     /* 크리터 컨트리 */
-    .Critter:nth-of-type(22) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/카누.jpg);}
-    .Critter:nth-of-type(23) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/곰돌이푸.webp);}
-    .Critter:nth-of-type(24) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/마운틴.webp);}
+    a:nth-of-type(22) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/카누.jpg);}
+    a:nth-of-type(23) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/곰돌이푸.webp);}
+    a:nth-of-type(24) .Photo{background-image: url(../img/sub1/어트렉션/컨트리/마운틴.webp);}
 
     /* 어드밴처 랜드 */
-    .Adventureland:nth-of-type(25) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/인이아나존스.webp);}
-    .Adventureland:nth-of-type(26) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/크루즈.webp);}
-    .Adventureland:nth-of-type(27) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/티키룸.webp);}
+    a:nth-of-type(25) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/인이아나존스.webp);}
+    a:nth-of-type(26) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/크루즈.webp);}
+    a:nth-of-type(27) .Photo{background-image: url(../img/sub1/어트렉션/어드밴처랜드/티키룸.webp);}
 
     /* 뉴 올리언스 광장 */
-    .Orleans:nth-of-type(28) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/홀리데이.jpg);}
-    .Orleans:nth-of-type(29) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/캐르비안의.webp);}
+    a:nth-of-type(28) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/홀리데이.jpg);}
+    a:nth-of-type(29) .Photo{background-image: url(../img/sub1/어트렉션/올리언스/캐르비안의.webp);}
 
     /* 메인 스트리트, 미국 */
-    .USA:nth-of-type(30) .Photo{background-image: url(../img/sub1/어트렉션/USA/링컨.jpg);}
-    .USA:nth-of-type(31) .Photo{background-image: url(../img/sub1/어트렉션/USA/겔러리.jpg);}
-    .USA:nth-of-type(32) .Photo{background-image: url(../img/sub1/어트렉션/USA/시네마.webp);}
-    .USA:nth-of-type(33) .Photo{background-image: url(../img/sub1/어트렉션/USA/차량.webp);}
+    a:nth-of-type(30) .Photo{background-image: url(../img/sub1/어트렉션/USA/링컨.jpg);}
+    a:nth-of-type(31) .Photo{background-image: url(../img/sub1/어트렉션/USA/겔러리.jpg);}
+    a:nth-of-type(32) .Photo{background-image: url(../img/sub1/어트렉션/USA/시네마.webp);}
+    a:nth-of-type(33) .Photo{background-image: url(../img/sub1/어트렉션/USA/차량.webp);}
 
 
 /* 정검시설  //////////////////
