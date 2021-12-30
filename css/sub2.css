@@ -65,14 +65,13 @@
     .relation h2{font-size: 23px;margin-bottom: 30px;}
     .Attractions{width: 100%; height: auto; display: flex; flex-wrap: wrap;flex-direction: row;
     justify-content: space-between; align-content: space-between;}
-    .Attractions a{width: 47%;}
-    .Attractions a:nth-of-type(3){display: none;}
+    .Attractions a{width: 100%;margin-bottom: 30px;}
     .service{width: 100%;}
     .service div{width: 100%; height:auto; overflow: hidden; border-radius: 10px;}
     .service div img{width: 100%; overflow: hidden; transition: 0.8s;}
     .service:hover img{transform: scale(1.2);}
-    .service h3{font-size: 15px; margin: 5px 0;}
-    .service p{font-size: 10px;}
+    .service h3{font-size: 18px; margin: 7px 0;}
+    .service p{font-size: 13px;}
     
     /* 선에 미키마우스 */
     .information img[alt="line"]{position: absolute; bottom: 7.5px; right: 10px;height: 20px;}
@@ -268,7 +267,7 @@
 /* 슬라이드   /////////////
 ////////////////////////// */
 #slide{width: 1600px;height: 800px;position: relative;margin: 0 auto;padding-top: 80px;
-    border-radius: 10px; overflow: hidden;}
+    overflow: hidden;}
     #slide .photo{width: 400%; height: 100%;}
     #slide .photo .photo-box{width: 25%;height: 100%;background-position: center;
     background-size:cover;border-radius: 10px;float: left;}
